@@ -1,0 +1,199 @@
+@import '@styles/layer-order.scss';
+
+@layer base.components {
+    .nav {
+        align-self: end; // important for larger logos
+        background-color: var(--nav-background-color);
+
+        @media (max-width: 900px) {
+            display: none;
+            flex-direction: column;
+        }
+    }
+
+    @media (max-width: 900px) {
+        .navOpen {
+            display: flex;
+            width: 100%;
+        }
+    }
+
+    .navList {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        @media (max-width: 900px) {
+            background-color: var(--utility-neutral-0);
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+
+    .navItem {
+        display: flex;
+        position: relative;
+        padding: var(--nav-link-padding);
+
+        .navLink {
+            cursor: pointer;
+        }
+
+        @media (min-width: 1101px) {
+            &:hover,
+            &:focus,
+            &.isActive {
+                border-bottom: 2px solid var(--nav-link-hover-color);
+                color: var(--nav-link-hover-color);
+                margin-bottom: -2px;
+
+                .navLink {
+                    color: var(--nav-link-hover-color);
+                }
+            }
+        }
+
+        @media (max-width: 900px) {
+            display: block;
+            border-bottom: var(--submenu-link-border);
+            padding: var(--nav-link-mobile-padding);
+
+            .navLink {
+                text-align: left;
+            }
+
+            &:last-child {
+                border: none;
+            }
+
+            &:hover,
+            &:focus {
+                border-bottom: var(--submenu-link-border);
+                color: var(--submenu-link-color);
+
+                .navLink {
+                    color: var(--submenu-link-color);
+                }
+            }
+        }
+    }
+
+    .linkGrid {
+        align-items: center;
+        display: grid;
+        gap: var(--spacing-xs);
+        grid-template-columns: auto 20px;
+    }
+
+    .linkGridSingleColumn {
+        grid-template-columns: auto;
+    }
+
+    .navLink {
+        background: none;
+        border: none;
+        color: var(--nav-link-color);
+        display: inline-block;
+        font-size: var(--nav-link-font-size);
+        font-weight: var(--nav-link-font-weight);
+        line-height: 1.4;
+        text-decoration: none;
+
+        .labelContent {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .mobileLabel {
+            display: none;
+
+            @media (max-width: 900px) {
+                display: block;
+            }
+        }
+
+        @media (max-width: 900px) {
+            white-space: normal;
+        }
+
+        svg {
+            vertical-align: middle;
+        }
+    }
+
+    .dropdownToggle {
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .iconRotate svg {
+        transform: rotate(180deg);
+    }
+
+    .subMenu {
+        background: var(--submenu-background-color);
+        box-shadow: var(--submenu-elevation);
+        list-style: none;
+        position: absolute;
+        right: 0;
+        top: 105%;
+
+        .subMenu {
+            top: 0;
+            right: 100%;
+        }
+
+        @media (max-width: 900px) {
+            position: static;
+            box-shadow: none;
+        }
+
+        .navItem {
+            border-bottom: var(--submenu-link-border);
+            display: block;
+            margin: 0;
+            padding: var(--submenu-link-padding);
+            text-decoration: none;
+            white-space: nowrap;
+
+            .navLink {
+                color: var(--submenu-link-color);
+                font-weight: var(--submenu-font-weight);
+            }
+
+            &:hover > .linkGrid .navLink,
+            &:focus > .linkGrid .navLink {
+                color: var(--submenu-link-hover-color);
+            }
+
+            &:hover,
+            &:focus {
+                background: var(--submenu-link-hover-background);
+                margin-bottom: 0;
+            }
+
+            @media (max-width: 900px) {
+                margin: 0 calc(-1 * var(--spacing-s));
+
+                &:first-child {
+                    border-top: var(--submenu-link-border);
+                    margin-top: var(--spacing-xs);
+                }
+
+                &:last-child {
+                    border-bottom: none;
+                    margin-bottom: calc(-1 * var(--spacing-xs));
+                }
+
+                &:hover,
+                &:focus {
+                    background: none;
+                }
+            }
+        }
+    }
+}

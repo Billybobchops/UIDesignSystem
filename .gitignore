@@ -1,0 +1,28 @@
+# Local
+.DS_Store
+*.local
+*.log*
+.env
+.env.local
+.env.*.local
+**/.env
+**/.env.local
+**/.env.*.local
+
+# Dist
+node_modules
+dist/
+
+# IDE
+.vscode/*
+!.vscode/extensions.json
+.idea
+.vscode/**/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+
+# Figma
+*.figma.tsx
+figma.config.json
+

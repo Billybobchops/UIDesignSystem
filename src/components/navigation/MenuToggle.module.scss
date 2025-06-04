@@ -1,0 +1,63 @@
+@import '@styles/layer-order.scss';
+
+@layer base.components {
+    .menuToggle {
+        width: 30px;
+        height: 18px;
+        position: relative;
+        transform: rotate(0deg);
+        transition: 3s ease-in-out;
+        cursor: pointer;
+        display: none;
+
+        @media (max-width: 900px) {
+            display: block;
+        }
+    }
+
+    .menuToggle span {
+        display: block;
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        background: var(--utility-neutral-70);
+        border-radius: var(--border-radius-m);
+        opacity: 1;
+        left: 0;
+        transform: rotate(0deg);
+        transition: 0.2s ease-in-out;
+    }
+
+    .menuToggle span:nth-child(1) {
+        top: 0px;
+    }
+
+    .menuToggle span:nth-child(2),
+    .menuToggle span:nth-child(3) {
+        top: 8px;
+    }
+
+    .menuToggle span:nth-child(4) {
+        top: 16px;
+    }
+
+    .menuToggle.open span:nth-child(1) {
+        top: 8px;
+        width: 0%;
+        left: 50%;
+    }
+
+    .menuToggle.open span:nth-child(2) {
+        transform: rotate(45deg);
+    }
+
+    .menuToggle.open span:nth-child(3) {
+        transform: rotate(-45deg);
+    }
+
+    .menuToggle.open span:nth-child(4) {
+        top: 8px;
+        width: 0%;
+        left: 50%;
+    }
+}

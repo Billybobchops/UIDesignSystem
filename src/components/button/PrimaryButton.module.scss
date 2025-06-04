@@ -1,0 +1,21 @@
+@use '@styles/mixins.scss' as *;
+@import '@styles/layer-order.scss';
+
+@layer base.components {
+    .button {
+        @include buttons;
+
+        border-radius: var(--border-radius-s);
+        padding: 0;
+
+        .innerButton {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            gap: var(--spacing-xs);
+            padding: var(--button-padding-small);
+        }
+
+        @include mobile-100-w;
+    }
+}

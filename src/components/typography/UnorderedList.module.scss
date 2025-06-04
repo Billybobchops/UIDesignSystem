@@ -1,0 +1,7 @@
+@import '@styles/layer-order.scss';
+
+@layer base.components {
+    .list {
+        margin: 0 0 var(--spacing-s) var(--spacing-m);
+    }
+}

@@ -1,0 +1,10 @@
+// This is necessary to ensure that the layer order is correct
+// Modern.js (with Rspack) is injecting async stylesheets so
+// we don't know the order in which they will be injected
+@layer base {
+    @layer reset, variables, components;
+}
+
+@layer override {
+    @layer overrides, spacing;
+}

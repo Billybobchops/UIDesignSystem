@@ -1,0 +1,8 @@
+@use '@styles/mixins.scss' as *;
+// @import '@styles/layer-order.scss';
+
+@layer base.components {
+    .checkbox {
+        @include checkboxes;
+    }
+}

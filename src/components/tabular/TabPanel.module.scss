@@ -1,0 +1,7 @@
+@import '@styles/layer-order.scss';
+
+@layer base.components {
+    .tabPanel {
+        padding: 20px;
+    }
+}

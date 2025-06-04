@@ -1,0 +1,10 @@
+@use '@styles/mixins.scss' as *;
+@import '@styles/layer-order.scss';
+
+@layer base.components {
+    @include inputs;
+
+    .input {
+        height: 120px;
+    }
+}
