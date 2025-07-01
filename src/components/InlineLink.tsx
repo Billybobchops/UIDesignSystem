@@ -9,9 +9,20 @@ interface LinkProps {
     variant?: 'blue' | 'grey';
 }
 
-const InlineLink: React.FC<LinkProps> = ({ children, onClick, href = '#', target = '_blank', variant = 'blue' }) => {
+const InlineLink: React.FC<LinkProps> = ({
+    children,
+    onClick,
+    href = '#',
+    target = '_blank',
+    variant = 'blue',
+}) => {
     return (
-        <a className={clsx(classes.link, classes[variant])} href={href} onClick={onClick} target={target}>
+        <a
+            className={clsx(classes.link, classes[variant])}
+            href={href}
+            onClick={onClick}
+            target={target}
+		>
             {children}
         </a>
     );

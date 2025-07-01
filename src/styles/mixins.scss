@@ -147,7 +147,7 @@
     }
 
     &:disabled {
-        color: var(--utility-neutral-50);
+        background-color: var(--utility-neutral-50);
         cursor: not-allowed;
     }
 }

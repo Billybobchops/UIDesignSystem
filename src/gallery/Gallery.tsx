@@ -19,6 +19,7 @@ import NavigationStory from './story/NavigationStory';
 import TabsStory from './story/TabStory';
 import TableStory from './story/TableStory';
 import TypographyStory from './story/TypographyStory';
+import GridStory from './story/GridStory';
 
 export function Gallery() {
     return (
@@ -103,7 +104,9 @@ export function Gallery() {
                 <TabsStory />
             </GalleryDisplayArea>
 
-            <GalleryDisplayArea title='Grid: COMING SOON'> </GalleryDisplayArea>
+            <GalleryDisplayArea title='Grid'>
+				<GridStory />
+			</GalleryDisplayArea>
 
             <GalleryDisplayArea title='Charts: COMING SOON'>
                 {' '}
