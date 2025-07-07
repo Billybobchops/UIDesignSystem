@@ -1,120 +1,120 @@
 :root {
 	/* Base styles */
-	--input-background-color: var(--utility-neutral-0);
-    --input-border-radius: var(--border-radius-s);
-    --input-border: 1px solid var(--utility-neutral-50);
-    --input-border-focus: 2px solid var(--base-theme-3);
-    --input-border-hover: 1px solid var(--base-theme-3);
-    --input-font-size: 1rem;
-    --input-container-margin-bottom: var(--input-font-size);
-    --input-desktop-width: 500px;
-    --input-margin: var(--spacing-xxs) var(--spacing-xxs) var(--spacing-xxs) 0;
-    --input-padding: var(--spacing-xs) var(--spacing-s);
-    --input-height: var(--spacing-xl);
+	--invoicecloud-input-background-color: var(--invoicecloud-utility-neutral-0);
+    --invoicecloud-input-border-radius: var(--invoicecloud-border-radius-s);
+    --invoicecloud-input-border: 1px solid var(--invoicecloud-utility-neutral-50);
+    --invoicecloud-input-border-focus: 2px solid var(--invoicecloud-base-theme-3);
+    --invoicecloud-input-border-hover: 1px solid var(--invoicecloud-base-theme-3);
+    --invoicecloud-input-font-size: 1rem;
+    --invoicecloud-input-container-margin-bottom: var(--invoicecloud-input-font-size);
+    --invoicecloud-input-desktop-width: 500px;
+    --invoicecloud-input-margin: var(--invoicecloud-spacing-xxs) var(--invoicecloud-spacing-xxs) var(--invoicecloud-spacing-xxs) 0;
+    --invoicecloud-input-padding: var(--invoicecloud-spacing-xs) var(--invoicecloud-spacing-s);
+    --invoicecloud-input-height: var(--invoicecloud-spacing-xl);
 
-    --input-invalid-border-color: var(--utility-red-50);
-    --input-invalid-border-left-width: 3px;
+    --invoicecloud-input-invalid-border-color: var(--invoicecloud-utility-red-50);
+    --invoicecloud-input-invalid-border-left-width: 3px;
 
-	--input-disabled-background-color: var(--utility-neutral-05);
-	--input-disabled-border-hover: var(--input-border);
+	--invoicecloud-input-disabled-background-color: var(--invoicecloud-utility-neutral-05);
+	--invoicecloud-input-disabled-border-hover: var(--invoicecloud-input-border);
 
-    --input-required-color: var(--utility-red-50);
+    --invoicecloud-input-required-color: var(--invoicecloud-utility-red-50);
 	
 	/* Labels */
-    --label-font-size: var(--input-font-size);
-    --label-font-weight: 700;
+    --invoicecloud-label-font-size: var(--invoicecloud-input-font-size);
+    --invoicecloud-label-font-weight: 700;
 
 	/* Checkboxes */
-	--checkbox-border: 2px solid var(--utility-neutral-50);
-	--checkbox-check-color: var(--utility-neutral-0);
-	--checkbox-check-shape: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
-	--checkbox-checked-background-color: var(--base-theme-3);
-	--checkbox-box-height: 20px;
-	--checkbox-box-width: 20px;
-	--checkbox-height: 0.65em;
-	--checkbox-width: var(--checkbox-height);
-	--checkbox-border-hover-color: var(--base-theme-3);
-	--checkbox-transition: 120ms transform ease-in-out;
-	--checkbox-transform-origin: bottom left;
+	--invoicecloud-checkbox-border: 2px solid var(--invoicecloud-utility-neutral-50);
+	--invoicecloud-checkbox-check-color: var(--invoicecloud-utility-neutral-0);
+	--invoicecloud-checkbox-check-shape: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+	--invoicecloud-checkbox-checked-background-color: var(--invoicecloud-base-theme-3);
+	--invoicecloud-checkbox-box-height: 20px;
+	--invoicecloud-checkbox-box-width: 20px;
+	--invoicecloud-checkbox-height: 0.65em;
+	--invoicecloud-checkbox-width: var(--invoicecloud-checkbox-height);
+	--invoicecloud-checkbox-border-hover-color: var(--invoicecloud-base-theme-3);
+	--invoicecloud-checkbox-transition: 120ms transform ease-in-out;
+	--invoicecloud-checkbox-transform-origin: bottom left;
 
-	--checkbox-focus-border-radius: 2px;
-	--checkbox-focus-outline: 2px solid var(--base-theme-3);
-	--checkbox-focus-transform: scale(1.05);
+	--invoicecloud-checkbox-focus-border-radius: 2px;
+	--invoicecloud-checkbox-focus-outline: 2px solid var(--invoicecloud-base-theme-3);
+	--invoicecloud-checkbox-focus-transform: scale(1.05);
 
-	--checkbox-disabled-background-color: var(--utility-neutral-50);
+	--invoicecloud-checkbox-disabled-background-color: var(--invoicecloud-utility-neutral-50);
 
 	/* Select All Checkbox */
-	--partial-check-background-color: var(--base-theme-3);
-	--partial-check-border-color: var(--partial-check-background-color);
-	--partial-check-symbol-color: var(--utility-neutral-0);
+	--invoicecloud-partial-check-background-color: var(--invoicecloud-base-theme-3);
+	--invoicecloud-partial-check-border-color: var(--invoicecloud-partial-check-background-color);
+	--invoicecloud-partial-check-symbol-color: var(--invoicecloud-utility-neutral-0);
 
 	/* Radio Group */
-	--radio-height: var(--checkbox-box-height);
-	--radio-width: var(--radio-height);
-	--radio-margin: 6px;
-	--radio-padding: 0;
-	--radio-border: 2px solid var(--utility-neutral-50);
-	--radio-border-radius: 50%;
-	--radio-background-color: transparent;
-	--radio-transition: outline 0.1s;
+	--invoicecloud-radio-height: var(--invoicecloud-checkbox-box-height);
+	--invoicecloud-radio-width: var(--invoicecloud-radio-height);
+	--invoicecloud-radio-margin: 6px;
+	--invoicecloud-radio-padding: 0;
+	--invoicecloud-radio-border: 2px solid var(--invoicecloud-utility-neutral-50);
+	--invoicecloud-radio-border-radius: 50%;
+	--invoicecloud-radio-background-color: transparent;
+	--invoicecloud-radio-transition: outline 0.1s;
 
-	--radio-selected-border-color: var(--base-theme-3);
-	--radio-selected-background-color: var(--radio-selected-border-color);
-	--radio-selected-padding: 2px;
-	--radio-selected-shape: radial-gradient(
+	--invoicecloud-radio-selected-border-color: var(--invoicecloud-base-theme-3);
+	--invoicecloud-radio-selected-background-color: var(--invoicecloud-radio-selected-border-color);
+	--invoicecloud-radio-selected-padding: 2px;
+	--invoicecloud-radio-selected-shape: radial-gradient(
 		circle,
-		var(--radio-selected-border-color) 0%,
-		var(--radio-selected-border-color) 50%,
+		var(--invoicecloud-radio-selected-border-color) 0%,
+		var(--invoicecloud-radio-selected-border-color) 50%,
 		transparent 60%,
 		transparent 100%
 	);
 
-	--radio-disabled-background-color: var(--utility-neutral-50);
-	--radio-selected-disabled-shape: radial-gradient(
+	--invoicecloud-radio-disabled-background-color: var(--invoicecloud-utility-neutral-50);
+	--invoicecloud-radio-selected-disabled-shape: radial-gradient(
 		circle,
-		var(--utility-neutral-50) 0%,
-		var(--utility-neutral-50) 50%,
+		var(--invoicecloud-utility-neutral-50) 0%,
+		var(--invoicecloud-utility-neutral-50) 50%,
 		transparent 50%,
 		transparent 100%
 	);
 
-	--radio-focus-outline: 2px solid var(--base-theme-3);
-	--radio-focus-border: 2px solid var(--utility-neutral-50);
-	--radio-focus-transform: scale(1.05);
+	--invoicecloud-radio-focus-outline: 2px solid var(--invoicecloud-base-theme-3);
+	--invoicecloud-radio-focus-border: 2px solid var(--invoicecloud-utility-neutral-50);
+	--invoicecloud-radio-focus-transform: scale(1.05);
 
-	--radio-hover-border: 2px solid var(--base-theme-3);
-	--radio-hover-transform: scale(1.05);
+	--invoicecloud-radio-hover-border: 2px solid var(--invoicecloud-base-theme-3);
+	--invoicecloud-radio-hover-transform: scale(1.05);
 
 	/* Date Picker */
-	--date-picker-margin: 6px 6px 6px 0;
-	--date-picker-padding: var(--spacing-xs) 0 var(--spacing-xs) var(--spacing-s);
-	--date-picker-width: 100%;
-	--date-picker-border-hover: 1px solid var(--base-theme-3);
-	--date-picker-focus-border: 2px solid var(--base-theme-3);
-	--date-picker-container-width: var(--date-picker-width);
+	--invoicecloud-date-picker-margin: 6px 6px 6px 0;
+	--invoicecloud-date-picker-padding: var(--invoicecloud-spacing-xs) 0 var(--invoicecloud-spacing-xs) var(--invoicecloud-spacing-s);
+	--invoicecloud-date-picker-width: 100%;
+	--invoicecloud-date-picker-border-hover: 1px solid var(--invoicecloud-base-theme-3);
+	--invoicecloud-date-picker-focus-border: 2px solid var(--invoicecloud-base-theme-3);
+	--invoicecloud-date-picker-container-width: var(--invoicecloud-date-picker-width);
 
 	/* Fieldset */
-	--fieldset-border: 2px solid var(--utility-neutral-20);
-	--fieldset-padding: var(--spacing-xs) var(--spacing-s) var(--spacing-s) var(--spacing-s);
+	--invoicecloud-fieldset-border: 2px solid var(--invoicecloud-utility-neutral-20);
+	--invoicecloud-fieldset-padding: var(--invoicecloud-spacing-xs) var(--invoicecloud-spacing-s) var(--invoicecloud-spacing-s) var(--invoicecloud-spacing-s);
 
 	/* Legend */
-	--legend-font-size: var(--label-font-size);
-	--legend-font-weight: var(--label-font-weight);
-	--legend-margin-left: var(--spacing-s);
-	--legend-padding: 0 12px;
+	--invoicecloud-legend-font-size: var(--invoicecloud-label-font-size);
+	--invoicecloud-legend-font-weight: var(--invoicecloud-label-font-weight);
+	--invoicecloud-legend-margin-left: var(--invoicecloud-spacing-s);
+	--invoicecloud-legend-padding: 0 12px;
 
 	/* Helper Text */
-	--helper-text-font-size: 12px;
-	--helper-text-error-color: var(--status-error-color);
+	--invoicecloud-helper-text-font-size: 12px;
+	--invoicecloud-helper-text-error-color: var(--invoicecloud-status-error-color);
 
 	/* MultiSelect */
-	--multiselect-dropdown-background-color: var(--input-background-color);
-	--multiselect-dropdown-max-height: 200px;
-	--multiselect-checkbox-margin: 12px;
-	--multiselect-item-background-color-hover: var(--base-theme-1);
-	--multiselect-item-border-bottom-hover: 1px solid var(--base-theme-3)
+	--invoicecloud-multiselect-dropdown-background-color: var(--invoicecloud-input-background-color);
+	--invoicecloud-multiselect-dropdown-max-height: 200px;
+	--invoicecloud-multiselect-checkbox-margin: 12px;
+	--invoicecloud-multiselect-item-background-color-hover: var(--invoicecloud-base-theme-1);
+	--invoicecloud-multiselect-item-border-bottom-hover: 1px solid var(--invoicecloud-base-theme-3)
 
 	/* Textarea */
-	--text-area-initial-height: 120px;
+	--invoicecloud-text-area-initial-height: 120px;
 }
 

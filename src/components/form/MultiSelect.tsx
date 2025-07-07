@@ -128,7 +128,7 @@ const MultiSelect: React.FC<MultiSelectProps> = ({
                         value={searchTerm}
                     />
                     <span aria-hidden="true" className={isOpen ? classes.activeChevron : ''}>
-                        <ChevronDown fill={'var(--utility-neutral-70)'} />
+                        <ChevronDown fill={'var(--invoicecloud-utility-neutral-70)'} />
                     </span>
                 </button>
 

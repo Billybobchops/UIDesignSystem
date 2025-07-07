@@ -104,7 +104,7 @@ const NavItem = ({ link }: { link: NavigationLink }) => {
                         type="button"
                     >
                         <span aria-hidden="true" className={`${isOpen ? classes.iconRotate : ''}`}>
-                            <ChevronDown fill={isHovered ? 'var(--nav-link-hover-color)' : 'var(--nav-link-color)'} />
+                            <ChevronDown fill={isHovered ? 'var(--invoicecloud-nav-link-hover-color)' : 'var(--invoicecloud-nav-link-color)'} />
                         </span>
                     </button>
                 )}

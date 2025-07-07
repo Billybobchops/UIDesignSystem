@@ -49,7 +49,7 @@ const Grid: React.FC<GridProps> = ({
     children,
     columns,
     rows = 'auto',
-    gap = 'var(--spacing-xs)',
+    gap = 'var(--invoicecloud-spacing-xs)',
     columnGap,
     rowGap,
     alignItems = 'stretch',
@@ -71,32 +71,32 @@ const Grid: React.FC<GridProps> = ({
 
     // Build CSS custom properties
     const cssVariables: React.CSSProperties = {
-        '--grid-columns': formatGridValue(columns),
-        '--grid-rows': formatGridValue(rows),
-        '--grid-gap': gap,
-        '--grid-col-gap': columnGap || gap,
-        '--grid-row-gap': rowGap || gap,
-        '--grid-align-items': alignItems,
-        '--grid-justify-items': justifyItems,
-        '--grid-align-content': alignContent,
-        '--grid-justify-content': justifyContent,
+        '--invoicecloud-grid-columns': formatGridValue(columns),
+        '--invoicecloud-grid-rows': formatGridValue(rows),
+        '--invoicecloud-grid-gap': gap,
+        '--invoicecloud-grid-col-gap': columnGap || gap,
+        '--invoicecloud-grid-row-gap': rowGap || gap,
+        '--invoicecloud-grid-align-items': alignItems,
+        '--invoicecloud-grid-justify-items': justifyItems,
+        '--invoicecloud-grid-align-content': alignContent,
+        '--invoicecloud-grid-justify-content': justifyContent,
     } as React.CSSProperties;
 
     // Handle responsive breakpoints
     const responsiveVariables: Record<string, string> = {};
     // biome-ignore lint: forEach is fine
     Object.entries(responsive).forEach(([breakpoint, config]) => {
-        responsiveVariables[`--grid-columns-${breakpoint}`] = formatGridValue(
+        responsiveVariables[`--invoicecloud-grid-columns-${breakpoint}`] = formatGridValue(
             config.columns
         );
 
         if (config.rows) {
-            responsiveVariables[`--grid-rows-${breakpoint}`] = formatGridValue(
+            responsiveVariables[`--invoicecloud-grid-rows-${breakpoint}`] = formatGridValue(
                 config.rows
             );
         }
         if (config.gap) {
-            responsiveVariables[`--grid-gap-${breakpoint}`] = config.gap;
+            responsiveVariables[`--invoicecloud-grid-gap-${breakpoint}`] = config.gap;
         }
     });
 

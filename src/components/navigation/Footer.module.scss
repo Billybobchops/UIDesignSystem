@@ -3,24 +3,24 @@
 @layer base.components {
     .container {
         align-items: center;
-        background-color: var(--footer-background-color);
-        color: var(--footer-color);
+        background-color: var(--invoicecloud-footer-background-color);
+        color: var(--invoicecloud-footer-color);
         display: grid;
-        font-size: var(--footer-font-size);
+        font-size: var(--invoicecloud-footer-font-size);
         grid-template-columns: repeat(auto-fill, minmax(0, auto));
-        padding: var(--footer-padding);
-        row-gap: var(--footer-row-gap);
+        padding: var(--invoicecloud-footer-padding);
+        row-gap: var(--invoicecloud-footer-row-gap);
 
         .logo {
-            padding-right: var(--footer-logo-padding-right);
+            padding-right: var(--invoicecloud-footer-logo-padding-right);
         }
 
         > :not(.logo) {
-            border-left: var(--footer-divider-border);
+            border-left: var(--invoicecloud-footer-divider-border);
         }
 
         > :not(.logo):not(.flex) {
-            padding: var(--footer-link-padding);
+            padding: var(--invoicecloud-footer-link-padding);
         }
 
         @media (max-width: 800px) {
@@ -43,10 +43,10 @@
     .flex {
         align-items: center;
         display: flex;
-        padding-left: var(--footer-padding);
+        padding-left: var(--invoicecloud-footer-padding);
 
         img {
-            padding-right: var(--footer-row-gap);
+            padding-right: var(--invoicecloud-footer-row-gap);
         }
 
         @media (max-width: 800px) {

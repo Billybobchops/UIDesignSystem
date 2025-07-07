@@ -8,53 +8,53 @@
         &.base,
         &.alternate,
         &.error {
-            background-color: var(--secondary-button-background-color);
+            background-color: var(--invoicecloud-secondary-button-background-color);
 
             &:hover {
-                color: var(--secondary-button-color-hover);
+                color: var(--invoicecloud-secondary-button-color-hover);
             }
         }
 
         &.error {
-            border: var(--secondary-button-error-border);
-            color: var(--secondary-button-error-color);
+            border: var(--invoicecloud-secondary-button-error-border);
+            color: var(--invoicecloud-secondary-button-error-color);
 
             &:hover {
-                background-color: var(--secondary-button-error-background-color-hover);
-                border: var(--secondary-button-error-border-hover);
+                background-color: var(--invoicecloud-secondary-button-error-background-color-hover);
+                border: var(--invoicecloud-secondary-button-error-border-hover);
             }
         }
 
         &.alternate {
-            border: 2px solid var(--alternate-theme-3);
-            color: var(--alternate-theme-3);
+            border: 2px solid var(--invoicecloud-alternate-theme-3);
+            color: var(--invoicecloud-alternate-theme-3);
 
             &:hover {
-                background-color: var(--alternate-theme-4);
-                border: 2px solid var(--alternate-theme-4);
+                background-color: var(--invoicecloud-alternate-theme-4);
+                border: 2px solid var(--invoicecloud-alternate-theme-4);
             }
         }
 
         &.base {
-            border: 2px solid var(--base-theme-4);
-            color: var(--base-theme-4);
+            border: 2px solid var(--invoicecloud-base-theme-4);
+            color: var(--invoicecloud-base-theme-4);
 
             &:hover {
-                background-color: var(--base-theme-3);
-                border: 2px solid var(--base-theme-3);
-                color: var(--secondary-button-base-color);
+                background-color: var(--invoicecloud-base-theme-3);
+                border: 2px solid var(--invoicecloud-base-theme-3);
+                color: var(--invoicecloud-secondary-button-base-color);
             }
         }
 
         &.disabled {
-            background-color: var(--secondary-button-disabled-background-color);
-            border: var(--secondary-button-disabled-border);
-            color: var(--secondary-button-disabled-color);
+            background-color: var(--invoicecloud-secondary-button-disabled-background-color);
+            border: var(--invoicecloud-secondary-button-disabled-border);
+            color: var(--invoicecloud-secondary-button-disabled-color);
 
             &:hover {
-                background-color: var(--secondary-button-disabled-background-color-hover);
-                border: var(--secondary-button-disabled-border-hover);
-                color: var(--secondary-button-disabled-color-hover);
+                background-color: var(--invoicecloud-secondary-button-disabled-background-color-hover);
+                border: var(--invoicecloud-secondary-button-disabled-border-hover);
+                color: var(--invoicecloud-secondary-button-disabled-color-hover);
             }
         }
 

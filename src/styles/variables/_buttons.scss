@@ -1,92 +1,93 @@
 :root {
     /* Primary Buttons */
-    --primary-button-border: none;
-    --primary-button-border-radius: var(--spacing-xxs);
-    --primary-button-color: var(--utility-neutral-0);
-    --primary-button-border-outline: 2px solid var(--base-theme-4);
-    --primary-button-border-outline-hover: 2px solid var(--base-theme-3);
-    --primary-button-font-size: 1rem;
-    --primary-button-font-weight: 700;
-    --primary-button-margin: 0 var(--spacing-s) var(--spacing-s) 0;
-    --primary-button-padding: 12px 20px;
+	--invoicecloud-primary-button-background-color: var(--invoicecloud-default-theme-4);
+	--invoicecloud-primary-button-background-color-hover: var(--invoicecloud-default-theme-3);
+    --invoicecloud-primary-button-border: none;
+    --invoicecloud-primary-button-border-radius: var(--invoicecloud-spacing-xxs);
+    --invoicecloud-primary-button-color: var(--invoicecloud-utility-neutral-0);
+    --invoicecloud-primary-button-border-outline: 2px solid var(--invoicecloud-base-theme-4);
+    --invoicecloud-primary-button-border-outline-hover: 2px solid var(--invoicecloud-base-theme-3);
+    --invoicecloud-primary-button-font-size: 1rem;
+    --invoicecloud-primary-button-font-weight: 700;
+    --invoicecloud-primary-button-margin: 0 var(--invoicecloud-spacing-s) var(--invoicecloud-spacing-s) 0;
+    --invoicecloud-primary-button-padding: 12px 20px;
 
-    --primary-button-error-background-color: var(--utility-red-50);
-    --primary-button-error-background-color-hover: var(--utility-red-70);
+    --invoicecloud-primary-button-error-background-color: var(--invoicecloud-utility-red-50);
+    --invoicecloud-primary-button-error-background-color-hover: var(--invoicecloud-utility-red-70);
 
-    --primary-button-inner-align-items: center;
-    --primary-button-inner-display: flex;
-    --primary-button-inner-justify-content: center;
-    --primary-button-inner-gap: var(--spacing-xs);
+    --invoicecloud-primary-button-inner-align-items: center;
+    --invoicecloud-primary-button-inner-display: flex;
+    --invoicecloud-primary-button-inner-justify-content: center;
+    --invoicecloud-primary-button-inner-gap: var(--invoicecloud-spacing-xs);
 
-    --primary-button-disabled-border: none;
-    --primary-button-disabled-border-hover: var(--primary-button-disabled-border);
-    --primary-button-disabled-background-color: var(--utility-neutral-10);
-    --primary-button-disabled-background-color-hover: var(--primary-button-disabled-background-color);
-    --primary-button-disabled-color: var(--utility-neutral-60);
-    --primary-button-disabled-color-hover: var(--primary-button-disabled-color);
+    --invoicecloud-primary-button-disabled-border: none;
+    --invoicecloud-primary-button-disabled-border-hover: var(--invoicecloud-primary-button-disabled-border);
+    --invoicecloud-primary-button-disabled-background-color: var(--invoicecloud-utility-neutral-10);
+    --invoicecloud-primary-button-disabled-background-color-hover: var(--invoicecloud-primary-button-disabled-background-color);
+    --invoicecloud-primary-button-disabled-color: var(--invoicecloud-utility-neutral-60);
+    --invoicecloud-primary-button-disabled-color-hover: var(--invoicecloud-primary-button-disabled-color);
 
     /* Secondary Buttons */
-    --secondary-button-background-color: var(--utility-neutral-0);
-    --secondary-button-color-hover: var(--utility-neutral-0);
-    --secondary-button-base-color: var(--utility-neutral-0);
+    --invoicecloud-secondary-button-background-color: var(--invoicecloud-utility-neutral-0);
+    --invoicecloud-secondary-button-color-hover: var(--invoicecloud-utility-neutral-0);
+    --invoicecloud-secondary-button-base-color: var(--invoicecloud-utility-neutral-0);
 
-    --secondary-button-error-border: 2px solid var(--utility-red-50);
-    --secondary-button-error-color: var(--utility-red-50);
-    --secondary-button-error-background-color-hover: var(--utility-red-70);
-    --secondary-button-error-border-hover: 2px solid var(--utility-red-70);
+    --invoicecloud-secondary-button-error-border: 2px solid var(--invoicecloud-utility-red-50);
+    --invoicecloud-secondary-button-error-color: var(--invoicecloud-utility-red-50);
+    --invoicecloud-secondary-button-error-background-color-hover: var(--invoicecloud-utility-red-70);
+    --invoicecloud-secondary-button-error-border-hover: 2px solid var(--invoicecloud-utility-red-70);
 
-    --secondary-button-disabled-background-color: var(--primary-button-disabled-background-color);
-    --secondary-button-disabled-background-color-hover: var(--primary-button-disabled-background-color-hover);
-    --secondary-button-disabled-border: var(--primary-button-disabled-border);
-    --secondary-button-disabled-border-hover: var(--primary-button-disabled-border-hover);
-    --secondary-button-disabled-color: var(--primary-button-disabled-color);
-    --secondary-button-disabled-color-hover: var(--primary-button-disabled-color-hover);
+    --invoicecloud-secondary-button-disabled-background-color: var(--invoicecloud-primary-button-disabled-background-color);
+    --invoicecloud-secondary-button-disabled-background-color-hover: var(--invoicecloud-primary-button-disabled-background-color-hover);
+    --invoicecloud-secondary-button-disabled-border: var(--invoicecloud-primary-button-disabled-border);
+    --invoicecloud-secondary-button-disabled-border-hover: var(--invoicecloud-primary-button-disabled-border-hover);
+    --invoicecloud-secondary-button-disabled-color: var(--invoicecloud-primary-button-disabled-color);
+    --invoicecloud-secondary-button-disabled-color-hover: var(--invoicecloud-primary-button-disabled-color-hover);
 
     /* Simple Buttons */
-    --simple-button-background-color: none;
-    --simple-button-background-color-hover: var(--simple-button-background-color);
-    --simple-button-border: none;
-    --simple-button-border-radius: var(--border-radius-s);
-    --simple-button-color: var(--utility-neutral-100);
-    --simple-button-margin: var(--primary-button-padding);
-    --simple-button-padding: 0;
+    --invoicecloud-simple-button-background-color: none;
+    --invoicecloud-simple-button-background-color-hover: var(--invoicecloud-simple-button-background-color);
+    --invoicecloud-simple-button-border: none;
+    --invoicecloud-simple-button-border-radius: var(--invoicecloud-border-radius-s);
+    --invoicecloud-simple-button-color: var(--invoicecloud-utility-neutral-100);
+    --invoicecloud-simple-button-margin: var(--invoicecloud-primary-button-padding);
+    --invoicecloud-simple-button-padding: 0;
 
-    --simple-button-error-color: var(--primary-button-error-background-color);
-    --simple-button-error-color-hover: var(--primary-button-error-background-color-hover);
+    --invoicecloud-simple-button-error-color: var(--invoicecloud-primary-button-error-background-color);
+    --invoicecloud-simple-button-error-color-hover: var(--invoicecloud-primary-button-error-background-color-hover);
 
-    --simple-button-disabled-background: none;
-    --simple-button-disabled-color: var(--primary-button-disabled-color);
-    --simple-button-disabled-color-hover: var(--simple-button-disabled-color);
+    --invoicecloud-simple-button-disabled-background: none;
+    --invoicecloud-simple-button-disabled-color: var(--invoicecloud-primary-button-disabled-color);
+    --invoicecloud-simple-button-disabled-color-hover: var(--invoicecloud-simple-button-disabled-color);
 
     /* Link Icon Buttons */
-    --link-icon-button-align-items: var(--primary-button-inner-align-items);
-    --link-icon-background-color: var(--simple-button-background-color);
-    --link-icon-button-background-color-hover: var(--simple-button-background-color-hover);
-    --link-icon-button-color: var(--base-theme-4);
-    --link-icon-button-display: inline-flex;
-    --link-icon-button-gap: var(--primary-button-inner-gap);
-    --link-icon-button-justify-content: var(--primary-button-inner-justify-content);
-    --link-icon-button-line-height: 1;
-    --link-icon-button-padding: var(--spacing-xxs);
-    --link-icon-button-vertical-align: middle;
-    --link-icon-only-button-padding: var(--spacing-xxs);
+    --invoicecloud-link-icon-button-align-items: var(--invoicecloud-primary-button-inner-align-items);
+    --invoicecloud-link-icon-button-background-color: var(--invoicecloud-simple-button-background-color);
+    --invoicecloud-link-icon-button-background-color-hover: var(--invoicecloud-simple-button-background-color-hover);
+    --invoicecloud-link-icon-button-color: var(--invoicecloud-base-theme-4);
+    --invoicecloud-link-icon-button-display: inline-flex;
+    --invoicecloud-link-icon-button-gap: var(--invoicecloud-primary-button-inner-gap);
+    --invoicecloud-link-icon-button-justify-content: var(--invoicecloud-primary-button-inner-justify-content);
+    --invoicecloud-link-icon-button-line-height: 1;
+    --invoicecloud-link-icon-button-padding: var(--invoicecloud-spacing-xxs);
+    --invoicecloud-link-icon-button-vertical-align: middle;
+    --invoicecloud-link-icon-only-button-padding: var(--invoicecloud-spacing-xxs);
 
-    --link-icon-button-error-color: var(--primary-button-error-background-color);
-    --link-icon-button-error-color-hover: var(
-    --primary-button-error-background-color-hover    );
-    --link-icon-only-button-error-background-color-hover: var(--primary-button-error-background-color);
+    --invoicecloud-link-icon-button-error-color: var(--invoicecloud-primary-button-error-background-color);
+    --invoicecloud-link-icon-button-error-color-hover: var(--invoicecloud-primary-button-error-background-color-hover);
+    --invoicecloud-link-icon-only-button-error-background-color-hover: var(--invoicecloud-primary-button-error-background-color);
 
-    --link-icon-button-disabled-color: var(--primary-button-disabled-color);
-    --link-icon-button-disabled-color-hover: var(--primary-button-disabled-color-hover);
-    --link-icon-only-button-disabled-background-color: var(--simple-button-disabled-background);
-    --link-icon-only-button-disabled-background-color-hover: var(--link-icon-only-button-disabled-background-color);
+    --invoicecloud-link-icon-button-disabled-color: var(--invoicecloud-primary-button-disabled-color);
+    --invoicecloud-link-icon-button-disabled-color-hover: var(--invoicecloud-primary-button-disabled-color-hover);
+    --invoicecloud-link-icon-only-button-disabled-background-color: var(--invoicecloud-simple-button-disabled-background);
+    --invoicecloud-link-icon-only-button-disabled-background-color-hover: var(--invoicecloud-link-icon-only-button-disabled-background-color);
 
     /* CTA Buttons */
-    --cta-button-padding: 12px 70px;
-    --cta-button-align-items: var(--primary-button-inner-align-items);
-    --cta-button-border: 2px solid var(--utility-neutral-10);
-    --cta-button-border-radius: var(--border-radius-l);
-    --cta-button-display: inline-flex;
-    --cta-button-justify-content: var(--primary-button-inner-justify-content);
-    --cta-button-gap: var(--primary-button-inner-gap);
+    --invoicecloud-cta-button-padding: 12px 70px;
+    --invoicecloud-cta-button-align-items: var(--invoicecloud-primary-button-inner-align-items);
+    --invoicecloud-cta-button-border: 2px solid var(--invoicecloud-utility-neutral-10);
+    --invoicecloud-cta-button-border-radius: var(--invoicecloud-border-radius-l);
+    --invoicecloud-cta-button-display: inline-flex;
+    --invoicecloud-cta-button-justify-content: var(--invoicecloud-primary-button-inner-justify-content);
+    --invoicecloud-cta-button-gap: var(--invoicecloud-primary-button-inner-gap);
 }

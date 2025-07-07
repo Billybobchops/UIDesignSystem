@@ -86,7 +86,7 @@ const Card: React.FC<CardProps> = ({
 
                 <div
                     className={classes.cardContent}
-                    style={lineClamp ? ({ '--line-clamp': lineClamp, } as React.CSSProperties) : undefined}
+                    style={lineClamp ? ({ '--invoicecloud-line-clamp': lineClamp, } as React.CSSProperties) : undefined}
 				>
                     <Paragraph>{children}</Paragraph>
                 </div>

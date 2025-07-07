@@ -18,8 +18,8 @@ const TableRowAction: React.FC<TableRowActionProps> = ({ onClick, isOpen, isActi
         <MuiTableCell
             sx={{
                 padding: '0 !important',
-                backgroundColor: isOpen ? 'var(--table-dynamic-active-row-action-background-color)' : 'none',
-                boxShadow: isOpen ? '0 1px 0 0 var(--table-active-row-border-color)' : 'none',
+                backgroundColor: isOpen ? 'var(--invoicecloud-invoice-cloud-table-dynamic-active-row-action-background-color)' : 'none',
+                boxShadow: isOpen ? '0 1px 0 0 var(--invoicecloud-invoice-cloud-table-active-row-border-color)' : 'none',
                 position: isOpen ? 'relative' : 'static',
                 minWidth: '50px',
                 width: '5%',
@@ -33,9 +33,9 @@ const TableRowAction: React.FC<TableRowActionProps> = ({ onClick, isOpen, isActi
             >
                 {type === 'chevron' ? (
                     isOpen ? (
-                        <TableChevronExpanded fill={'var(--table-chevron-color)'} />
+                        <TableChevronExpanded fill={'var(--invoicecloud-invoice-cloud-table-chevron-color)'} />
                     ) : (
-                        <TableChevronCollapsed fill={'var(--table-chevron-color)'} />
+                        <TableChevronCollapsed fill={'var(--invoicecloud-invoice-cloud-table-chevron-color)'} />
                     )
                 ) : (
                     <Checkbox checked={isActive} onChange={onClick} spacing={'u-m-none'} />

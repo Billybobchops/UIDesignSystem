@@ -2,8 +2,8 @@
 
 @layer base.components {
     .grid {
-        border-radius: var(--border-radius-m);
-        border: 1px solid var(--utility-neutral-20);
+        border-radius: var(--invoicecloud-border-radius-m);
+        border: 1px solid var(--invoicecloud-utility-neutral-20);
         display: grid;
         grid-template-rows: repeat(3, auto);
         max-width: 375px;
@@ -11,14 +11,14 @@
 
     .gridRow {
         align-items: center;
-        border-bottom: 1px solid var(--utility-neutral-20);
-        color: var(--base-theme-4);
+        border-bottom: 1px solid var(--invoicecloud-utility-neutral-20);
+        color: var(--invoicecloud-base-theme-4);
         display: grid;
         grid-template-columns: auto min-content;
         padding: 16px;
 
         &:hover {
-            background-color: var(--base-theme-1);
+            background-color: var(--invoicecloud-base-theme-1);
         }
 
         @media (max-width: 500px) {
@@ -39,13 +39,13 @@
     .gridItem {
         align-items: center;
         display: grid;
-        gap: var(--spacing-xs);
-        grid-template-columns: var(--spacing-m) auto;
+        gap: var(--invoicecloud-spacing-xs);
+        grid-template-columns: var(--invoicecloud-spacing-m) auto;
         font-weight: 400;
     }
 
     .enrolled {
-        color: var(--alternate-theme-3);
+        color: var(--invoicecloud-alternate-theme-3);
     }
 
     .serviceTitle {
@@ -58,7 +58,7 @@
 
     .mobileBadge {
         display: block;
-        margin-right: var(--spacing-s);
+        margin-right: var(--invoicecloud-spacing-s);
         justify-self: end;
 
         @media (max-width: 500px) {

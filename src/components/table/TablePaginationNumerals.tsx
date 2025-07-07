@@ -40,18 +40,18 @@ const TablePaginationNumerals: React.FC<TablePaginationNumeralsProps> = ({
                     flexWrap: 'nowrap',
                 },
                 '& .MuiButtonBase-root': {
-                    color: 'var(--table-pagination-numeral-color)',
-                    borderRadius: 'var(--table-pagination-numeral-border-radius)',
-                    fontWeight: 'var(--table-pagination-numeral-font-weight)',
-                    fontSize: 'var(--table-pagination-numeral-font-size)',
+                    color: 'var(--invoicecloud-invoice-cloud-table-pagination-numeral-color)',
+                    borderRadius: 'var(--invoicecloud-invoice-cloud-table-pagination-numeral-border-radius)',
+                    fontWeight: 'var(--invoicecloud-invoice-cloud-table-pagination-numeral-font-weight)',
+                    fontSize: 'var(--invoicecloud-invoice-cloud-table-pagination-numeral-font-size)',
 
                     '&.Mui-selected': {
-                        backgroundColor: 'var(--table-pagination-numeral-selected-background-color)',
-                        borderRadius: 'var(--table-pagination-numeral-border-radius)',
-                        color: 'var(--table-pagination-numeral-selected-color)',
+                        backgroundColor: 'var(--invoicecloud-invoice-cloud-table-pagination-numeral-selected-background-color)',
+                        borderRadius: 'var(--invoicecloud-invoice-cloud-table-pagination-numeral-border-radius)',
+                        color: 'var(--invoicecloud-invoice-cloud-table-pagination-numeral-selected-color)',
 
                         '&:hover': {
-                            backgroundColor: 'var(--table-pagination-numeral-selected-background-color)',
+                            backgroundColor: 'var(--invoicecloud-invoice-cloud-table-pagination-numeral-selected-background-color)',
                         },
                     },
                 },

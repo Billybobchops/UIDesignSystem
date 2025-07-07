@@ -17,15 +17,15 @@ const Alert: React.FC<AlertProps> = ({ children, isDismissable, spacing, variant
     const getFillColor = (variant: string) => {
         switch (variant) {
             case 'info':
-                return 'var(--status-info-color)';
+                return 'var(--invoicecloud-status-info-color)';
             case 'warning':
-                return 'var(--status-warning-color)';
+                return 'var(--invoicecloud-status-warning-color)';
             case 'error':
-                return 'var(--status-error-color)';
+                return 'var(--invoicecloud-status-error-color)';
             case 'success':
-                return 'var(--status-success-color)';
+                return 'var(--invoicecloud-status-success-color)';
             default:
-                return 'var(--status-neutral-color)';
+                return 'var(--invoicecloud-status-neutral-color)';
         }
     };
 

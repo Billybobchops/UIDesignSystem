@@ -2,29 +2,29 @@
 
 @layer base.components {
     .accountLink {
-        color: var(--account-link-color);
+        color: var(--invoicecloud-account-link-color);
         display: block;
-        font-size: var(--account-link-font-size);
-        margin: var(--account-link-margin);
-        text-decoration: var(--account-link-text-decoration);
+        font-size: var(--invoicecloud-account-link-font-size);
+        margin: var(--invoicecloud-account-link-margin);
+        text-decoration: var(--invoicecloud-account-link-text-decoration);
         width: fit-content;
 
         &:hover {
-            color: var(--base-theme-3);
+            color: var(--invoicecloud-base-theme-3);
             text-decoration: none;
         }
     }
 
     .selected {
-        background-color: var(--account-link-selected-background-color);
-        border-radius: var(--account-link-selected-border-radius);
-        color: var(--account-link-selected-color);
-        padding: var(--account-link-selected-padding);
-        text-decoration: var(--account-link-selected-text-decoration);
+        background-color: var(--invoicecloud-account-link-selected-background-color);
+        border-radius: var(--invoicecloud-account-link-selected-border-radius);
+        color: var(--invoicecloud-account-link-selected-color);
+        padding: var(--invoicecloud-account-link-selected-padding);
+        text-decoration: var(--invoicecloud-account-link-selected-text-decoration);
 
         &:hover {
-            background-color: var(--account-link-selected-hover-background-color);
-            color: var(--account-link-selected-color);
+            background-color: var(--invoicecloud-account-link-selected-hover-background-color);
+            color: var(--invoicecloud-account-link-selected-color);
         }
     }
 }

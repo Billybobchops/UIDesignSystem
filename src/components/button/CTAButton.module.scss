@@ -5,13 +5,13 @@
     .button {
         @include buttons;
 
-        align-items: var(--cta-align-items);
-        display: var(--cta-button-display);
-        justify-content: var(--cta-button-justify-content);
-        gap: var(--cta-button-gap);
-        border-radius: var(--cta-button-border-radius);
-        border: 2px solid var(--cta-button-border);
-        padding: var(--cta-button-padding);
+        align-items: var(--invoicecloud-cta-align-items);
+        display: var(--invoicecloud-cta-button-display);
+        justify-content: var(--invoicecloud-cta-button-justify-content);
+        gap: var(--invoicecloud-cta-button-gap);
+        border-radius: var(--invoicecloud-cta-button-border-radius);
+        border: 2px solid var(--invoicecloud-cta-button-border);
+        padding: var(--invoicecloud-cta-button-padding);
 
         @include mobile-100-w;
     }

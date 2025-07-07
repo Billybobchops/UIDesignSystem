@@ -3,7 +3,7 @@
 @layer base.components {
     .nav {
         align-self: end; // important for larger logos
-        background-color: var(--nav-background-color);
+        background-color: var(--invoicecloud-nav-background-color);
 
         @media (max-width: 900px) {
             display: none;
@@ -27,7 +27,7 @@
         padding: 0;
 
         @media (max-width: 900px) {
-            background-color: var(--nav-background-color);
+            background-color: var(--invoicecloud-nav-background-color);
             flex-direction: column;
             width: 100%;
         }
@@ -36,7 +36,7 @@
     .navItem {
         display: flex;
         position: relative;
-        padding: var(--nav-link-padding);
+        padding: var(--invoicecloud-nav-link-padding);
 
         .navLink {
             cursor: pointer;
@@ -46,20 +46,20 @@
             &:hover,
             &:focus,
             &.isActive {
-                border-bottom: var(--nav-link-active-border-bottom);
-                color: var(--nav-link-active-color);
-                margin-bottom: var(--nav-link-active-margin-bottom);
+                border-bottom: var(--invoicecloud-nav-link-active-border-bottom);
+                color: var(--invoicecloud-nav-link-active-color);
+                margin-bottom: var(--invoicecloud-nav-link-active-margin-bottom);
 
                 .navLink {
-                    color: var(--nav-link-active-color);
+                    color: var(--invoicecloud-nav-link-active-color);
                 }
             }
         }
 
         @media (max-width: 900px) {
             display: block;
-            border-bottom: var(--submenu-link-border);
-            padding: var(--nav-link-mobile-padding);
+            border-bottom: var(--invoicecloud-submenu-link-border);
+            padding: var(--invoicecloud-nav-link-mobile-padding);
 
             .navLink {
                 text-align: left;
@@ -71,11 +71,11 @@
 
             &:hover,
             &:focus {
-                border-bottom: var(--submenu-link-border);
-                color: var(--submenu-link-color);
+                border-bottom: var(--invoicecloud-submenu-link-border);
+                color: var(--invoicecloud-submenu-link-color);
 
                 .navLink {
-                    color: var(--submenu-link-color);
+                    color: var(--invoicecloud-submenu-link-color);
                 }
             }
         }
@@ -84,7 +84,7 @@
     .linkGrid {
         align-items: center;
         display: grid;
-        gap: var(--nav-link-grid-gap);
+        gap: var(--invoicecloud-nav-link-grid-gap);
         grid-template-columns: auto 20px;
     }
 
@@ -93,14 +93,14 @@
     }
 
     .navLink {
-        background: var(--nav-link-background-color);
-        border: var(--nav-link-border);
-        color: var(--nav-link-color);
+        background: var(--invoicecloud-nav-link-background-color);
+        border: var(--invoicecloud-nav-link-border);
+        color: var(--invoicecloud-nav-link-color);
         display: inline-block;
-        font-size: var(--nav-link-font-size);
-        font-weight: var(--nav-link-font-weight);
-        line-height: var(--nav-link-line-height);
-        text-decoration: var(--nav-link-text-decoration);
+        font-size: var(--invoicecloud-nav-link-font-size);
+        font-weight: var(--invoicecloud-nav-link-font-weight);
+        line-height: var(--invoicecloud-nav-link-line-height);
+        text-decoration: var(--invoicecloud-nav-link-text-decoration);
 
         .labelContent {
             display: flex;
@@ -135,8 +135,8 @@
     }
 
     .subMenu {
-        background: var(--submenu-background-color);
-        box-shadow: var(--submenu-elevation);
+        background: var(--invoicecloud-submenu-background-color);
+        box-shadow: var(--invoicecloud-submenu-elevation);
         list-style: none;
         position: absolute;
         right: 0;
@@ -149,44 +149,44 @@
 
         @media (max-width: 900px) {
             position: static;
-            box-shadow: var(--submenu-mobile-elevation);
+            box-shadow: var(--invoicecloud-submenu-mobile-elevation);
         }
 
         .navItem {
-            border-bottom: var(--submenu-link-border);
+            border-bottom: var(--invoicecloud-submenu-link-border);
             display: block;
             margin: 0;
-            padding: var(--submenu-link-padding);
-            text-decoration: var(--submenu-link-text-decoration);
+            padding: var(--invoicecloud-submenu-link-padding);
+            text-decoration: var(--invoicecloud-submenu-link-text-decoration);
             white-space: nowrap;
 
             .navLink {
-                color: var(--submenu-link-color);
-                font-weight: var(--submenu-font-weight);
+                color: var(--invoicecloud-submenu-link-color);
+                font-weight: var(--invoicecloud-submenu-font-weight);
             }
 
             &:hover > .linkGrid .navLink,
             &:focus > .linkGrid .navLink {
-                color: var(--submenu-link-hover-color);
+                color: var(--invoicecloud-submenu-link-hover-color);
             }
 
             &:hover,
             &:focus {
-                background: var(--submenu-link-hover-background);
+                background: var(--invoicecloud-submenu-link-hover-background);
                 margin-bottom: 0;
             }
 
             @media (max-width: 900px) {
-                margin: 0 calc(-1 * var(--spacing-s));
+                margin: 0 calc(-1 * var(--invoicecloud-spacing-s));
 
                 &:first-child {
-                    border-top: var(--submenu-link-border);
-                    margin-top: var(--spacing-xs);
+                    border-top: var(--invoicecloud-submenu-link-border);
+                    margin-top: var(--invoicecloud-spacing-xs);
                 }
 
                 &:last-child {
                     border-bottom: none;
-                    margin-bottom: calc(-1 * var(--spacing-xs));
+                    margin-bottom: calc(-1 * var(--invoicecloud-spacing-xs));
                 }
 
                 &:hover,

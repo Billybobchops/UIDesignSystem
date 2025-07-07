@@ -3,8 +3,8 @@
 
 @layer base.components {
     .multiSelectContainer {
-        margin-bottom: var(--input-container-margin-bottom);
-        width: var(--input-desktop-width);
+        margin-bottom: var(--invoicecloud-input-container-margin-bottom);
+        width: var(--invoicecloud-input-desktop-width);
 
         .chevronPositioning {
             align-items: center;
@@ -30,23 +30,23 @@
             appearance: none;
             background: none;
 			border: none;
-            font-size: var(--input-font-size);
-            margin: var(--input-margin);
+            font-size: var(--invoicecloud-input-font-size);
+            margin: var(--invoicecloud-input-margin);
 
             input[aria-label='Search options'] {
-				border-radius: var(--input-border-radius);
-                font-size: var(--input-font-size);
-                height: var(--input-height);
-                padding: var(--input-padding);
+				border-radius: var(--invoicecloud-input-border-radius);
+                font-size: var(--invoicecloud-input-font-size);
+                height: var(--invoicecloud-input-height);
+                padding: var(--invoicecloud-input-padding);
                 text-align: left;
-                width: var(--input-desktop-width);
+                width: var(--invoicecloud-input-desktop-width);
 
                 &:focus-visible {
-                    border: var(--input-border-focus);
+                    border: var(--invoicecloud-input-border-focus);
                 }
 
                 &:hover {
-                    border: var(--input-border-hover);
+                    border: var(--invoicecloud-input-border-hover);
                 }
 
                 @include mobile-100-w;
@@ -56,8 +56,8 @@
         }
 
         .multiSelectDropdown {
-            background: var(--multiselect-dropdown-background-color);
-            border: var(--input-border);
+            background: var(--invoicecloud-multiselect-dropdown-background-color);
+            border: var(--invoicecloud-input-border);
             left: 0;
             position: absolute;
             top: 100%;
@@ -66,8 +66,8 @@
         }
 
         .multiSelectSearch {
-			border: var(--input-border);
-            padding: var(--spacing-xs);
+			border: var(--invoicecloud-input-border);
+            padding: var(--invoicecloud-spacing-xs);
             width: calc(100% - 16px);
         }
 
@@ -75,7 +75,7 @@
             list-style: none;
             padding: 0;
             margin: 0;
-            max-height: var(--multiselect-dropdown-max-height);
+            max-height: var(--invoicecloud-multiselect-dropdown-max-height);
             overflow-y: auto;
         }
 
@@ -85,44 +85,44 @@
                 align-items: center;
 
                 input {
-                    margin: var(--multiselect-checkbox-margin);
+                    margin: var(--invoicecloud-multiselect-checkbox-margin);
                 }
             }
 
             &:hover {
-                background-color: var(--multiselect-item-background-color-hover);
-                border-bottom: var(--multiselect-item-border-bottom-hover)
+                background-color: var(--invoicecloud-multiselect-item-background-color-hover);
+                border-bottom: var(--invoicecloud-multiselect-item-border-bottom-hover)
             }
         }
 
 		// to-do: can we delete this and its corresponding .tsx 
         // .hoverActive {
-        //     background-color: var(--base-theme-1);
-        //     border-bottom: 1px solid var(--base-theme-3);
+        //     background-color: var(--invoicecloud-base-theme-1);
+        //     border-bottom: 1px solid var(--invoicecloud-base-theme-3);
         // }
 
         .selectAll {
-            border-bottom: 1px solid var(--utility-neutral-20);
+            border-bottom: 1px solid var(--invoicecloud-utility-neutral-20);
             font-weight: 700;
         }
 
         .input[aria-invalid='true'] {
-            border-color: var(--input-invalid-border-color);
-            border-left-width: var(--input-invalid-border-left-width);
+            border-color: var(--invoicecloud-input-invalid-border-color);
+            border-left-width: var(--invoicecloud-input-invalid-border-left-width);
         }
 
         .chipContainer {
             align-items: center;
             display: flex;
             flex-wrap: wrap;
-            gap: var(--spacing-xs);
-            margin: var(--spacing-xs) 0 var(--spacing-xxs) 0;
+            gap: var(--invoicecloud-spacing-xs);
+            margin: var(--invoicecloud-spacing-xs) 0 var(--invoicecloud-spacing-xxs) 0;
             width: 100%;
 
             .cancelLink {
                 button {
                     font-weight: 400;
-                    margin: var(--spacing-xxs) 12px;
+                    margin: var(--invoicecloud-spacing-xxs) 12px;
                     text-decoration: underline;
                 }
             }

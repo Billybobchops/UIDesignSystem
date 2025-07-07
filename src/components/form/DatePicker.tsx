@@ -26,18 +26,18 @@ const DatePickerInput: React.FC<DatePickerInputProps> = ({ label, helperText = '
                     slotProps={{ textField: { fullWidth: true, placeholder: '' } }}
                     sx={{
                         '& .MuiInputBase-root': {
-                            border: 'var(--input-border)',
-                            margin: 'var(--date-picker-margin)',
-                            width: 'var(--date-picker-width)',
+                            border: 'var(--invoicecloud-input-border)',
+                            margin: 'var(--invoicecloud-date-picker-margin)',
+                            width: 'var(--invoicecloud-date-picker-width)',
                         },
                         '& .MuiInputBase-root:hover': {
-                            border: 'var(--date-picker-border-hover)',
+                            border: 'var(--invoicecloud-date-picker-border-hover)',
                         },
                         '& .MuiOutlinedInput-input:focus-visible': {
-                            border: 'var(--date-picker-focus-border)',
+                            border: 'var(--invoicecloud-date-picker-focus-border)',
                         },
                         '& .MuiOutlinedInput-input': {
-                            padding: 'var(--date-picker-padding)',
+                            padding: 'var(--invoicecloud-date-picker-padding)',
                         },
                         '& .MuiOutlinedInput-notchedOutline': {
                             border: 'none',

@@ -3,43 +3,43 @@
 @layer base.components {
     .radio {
         appearance: none;
-        background-color: var(--radio-background-color);
-        border-radius: var(--radio-border-radius);;
-        border: var(--radio-border);
+        background-color: var(--invoicecloud-radio-background-color);
+        border-radius: var(--invoicecloud-radio-border-radius);;
+        border: var(--invoicecloud-radio-border);
         box-sizing: border-box;
-        height: var(--radio-height);
-        margin: var(--radio-margin);
+        height: var(--invoicecloud-radio-height);
+        margin: var(--invoicecloud-radio-margin);
         outline: none;
-        padding: var(--radio-padding);
-        transition: var(--radio-transition);
-        width: var(--radio-width);
+        padding: var(--invoicecloud-radio-padding);
+        transition: var(--invoicecloud-radio-transition);
+        width: var(--invoicecloud-radio-width);
 
         &:not(:disabled):checked {
             background-clip: content-box;
-            background-color: var(--radio-selected-background-color);
-            background-image: var(--radio-selected-shape);
-            border-color: var(--radio-selected-border-color);
-            padding: var(--radio-selected-padding);
+            background-color: var(--invoicecloud-radio-selected-background-color);
+            background-image: var(--invoicecloud-radio-selected-shape);
+            border-color: var(--invoicecloud-radio-selected-border-color);
+            padding: var(--invoicecloud-radio-selected-padding);
         }
 
         &:disabled {
-            background-color: var(--radio-disabled-background-color);
+            background-color: var(--invoicecloud-radio-disabled-background-color);
 			cursor: not-allowed;
         }
 
         &:disabled:checked {
-            background-image: var(--radio-selected-disabled-shape);
+            background-image: var(--invoicecloud-radio-selected-disabled-shape);
         }
 
         &:focus-visible:not(:checked) {
-            outline: var(--radio-focus-outline);
-            border: var(--radio-focus-border);
-            transform: var(--radio-focus-transform);
+            outline: var(--invoicecloud-radio-focus-outline);
+            border: var(--invoicecloud-radio-focus-border);
+            transform: var(--invoicecloud-radio-focus-transform);
         }
 
         &:not(:disabled):hover {
-            border: var(--radio-hover-border);
-            transform: var(--radio-hover-transform);
+            border: var(--invoicecloud-radio-hover-border);
+            transform: var(--invoicecloud-radio-hover-transform);
         }
 
         @media (prefers-reduced-motion: reduce) {

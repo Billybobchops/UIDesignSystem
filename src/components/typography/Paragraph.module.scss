@@ -2,16 +2,16 @@
 
 @layer base.components {
     .paragraph {
-        font-size: var(--body-font-size);
-        line-height: var(--body-font-line-height);
-        margin: 0 0 var(--spacing-s) 0;
+        font-size: var(--invoicecloud-body-font-size);
+        line-height: var(--invoicecloud-body-font-line-height);
+        margin: 0 0 var(--invoicecloud-spacing-s) 0;
     }
 
     .s {
-        font-size: var(--body-font-size-s);
+        font-size: var(--invoicecloud-body-font-size-s);
     }
 
     .xs {
-        font-size: var(--body-font-size-xs);
+        font-size: var(--invoicecloud-body-font-size-xs);
     }
 }

@@ -2,16 +2,16 @@
 
 @layer base.components {
     .alert {
-        border-radius: var(--alert-border-radius);
+        border-radius: var(--invoicecloud-alert-border-radius);
         display: grid;
-        font-size: var(--alert-font-size);
+        font-size: var(--invoicecloud-alert-font-size);
         grid-template-columns: auto 1fr 20px;
-        line-height: var(--alert-line-height);
-        margin-bottom: var(--alert-margin-bottom);
-        padding: var(--alert-padding);
+        line-height: var(--invoicecloud-alert-line-height);
+        margin-bottom: var(--invoicecloud-alert-margin-bottom);
+        padding: var(--invoicecloud-alert-padding);
 
         span:first-of-type {
-            margin-right: var(--spacing-xs);
+            margin-right: var(--invoicecloud-spacing-xs);
         }
 
         span:last-of-type {
@@ -20,27 +20,27 @@
     }
 
     .info {
-        background-color: var(--status-info-background-color);
-        border: var(--status-info-border);
-        color: var(--status-info-color);
+        background-color: var(--invoicecloud-status-info-background-color);
+        border: var(--invoicecloud-status-info-border);
+        color: var(--invoicecloud-status-info-color);
     }
 
     .error {
-        background-color: var(--status-error-background-color);
-        border: var(--status-error-border);
-        color: var(--status-error-color);
+        background-color: var(--invoicecloud-status-error-background-color);
+        border: var(--invoicecloud-status-error-border);
+        color: var(--invoicecloud-status-error-color);
     }
 
     .success {
-        background-color: var(--status-success-background-color);
-        border: var(--status-success-border);
-        color: var(--status-success-color);
+        background-color: var(--invoicecloud-status-success-background-color);
+        border: var(--invoicecloud-status-success-border);
+        color: var(--invoicecloud-status-success-color);
     }
 
     .warning {
-        background-color: var(--status-warning-background-color);
-        border: var(--status-warning-border);
-        color: var(--status-warning-color);
+        background-color: var(--invoicecloud-status-warning-background-color);
+        border: var(--invoicecloud-status-warning-border);
+        color: var(--invoicecloud-status-warning-color);
     }
 
     .button {

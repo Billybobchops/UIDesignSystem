@@ -16,7 +16,7 @@ const MuiTablePaginationActions: React.FC<MuiTablePaginationActionsProps> = ({
     onPageChange,
 }) => {
     return (
-        <Box sx={{ marginLeft: 'auto', gap: 'var(--spacing-s)', marginRight: 'var(--spacing-s)' }}>
+        <Box sx={{ marginLeft: 'auto', gap: 'var(--invoicecloud-spacing-s)', marginRight: 'var(--invoicecloud-spacing-s)' }}>
             <TablePaginationNumerals
                 currentPage={page}
                 totalRows={count}
@@ -67,8 +67,8 @@ const MuiTablePagination: React.FC<MuiTablePaginationProps> = ({
                     },
                 },
                 '& .MuiInputBase-root .MuiNativeSelect-select.MuiTablePagination-select': {
-                    border: 'var(--table-pagination-select-border)',
-                    borderRadius: 'var(--table-pagination-select-border-radius)',
+                    border: 'var(--invoicecloud-table-pagination-select-border)',
+                    borderRadius: 'var(--invoicecloud-table-pagination-select-border-radius)',
                 },
             }}
             onPageChange={handleChangePage}

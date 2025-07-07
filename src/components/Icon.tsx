@@ -2,7 +2,7 @@ interface IconProps {
     fill?: string;
 }
 
-export const ICFooterLogo: React.FC<IconProps> = ({ fill = 'var(--utility-neutral-0)' }) => {
+export const ICFooterLogo: React.FC<IconProps> = ({ fill = 'var(--invoicecloud-utility-neutral-0)' }) => {
     return (
         <svg
             aria-labelledby="footerLogo"
@@ -39,7 +39,7 @@ export const ICFooterLogo: React.FC<IconProps> = ({ fill = 'var(--utility-neutra
     );
 };
 
-export const AutoPay: React.FC<IconProps> = ({ fill = 'var(--utility-neutral-0)' }) => {
+export const AutoPay: React.FC<IconProps> = ({ fill = 'var(--invoicecloud-utility-neutral-0)' }) => {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
             <title>AutoPay</title>
@@ -58,7 +58,7 @@ export const AutoPay: React.FC<IconProps> = ({ fill = 'var(--utility-neutral-0)'
     );
 };
 
-export const Paperless: React.FC<IconProps> = ({ fill = 'var(--utility-neutral-0)' }) => {
+export const Paperless: React.FC<IconProps> = ({ fill = 'var(--invoicecloud-utility-neutral-0)' }) => {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
             <title>Paperless</title>
@@ -101,7 +101,7 @@ export const Paperless: React.FC<IconProps> = ({ fill = 'var(--utility-neutral-0
     );
 };
 
-export const PayByText: React.FC<IconProps> = ({ fill = 'var(--utility-neutral-0)' }) => {
+export const PayByText: React.FC<IconProps> = ({ fill = 'var(--invoicecloud-utility-neutral-0)' }) => {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
             <title>Pay By Text</title>
@@ -113,7 +113,7 @@ export const PayByText: React.FC<IconProps> = ({ fill = 'var(--utility-neutral-0
     );
 };
 
-export const Plus: React.FC<IconProps> = ({ fill = 'var(--utility-neutral-0)' }) => {
+export const Plus: React.FC<IconProps> = ({ fill = 'var(--invoicecloud-utility-neutral-0)' }) => {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
             <title>Plus</title>
@@ -125,7 +125,7 @@ export const Plus: React.FC<IconProps> = ({ fill = 'var(--utility-neutral-0)' })
     );
 };
 
-export const Info: React.FC<IconProps> = ({ fill = 'var(--utility-neutral-0)' }) => {
+export const Info: React.FC<IconProps> = ({ fill = 'var(--invoicecloud-utility-neutral-0)' }) => {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
             <title>Info</title>
@@ -137,7 +137,7 @@ export const Info: React.FC<IconProps> = ({ fill = 'var(--utility-neutral-0)' })
     );
 };
 
-export const MenuCloseSmall: React.FC<IconProps> = ({ fill = 'var(--utility-neutral-0)' }) => {
+export const MenuCloseSmall: React.FC<IconProps> = ({ fill = 'var(--invoicecloud-utility-neutral-0)' }) => {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
             <title>Menu close</title>
@@ -149,7 +149,7 @@ export const MenuCloseSmall: React.FC<IconProps> = ({ fill = 'var(--utility-neut
     );
 };
 
-export const MenuCloseMedium: React.FC<IconProps> = ({ fill = 'var(--utility-neutral-0)' }) => {
+export const MenuCloseMedium: React.FC<IconProps> = ({ fill = 'var(--invoicecloud-utility-neutral-0)' }) => {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
             <title>Menu close</title>
@@ -161,7 +161,7 @@ export const MenuCloseMedium: React.FC<IconProps> = ({ fill = 'var(--utility-neu
     );
 };
 
-export const MenuCloseLarge: React.FC<IconProps> = ({ fill = 'var(--utility-neutral-0)' }) => {
+export const MenuCloseLarge: React.FC<IconProps> = ({ fill = 'var(--invoicecloud-utility-neutral-0)' }) => {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
             <title>Menu close</title>
@@ -173,7 +173,7 @@ export const MenuCloseLarge: React.FC<IconProps> = ({ fill = 'var(--utility-neut
     );
 };
 
-export const ErrorIcon: React.FC<IconProps> = ({ fill = 'var(--utility-neutral-0)' }) => {
+export const ErrorIcon: React.FC<IconProps> = ({ fill = 'var(--invoicecloud-utility-neutral-0)' }) => {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
             <title>Error</title>
@@ -185,7 +185,7 @@ export const ErrorIcon: React.FC<IconProps> = ({ fill = 'var(--utility-neutral-0
     );
 };
 
-export const Success: React.FC<IconProps> = ({ fill = 'var(--utility-neutral-0)' }) => {
+export const Success: React.FC<IconProps> = ({ fill = 'var(--invoicecloud-utility-neutral-0)' }) => {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
             <title>Success</title>
@@ -197,7 +197,7 @@ export const Success: React.FC<IconProps> = ({ fill = 'var(--utility-neutral-0)'
     );
 };
 
-export const ChevronRight: React.FC<IconProps> = ({ fill = 'var(--utility-neutral-0)' }) => {
+export const ChevronRight: React.FC<IconProps> = ({ fill = 'var(--invoicecloud-utility-neutral-0)' }) => {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
             <title>Chevron Right</title>
@@ -214,7 +214,7 @@ export const ChevronRight: React.FC<IconProps> = ({ fill = 'var(--utility-neutra
     );
 };
 
-export const ChevronDown: React.FC<IconProps> = ({ fill = 'var(--utility-neutral-0)' }) => {
+export const ChevronDown: React.FC<IconProps> = ({ fill = 'var(--invoicecloud-utility-neutral-0)' }) => {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="10" viewBox="0 0 16 10" fill="none">
             <title>Dropdown chevron</title>
@@ -226,7 +226,7 @@ export const ChevronDown: React.FC<IconProps> = ({ fill = 'var(--utility-neutral
     );
 };
 
-export const SearchDefault: React.FC<IconProps> = ({ fill = 'var(--utility-neutral-0)' }) => {
+export const SearchDefault: React.FC<IconProps> = ({ fill = 'var(--invoicecloud-utility-neutral-0)' }) => {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
             <title>Search</title>
@@ -238,7 +238,7 @@ export const SearchDefault: React.FC<IconProps> = ({ fill = 'var(--utility-neutr
     );
 };
 
-export const NewWindow: React.FC<IconProps> = ({ fill = 'var(--utility-neutral-0)' }) => {
+export const NewWindow: React.FC<IconProps> = ({ fill = 'var(--invoicecloud-utility-neutral-0)' }) => {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19" fill="none">
             <title>New Window</title>
@@ -250,7 +250,7 @@ export const NewWindow: React.FC<IconProps> = ({ fill = 'var(--utility-neutral-0
     );
 };
 
-export const Warning: React.FC<IconProps> = ({ fill = 'var(--utility-neutral-0)' }) => {
+export const Warning: React.FC<IconProps> = ({ fill = 'var(--invoicecloud-utility-neutral-0)' }) => {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width="13" height="16" viewBox="0 0 13 16" fill="none">
             <title>Warning</title>
@@ -263,7 +263,7 @@ export const Warning: React.FC<IconProps> = ({ fill = 'var(--utility-neutral-0)'
 };
 
 // Need these because they have their square
-export const TableChevronCollapsed: React.FC<IconProps> = ({ fill = 'var(--utility-neutral-0)' }) => {
+export const TableChevronCollapsed: React.FC<IconProps> = ({ fill = 'var(--invoicecloud-utility-neutral-0)' }) => {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
             <title>Table Collapse Chevron</title>
@@ -281,7 +281,7 @@ export const TableChevronCollapsed: React.FC<IconProps> = ({ fill = 'var(--utili
 };
 
 // Need these because they have their square
-export const TableChevronExpanded: React.FC<IconProps> = ({ fill = 'var(--utility-neutral-0)' }) => {
+export const TableChevronExpanded: React.FC<IconProps> = ({ fill = 'var(--invoicecloud-utility-neutral-0)' }) => {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
             <title>Table Expand Chevron</title>
@@ -298,7 +298,7 @@ export const TableChevronExpanded: React.FC<IconProps> = ({ fill = 'var(--utilit
     );
 };
 
-export const TableSortArrow: React.FC<IconProps> = ({ fill = 'var(--utility-neutral-0)' }) => {
+export const TableSortArrow: React.FC<IconProps> = ({ fill = 'var(--invoicecloud-utility-neutral-0)' }) => {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16" fill="none">
             <title>Table Sort Arrow</title>
@@ -317,7 +317,7 @@ export const TableSortArrow: React.FC<IconProps> = ({ fill = 'var(--utility-neut
     );
 };
 
-export const FirstPage: React.FC<IconProps> = ({ fill = 'var(--base-theme-4)' }) => {
+export const FirstPage: React.FC<IconProps> = ({ fill = 'var(--invoicecloud-base-theme-4)' }) => {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
             <title>First Page</title>
@@ -340,7 +340,7 @@ export const FirstPage: React.FC<IconProps> = ({ fill = 'var(--base-theme-4)' })
     );
 };
 
-export const LastPage: React.FC<IconProps> = ({ fill = 'var(--base-theme-4)' }) => {
+export const LastPage: React.FC<IconProps> = ({ fill = 'var(--invoicecloud-base-theme-4)' }) => {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
             <title>Last Page</title>
@@ -363,7 +363,7 @@ export const LastPage: React.FC<IconProps> = ({ fill = 'var(--base-theme-4)' }) 
     );
 };
 
-export const PreviousPage: React.FC<IconProps> = ({ fill = 'var(--base-theme-4)' }) => {
+export const PreviousPage: React.FC<IconProps> = ({ fill = 'var(--invoicecloud-base-theme-4)' }) => {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 10 16" fill="none">
             <title>Previous Page</title>
@@ -382,7 +382,7 @@ export const PreviousPage: React.FC<IconProps> = ({ fill = 'var(--base-theme-4)'
     );
 };
 
-export const NextPage: React.FC<IconProps> = ({ fill = 'var(--base-theme-4)' }) => {
+export const NextPage: React.FC<IconProps> = ({ fill = 'var(--invoicecloud-base-theme-4)' }) => {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width="9" height="16" viewBox="0 0 9 16" fill="none">
             <title>Next Page</title>
@@ -401,7 +401,7 @@ export const NextPage: React.FC<IconProps> = ({ fill = 'var(--base-theme-4)' }) 
     );
 };
 
-export const Kebab: React.FC<IconProps> = ({ fill = 'var(--base-theme-4)' }) => {
+export const Kebab: React.FC<IconProps> = ({ fill = 'var(--invoicecloud-base-theme-4)' }) => {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
             <title>Kebab</title>
@@ -418,7 +418,7 @@ export const Kebab: React.FC<IconProps> = ({ fill = 'var(--base-theme-4)' }) => 
     );
 };
 
-export const Home: React.FC<IconProps> = ({ fill = 'var(--base-theme-4)' }) => {
+export const Home: React.FC<IconProps> = ({ fill = 'var(--invoicecloud-base-theme-4)' }) => {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16" fill="none">
             <title>Home</title>

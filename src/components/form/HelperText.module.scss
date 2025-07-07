@@ -3,10 +3,10 @@
 @layer base.components {
     .helperText {
         display: block;
-        font-size: var(--helper-text-font-size);
+        font-size: var(--invoicecloud-helper-text-font-size);
     }
 
     .errorText {
-        color: var(--helper-text-error-color);
+        color: var(--invoicecloud-helper-text-error-color);
     }
 }

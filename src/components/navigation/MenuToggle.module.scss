@@ -20,11 +20,11 @@
         position: absolute;
         height: 2px;
         width: 100%;
-        background: var(--header-hamburger-toggle-background-color);
-        border-radius: var(--header-hamburger-toggle-border-radius);
+        background: var(--invoicecloud-header-hamburger-toggle-background-color);
+        border-radius: var(--invoicecloud-header-hamburger-toggle-border-radius);
         opacity: 1;
         left: 0;
-        transition: var(--header-hamburger-transition);
+        transition: var(--invoicecloud-header-hamburger-transition);
     }
 
     .menuToggle span:nth-child(1) {

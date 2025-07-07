@@ -28,18 +28,18 @@ const CTAButton: React.FC<ButtonProps> = ({
 
     const fillColor = (() => {
         if (disabled) {
-            return 'var(--primary-button-disabled-color)';
+            return 'var(--invoicecloud-primary-button-disabled-color)';
         }
 
         if (isHovered && variant !== 'outline') {
-            return 'var(--utility-neutral-0)';
+            return 'var(--invoicecloud-utility-neutral-0)';
         }
 
         if (variant === 'outline') {
             if (isHovered) {
-                return 'var(--base-theme-3)';
+                return 'var(--invoicecloud-base-theme-3)';
             }
-            return 'var(--base-theme-4)';
+            return 'var(--invoicecloud-base-theme-4)';
         }
     })();
 

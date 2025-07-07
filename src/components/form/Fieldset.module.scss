@@ -3,19 +3,19 @@
 
 @layer base.components {
     .fieldset {
-        border-radius: var(--input-border-radius);
-        border: var(--fieldset-border);
-        margin-bottom: var(--input-container-margin-bottom);
-        padding: var(--fieldset-padding);
-        width: var(--input-desktop-width);
+        border-radius: var(--invoicecloud-input-border-radius);
+        border: var(--invoicecloud-fieldset-border);
+        margin-bottom: var(--invoicecloud-input-container-margin-bottom);
+        padding: var(--invoicecloud-fieldset-padding);
+        width: var(--invoicecloud-input-desktop-width);
 
         @include mobile-100-w;
     }
 
     .legend {
-        font-size: var(--legend-font-size);
-        font-weight: var(--legend-font-weight);
-        margin-left: var(--legend-margin-left);
-        padding: var(--legend-padding);
+        font-size: var(--invoicecloud-legend-font-size);
+        font-weight: var(--invoicecloud-legend-font-weight);
+        margin-left: var(--invoicecloud-legend-margin-left);
+        padding: var(--invoicecloud-legend-padding);
     }
 }

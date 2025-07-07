@@ -3,13 +3,13 @@
 @layer base.components {
     .card {
         align-items: flex-start;
-        border-radius: var(--card-border-radius);
-        box-shadow: var(--elevation-2);
+        border-radius: var(--invoicecloud-card-border-radius);
+        box-shadow: var(--invoicecloud-elevation-2);
         display: flex;
         flex-direction: column;
-        margin-bottom: var(--card-margin-bottom);
-        max-width: var(--card-max-width);
-        outline: var(--card-outline);
+        margin-bottom: var(--invoicecloud-card-margin-bottom);
+        max-width: var(--invoicecloud-card-max-width);
+        outline: var(--invoicecloud-card-outline);
 
         .dialogWrapper {
             display: flex;
@@ -17,7 +17,7 @@
         }
 
         h3 .iconStart {
-            margin-right: var(--spacing-xs);
+            margin-right: var(--invoicecloud-spacing-xs);
         }
 
         button:hover {
@@ -25,47 +25,47 @@
         }
 
         &:has(button:enabled):hover {
-            border-radius: var(--card-border-radius);
-            outline: var(--card-outline-hover);
+            border-radius: var(--invoicecloud-card-border-radius);
+            outline: var(--invoicecloud-card-outline-hover);
         }
 
         &:has(button:enabled):active:active {
-            outline: var(--card-outline-active);
+            outline: var(--invoicecloud-card-outline-active);
         }
 
         &:has(.cardButton:focus-visible),
         button:not(.cardButton):focus-visible {
-            border-radius: var(--card-border-radius);
-            outline: 2px solid var(--card-outline-focus);
-            outline-offset: var(--card-outline-offset-focus);
+            border-radius: var(--invoicecloud-card-border-radius);
+            outline: 2px solid var(--invoicecloud-card-outline-focus);
+            outline-offset: var(--invoicecloud-card-outline-offset-focus);
         }
 
         &:has(button:disabled),
         button:disabled {
-            background-color: var(--card-background-color-disabled);
-            color: var(--card-color-disabled);
+            background-color: var(--invoicecloud-card-background-color-disabled);
+            color: var(--invoicecloud-card-color-disabled);
             cursor: not-allowed;
         }
 
         &:has(button:disabled) h3 {
-            color: var(--card-heading-color-disabled);
+            color: var(--invoicecloud-card-heading-color-disabled);
         }
 
         &:has(button:disabled) button {
-            color: var(--card-button-color-disabled);
+            color: var(--invoicecloud-card-button-color-disabled);
         }
     }
 
     .cardButton {
-        background-color: var(--card-button-background-color);
-        border: var(--card-button-border);
+        background-color: var(--invoicecloud-card-button-background-color);
+        border: var(--invoicecloud-card-button-border);
         display: flex;
         font-family: inherit;
         font-size: inherit;
         flex-direction: column;
         flex: 1;
         height: 100%;
-        padding: var(--card-button-padding);
+        padding: var(--invoicecloud-card-button-padding);
         text-align: left;
         width: 100%;
 
@@ -75,7 +75,7 @@
     }
 
     .linkButtonContainer {
-        padding: 0 var(--spacing-s);
+        padding: 0 var(--invoicecloud-spacing-s);
         margin-top: auto;
         width: 100%;
     }
@@ -89,8 +89,8 @@
         overflow: hidden;
         text-overflow: ellipsis;
 		-webkit-box-orient: vertical;
-		-webkit-line-clamp: var(--line-clamp);
-		line-clamp: var(--line-clamp);
+		-webkit-line-clamp: var(--invoicecloud-line-clamp);
+		line-clamp: var(--invoicecloud-line-clamp);
     }
 
 	.hasDialogCardContent {

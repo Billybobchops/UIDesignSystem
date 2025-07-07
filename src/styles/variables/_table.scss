@@ -1,21 +1,21 @@
 :root {
-	--table-background-color: var(--utility-neutral-0);
-	--table-background-color-odd: var(--utility-neutral-05);
-	--table-margin-bottom: var(--spacing-xxl);
-	--table-min-width: 700px;
-	--table-width: 100%;
-	--table-row-padding: 12px var(--spacing-xs);
-	--table-active-row-border-color: var(--base-theme-4);
+	--invoicecloud-table-background-color: var(--invoicecloud-utility-neutral-0);
+	--invoicecloud-table-background-color-odd: var(--invoicecloud-utility-neutral-05);
+	--invoicecloud-table-margin-bottom: var(--invoicecloud-spacing-xxl);
+	--invoicecloud-table-min-width: 700px;
+	--invoicecloud-table-width: 100%;
+	--invoicecloud-table-row-padding: 12px var(--invoicecloud-spacing-xs);
+	--invoicecloud-table-active-row-border-color: var(--invoicecloud-base-theme-4);
 
-	--table-pagination-select-border: 1px solid var(--utility-neutral-50);
-	--table-pagination-select-border-radius: var(--border-radius-s);
-	--table-pagination-numeral-color: var(--base-theme-4);
-	--table-pagination-numeral-border-radius: var(--border-radius-s);
-	--table-pagination-numeral-font-weight: 700;
-	--table-pagination-numeral-font-size: 16px;
-	--table-pagination-numeral-selected-background-color: var(--table-pagination-numeral-color);
-	--table-pagination-numeral-selected-color: var(--utility-neutral-0);
+	--invoicecloud-table-pagination-select-border: 1px solid var(--invoicecloud-utility-neutral-50);
+	--invoicecloud-table-pagination-select-border-radius: var(--invoicecloud-border-radius-s);
+	--invoicecloud-table-pagination-numeral-color: var(--invoicecloud-base-theme-4);
+	--invoicecloud-table-pagination-numeral-border-radius: var(--invoicecloud-border-radius-s);
+	--invoicecloud-table-pagination-numeral-font-weight: 700;
+	--invoicecloud-table-pagination-numeral-font-size: 16px;
+	--invoicecloud-table-pagination-numeral-selected-background-color: var(--invoicecloud-table-pagination-numeral-color);
+	--invoicecloud-table-pagination-numeral-selected-color: var(--invoicecloud-utility-neutral-0);
 
-	--table-dynamic-active-row-action-background-color: var(--utility-blue-10);
-	--table-chevron-color: var(--base-theme-3);
+	--invoicecloud-table-dynamic-active-row-action-background-color: var(--invoicecloud-utility-blue-10);
+	--invoicecloud-table-chevron-color: var(--invoicecloud-base-theme-3);
 }

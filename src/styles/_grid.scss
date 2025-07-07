@@ -1,36 +1,36 @@
 .grid-component {
-    align-content: var(--grid-align-content);
-    align-items: var(--grid-align-items);
-    column-gap: var(--grid-col-gap);
+    align-content: var(--invoicecloud-grid-align-content);
+    align-items: var(--invoicecloud-grid-align-items);
+    column-gap: var(--invoicecloud-grid-col-gap);
     display: grid;
-    gap: var(--grid-gap);
-    grid-template-columns: var(--grid-columns);
-    grid-template-rows: var(--grid-rows);
-    justify-content: var(--grid-justify-content);
-    justify-items: var(--grid-justify-items);
-    row-gap: var(--grid-row-gap);
+    gap: var(--invoicecloud-grid-gap);
+    grid-template-columns: var(--invoicecloud-grid-columns);
+    grid-template-rows: var(--invoicecloud-grid-rows);
+    justify-content: var(--invoicecloud-grid-justify-content);
+    justify-items: var(--invoicecloud-grid-justify-items);
+    row-gap: var(--invoicecloud-grid-row-gap);
 }
 
 @media (max-width: 768px) {
     .grid-component {
-        grid-template-columns: var(--grid-columns-sm, var(--grid-columns));
-        grid-template-rows: var(--grid-rows-sm, var(--grid-rows));
-        gap: var(--grid-gap-sm, var(--grid-gap));
+        grid-template-columns: var(--invoicecloud-grid-columns-sm, var(--invoicecloud-grid-columns));
+        grid-template-rows: var(--invoicecloud-grid-rows-sm, var(--invoicecloud-grid-rows));
+        gap: var(--invoicecloud-grid-gap-sm, var(--invoicecloud-grid-gap));
     }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
     .grid-component {
-        grid-template-columns: var(--grid-columns-md, var(--grid-columns));
-        grid-template-rows: var(--grid-rows-md, var(--grid-rows));
-        gap: var(--grid-gap-md, var(--grid-gap));
+        grid-template-columns: var(--invoicecloud-grid-columns-md, var(--invoicecloud-grid-columns));
+        grid-template-rows: var(--invoicecloud-grid-rows-md, var(--invoicecloud-grid-rows));
+        gap: var(--invoicecloud-grid-gap-md, var(--invoicecloud-grid-gap));
     }
 }
 
 @media (min-width: 1025px) {
     .grid-component {
-        grid-template-columns: var(--grid-columns-lg, var(--grid-columns));
-        grid-template-rows: var(--grid-rows-lg, var(--grid-rows));
-        gap: var(--grid-gap-lg, var(--grid-gap));
+        grid-template-columns: var(--invoicecloud-grid-columns-lg, var(--invoicecloud-grid-columns));
+        grid-template-rows: var(--invoicecloud-grid-rows-lg, var(--invoicecloud-grid-rows));
+        gap: var(--invoicecloud-grid-gap-lg, var(--invoicecloud-grid-gap));
     }
 }

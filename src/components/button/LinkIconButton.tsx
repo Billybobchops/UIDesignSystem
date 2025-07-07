@@ -30,28 +30,28 @@ const IconButton: React.FC<IconButtonProps> = ({
     const [isHovered, setIsHovered] = useState(false);
     const getFillColor = (variant: string, disabled: boolean) => {
         if (disabled) {
-            return { fill: 'var(--utility-neutral-60)', hoverFill: 'var(--utility-neutral-60)' };
+            return { fill: 'var(--invoicecloud-utility-neutral-60)', hoverFill: 'var(--invoicecloud-utility-neutral-60)' };
         }
         switch (variant) {
             case 'base':
                 return {
-                    fill: 'var(--base-theme-4)',
-                    hoverFill: text ? 'var(--base-theme-3)' : 'var(--utility-neutral-0)',
+                    fill: 'var(--invoicecloud-base-theme-4)',
+                    hoverFill: text ? 'var(--invoicecloud-base-theme-3)' : 'var(--invoicecloud-utility-neutral-0)',
                 };
             case 'alternate':
                 return {
-                    fill: 'var(--alternate-theme-3)',
-                    hoverFill: text ? 'var(--alternate-theme-4)' : 'var(--utility-neutral-0)',
+                    fill: 'var(--invoicecloud-alternate-theme-3)',
+                    hoverFill: text ? 'var(--invoicecloud-alternate-theme-4)' : 'var(--invoicecloud-utility-neutral-0)',
                 };
             case 'error':
                 return {
-                    fill: 'var(--link-icon-button-error-color)',
-                    hoverFill: text ? 'var(--link-icon-button-error-color-hover)' : 'var(--utility-neutral-0)',
+                    fill: 'var(--invoicecloud-link-icon-button-error-color)',
+                    hoverFill: text ? 'var(--invoicecloud-link-icon-button-error-color-hover)' : 'var(--invoicecloud-utility-neutral-0)',
                 };
             default:
                 return {
-                    fill: 'var(--utility-neutral-60)',
-                    hoverFill: text ? 'var(--utility-neutral-60)' : 'var(--utility-neutral-0)',
+                    fill: 'var(--invoicecloud-utility-neutral-60)',
+                    hoverFill: text ? 'var(--invoicecloud-utility-neutral-60)' : 'var(--invoicecloud-utility-neutral-0)',
                 };
         }
     };

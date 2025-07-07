@@ -5,80 +5,80 @@
     .button {
         @include buttons;
 
-        align-items: var(--link-icon-button-align-items);
-        color: var(--link-icon-button-color);
-        display: var(--link-icon-button-display);
-        gap: var(--link-icon-button-gap);
-        justify-content: var(--link-icon-button-justify-content);
-        line-height: var(--link-icon-button-line-height);
-        padding: var(--link-icon-button-padding);
-        vertical-align: var(--link-icon-button-vertical-align);
+        align-items: var(--invoicecloud-link-icon-button-align-items);
+        color: var(--invoicecloud-link-icon-button-color);
+        display: var(--invoicecloud-link-icon-button-display);
+        gap: var(--invoicecloud-link-icon-button-gap);
+        justify-content: var(--invoicecloud-link-icon-button-justify-content);
+        line-height: var(--invoicecloud-link-icon-button-line-height);
+        padding: var(--invoicecloud-link-icon-button-padding);
+        vertical-align: var(--invoicecloud-link-icon-button-vertical-align);
 
         &.error,
         &.alternate,
         &.base,
         &.disabled {
-            background: var(--link-icon-button-background-color);
+            background: var(--invoicecloud-link-icon-button-background-color);
 
             &:hover {
-                background: var(--link-icon-button-background-color-hover);
+                background: var(--invoicecloud-link-icon-button-background-color-hover);
             }
         }
 
         &.error {
-            color: var(--link-icon-button-error-color);
+            color: var(--invoicecloud-link-icon-button-error-color);
 
             &:hover {
-                color: var(--link-icon-button-error-color-hover);
+                color: var(--invoicecloud-link-icon-button-error-color-hover);
             }
         }
 
         &.alternate {
-            color: var(--alternate-theme-3);
+            color: var(--invoicecloud-alternate-theme-3);
 
             &:hover {
-                color: var(--alternate-theme-4);
+                color: var(--invoicecloud-alternate-theme-4);
             }
         }
 
         &.base {
-            color: var(--base-theme-4);
+            color: var(--invoicecloud-base-theme-4);
 
             &:hover {
-                color: var(--base-theme-3);
+                color: var(--invoicecloud-base-theme-3);
             }
         }
 
         &.disabled {
-            color: var(--link-icon-button-disabled-color);
+            color: var(--invoicecloud-link-icon-button-disabled-color);
 
             &:hover {
-                color: var(--link-icon-button-disabled-color-hover);
+                color: var(--invoicecloud-link-icon-button-disabled-color-hover);
             }
         }
 
         &.iconOnly {
-            padding: var(--link-icon-only-button-padding);
+            padding: var(--invoicecloud-link-icon-only-button-padding);
 
             &:hover {
                 &.error {
-                    background: var(--link-icon-only-button-error-background-color-hover);
+                    background: var(--invoicecloud-link-icon-only-button-error-background-color-hover);
                 }
 
                 &.alternate {
-                    background: var(--alternate-theme-2);
+                    background: var(--invoicecloud-alternate-theme-2);
                 }
 
                 &.base {
-                    background: var(--base-theme-3);
+                    background: var(--invoicecloud-base-theme-3);
                 }
             }
 
             &.disabled {
-                background: var(--link-icon-only-button-disabled-background-color);
+                background: var(--invoicecloud-link-icon-only-button-disabled-background-color);
 
                 &:hover {
-                    background: var(--link-icon-only-button-disabled-background-color-hover);
+                    background: var(--invoicecloud-link-icon-only-button-disabled-background-color-hover);
                 }
             }
 

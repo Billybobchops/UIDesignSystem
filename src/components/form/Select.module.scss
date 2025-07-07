@@ -3,7 +3,7 @@
 
 @layer base.components {
     .selectContainer {
-        margin-bottom: var(--input-container-margin-bottom);
+        margin-bottom: var(--invoicecloud-input-container-margin-bottom);
     }
 
     .chevronPositioning {
@@ -24,29 +24,29 @@
     .select {
         appearance: none;
         background: none;
-        border: var(--input-border);
-        border-radius: var(--input-border-radius);
-        font-size: var(--input-font-size);
-        margin: var(--input-margin);
+        border: var(--invoicecloud-input-border);
+        border-radius: var(--invoicecloud-input-border-radius);
+        font-size: var(--invoicecloud-input-font-size);
+        margin: var(--invoicecloud-input-margin);
         margin-right: 0; // override
-        height: var(--input-height);
-        padding: var(--input-padding);
-        padding-right: var(--spacing-l); // override
-        width: var(--input-desktop-width);
+        height: var(--invoicecloud-input-height);
+        padding: var(--invoicecloud-input-padding);
+        padding-right: var(--invoicecloud-spacing-l); // override
+        width: var(--invoicecloud-input-desktop-width);
 
         &:focus-visible {
-            border: var(--input-border-focus);
+            border: var(--invoicecloud-input-border-focus);
         }
 
         &:hover {
-            border: var(--input-border-hover);
+            border: var(--invoicecloud-input-border-hover);
         }
 
         @include mobile-100-w;
     }
 
     .input[aria-invalid='true'] {
-        border-color: var(--input-invalid-border-color);
-        border-left-width: var(--input-invalid-border-left-width);
+        border-color: var(--invoicecloud-input-invalid-border-color);
+        border-left-width: var(--invoicecloud-input-invalid-border-left-width);
     }
 }

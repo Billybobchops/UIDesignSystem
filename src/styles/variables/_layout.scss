@@ -1,63 +1,63 @@
 :root {
 	/* Accordion */
-	--accordion-margin-bottom: 20px;
-	--accordion-focused-outline: 2px solid var(--base-theme-3);
-	--accordion-focused-outline-offset: var(--focus-outline-offset-m);
-	--accordion-border-radius: var(--border-radius-s);
-	--accordion-background-color: var(--utility-neutral-05);
-	--accordion-background-color-hover: var(--base-theme-1);
-	--accordion-border-left: none;
-	--accordion-border-right: none;
-	--accordion-border-top: none;
-	--accordion-border-bottom: 2px solid var(--utility-neutral-20);
-	--accordion-border-bottom-hover: 2.5px solid var(--base-theme-3);
-	--accordion-color: var(--base-theme-4);
-	--accordion-color-hover: var(--base-theme-3);
-	--accordion-font-size: 16px;
-	--accordion-font-weight: 700;
-	--accordion-gap: var(--spacing-s);
-	--accordion-padding: 14px 18px;
-	--accordion-active-border-radius: var(--border-radius-s) var(--border-radius-s) 0 0;
-	--accordion-active-border: 1px solid var(--base-theme-3);
-	--accordion-active-border-bottom: none;
-	--accordion-content-border-radius: 0 0 var(--border-radius-s) var(--border-radius-s);
-	--accordion-content-border: 1px solid var(--base-theme-3);
-	--accordion-content-padding: 20px;
+	--invoicecloud-accordion-margin-bottom: 20px;
+	--invoicecloud-accordion-focused-outline: 2px solid var(--invoicecloud-base-theme-3);
+	--invoicecloud-accordion-focused-outline-offset: var(--invoicecloud-focus-outline-offset-m);
+	--invoicecloud-accordion-border-radius: var(--invoicecloud-border-radius-s);
+	--invoicecloud-accordion-background-color: var(--invoicecloud-utility-neutral-05);
+	--invoicecloud-accordion-background-color-hover: var(--invoicecloud-base-theme-1);
+	--invoicecloud-accordion-border-left: none;
+	--invoicecloud-accordion-border-right: none;
+	--invoicecloud-accordion-border-top: none;
+	--invoicecloud-accordion-border-bottom: 2px solid var(--invoicecloud-utility-neutral-20);
+	--invoicecloud-accordion-border-bottom-hover: 2.5px solid var(--invoicecloud-base-theme-3);
+	--invoicecloud-accordion-color: var(--invoicecloud-base-theme-4);
+	--invoicecloud-accordion-color-hover: var(--invoicecloud-base-theme-3);
+	--invoicecloud-accordion-font-size: 16px;
+	--invoicecloud-accordion-font-weight: 700;
+	--invoicecloud-accordion-gap: var(--invoicecloud-spacing-s);
+	--invoicecloud-accordion-padding: 14px 18px;
+	--invoicecloud-accordion-active-border-radius: var(--invoicecloud-border-radius-s) var(--invoicecloud-border-radius-s) 0 0;
+	--invoicecloud-accordion-active-border: 1px solid var(--invoicecloud-base-theme-3);
+	--invoicecloud-accordion-active-border-bottom: none;
+	--invoicecloud-accordion-content-border-radius: 0 0 var(--invoicecloud-border-radius-s) var(--invoicecloud-border-radius-s);
+	--invoicecloud-accordion-content-border: 1px solid var(--invoicecloud-base-theme-3);
+	--invoicecloud-accordion-content-padding: 20px;
 
 	/* Dialog */
-	--dialog-border: none;
-	--dialog-border-radius: var(--border-radius-m);
-	--dialog-max-height: 600px;
-	--dialog-max-width: var(--dialog-max-height);
-	--dialog-padding: var(--spacing-l) var(--spacing-l) 0 var(--spacing-l);
-	--dialog-width: calc(100% - 120px);
-	--dialog-backdrop-background-color: rgba(0, 0, 0, 0.5);
-	--dialog-backdrop-transition: display 0.7s allow-discrete, overlay 0.7s allow-discrete,
+	--invoicecloud-dialog-border: none;
+	--invoicecloud-dialog-border-radius: var(--invoicecloud-border-radius-m);
+	--invoicecloud-dialog-max-height: 600px;
+	--invoicecloud-dialog-max-width: var(--invoicecloud-dialog-max-height);
+	--invoicecloud-dialog-padding: var(--invoicecloud-spacing-l) var(--invoicecloud-spacing-l) 0 var(--invoicecloud-spacing-l);
+	--invoicecloud-dialog-width: calc(100% - 50px);
+	--invoicecloud-dialog-backdrop-background-color: rgba(0, 0, 0, 0.5);
+	--invoicecloud-dialog-backdrop-transition: display 0.7s allow-discrete, overlay 0.7s allow-discrete,
             background-color 0.7s;
-	--dialog-backdrop-opaciity: 0.8;
-	--dialog-title-margin-bottom: var(--accordion-content-padding);
-	--dialog-action-bar-background-color: var(--utility-neutral-0);
-	--dialog-action-bar-border-top: 2px solid var(--utility-neutral-30);
+	--invoicecloud-dialog-backdrop-opaciity: 0.8;
+	--invoicecloud-dialog-title-margin-bottom: var(--invoicecloud-accordion-content-padding);
+	--invoicecloud-dialog-action-bar-background-color: var(--invoicecloud-utility-neutral-0);
+	--invoicecloud-dialog-action-bar-border-top: 2px solid var(--invoicecloud-utility-neutral-30);
 
 	/* Dividers */
-	--divider-light: 1px solid var(--utility-neutral-10);
-	--divider-dark: 1px solid var(--utility-neutral-20);
+	--invoicecloud-divider-light: 1px solid var(--invoicecloud-utility-neutral-10);
+	--invoicecloud-divider-dark: 1px solid var(--invoicecloud-utility-neutral-20);
 
 	/* Cards */
-	--card-border-radius: var(--border-radius-s);
-	--card-box-shadow: var(--elevation-2);
-	--card-margin-bottom: var(--spacing-s);
-	--card-max-width: var(--input-desktop-width);
-	--card-outline: 1px solid var(--utility-neutral-20);
-	--card-outline-hover: 1px solid var(--utility-blue-50);
-	--card-outline-active: 2px solid var(--utility-blue-50);
-	--card-outline-focus: 2px solid var(--utility-blue-50);
-	--card-outline-offset-focus: var(--focus-outline-offset-s);
-	--card-background-color-disabled: var(--utility-neutral-05);
-	--card-color-disabled: var(--utility-neutral-80);
-	--card-heading-color-disabled: var(--utility-neutral-70);
-	--card-button-color-disabled: var(--utility-neutral-60);
-	--card-button-background-color: transparent;
-	--card-button-border: none;
-	--card-button-padding: var(--spacing-s) var(--spacing-s) 0 var(--spacing-s);
+	--invoicecloud-card-border-radius: var(--invoicecloud-border-radius-s);
+	--invoicecloud-card-box-shadow: var(--invoicecloud-elevation-2);
+	--invoicecloud-card-margin-bottom: var(--invoicecloud-spacing-s);
+	--invoicecloud-card-max-width: var(--invoicecloud-input-desktop-width);
+	--invoicecloud-card-outline: 1px solid var(--invoicecloud-utility-neutral-20);
+	--invoicecloud-card-outline-hover: 1px solid var(--invoicecloud-utility-blue-50);
+	--invoicecloud-card-outline-active: 2px solid var(--invoicecloud-utility-blue-50);
+	--invoicecloud-card-outline-focus: 2px solid var(--invoicecloud-utility-blue-50);
+	--invoicecloud-card-outline-offset-focus: var(--invoicecloud-focus-outline-offset-s);
+	--invoicecloud-card-background-color-disabled: var(--invoicecloud-utility-neutral-05);
+	--invoicecloud-card-color-disabled: var(--invoicecloud-utility-neutral-80);
+	--invoicecloud-card-heading-color-disabled: var(--invoicecloud-utility-neutral-70);
+	--invoicecloud-card-button-color-disabled: var(--invoicecloud-utility-neutral-60);
+	--invoicecloud-card-button-background-color: transparent;
+	--invoicecloud-card-button-border: none;
+	--invoicecloud-card-button-padding: var(--invoicecloud-spacing-s) var(--invoicecloud-spacing-s) 0 var(--invoicecloud-spacing-s);
 }

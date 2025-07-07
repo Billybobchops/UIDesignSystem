@@ -24,7 +24,7 @@ const PrimaryButton: React.FC<ButtonProps> = ({
     type = 'button',
     variant = 'base',
 }) => {
-    const fillColor = disabled ? 'var(--primary-button-disabled-color)' : 'var(--primary-button-color)';
+    const fillColor = disabled ? 'var(--invoicecloud-primary-button-disabled-color)' : 'var(--invoicecloud-primary-button-color)';
 
     return (
         <button

@@ -2,12 +2,12 @@
 
 @layer base.components {
     .badge {
-        border-radius: var(--border-radius-l);
+        border-radius: var(--invoicecloud-border-radius-l);
         display: inline-block;
-        font-size: var(--badge-font-size);
-        font-weight: var(--badge-font-weight);
-        padding: var(--badge-padding);
-        margin: var(--badge-margin);
+        font-size: var(--invoicecloud-badge-font-size);
+        font-weight: var(--invoicecloud-badge-font-weight);
+        padding: var(--invoicecloud-badge-padding);
+        margin: var(--invoicecloud-badge-margin);
     }
 
     .hasMargin {
@@ -15,32 +15,32 @@
     }
 
     .success {
-        background-color: var(--status-success-background-color);
-        border: var(--status-success-border);
-        color: var(--status-success-color);
+        background-color: var(--invoicecloud-status-success-background-color);
+        border: var(--invoicecloud-status-success-border);
+        color: var(--invoicecloud-status-success-color);
     }
 
     .warning {
-        background-color: var(--status-warning-background-color);
-        border: var(--status-warning-border);
-        color: var(--status-warning-color);
+        background-color: var(--invoicecloud-status-warning-background-color);
+        border: var(--invoicecloud-status-warning-border);
+        color: var(--invoicecloud-status-warning-color);
     }
 
     .error {
-        background-color: var(--status-error-background-color);
-        border: var(--status-error-border);
-        color: var(--status-error-color);
+        background-color: var(--invoicecloud-status-error-background-color);
+        border: var(--invoicecloud-status-error-border);
+        color: var(--invoicecloud-status-error-color);
     }
 
     .neutral {
-        background-color: var(--status-neutral-background-color);
-        border: var(--status-neutral-border);
-        color: var(--status-neutral-color);
+        background-color: var(--invoicecloud-status-neutral-background-color);
+        border: var(--invoicecloud-status-neutral-border);
+        color: var(--invoicecloud-status-neutral-color);
     }
 
     .info {
-        background-color: var(--status-info-background-color);
-        border: var(--status-info-border);
-        color: var(--status-info-color);
+        background-color: var(--invoicecloud-status-info-background-color);
+        border: var(--invoicecloud-status-info-border);
+        color: var(--invoicecloud-status-info-color);
     }
 }

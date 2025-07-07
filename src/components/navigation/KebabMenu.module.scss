@@ -7,34 +7,34 @@
     }
 
     .button {
-        background: var(--kebab-button-background-color);
-        border: var(--kebab-button-border);
-        border-radius: var(--kebab-button-border-radius);
+        background: var(--invoicecloud-kebab-button-background-color);
+        border: var(--invoicecloud-kebab-button-border);
+        border-radius: var(--invoicecloud-kebab-button-border-radius);
         display: flex;
         align-items: center;
-        padding: var(--kebab-button-padding);
+        padding: var(--invoicecloud-kebab-button-padding);
 
         &:hover {
-            background-color: var(--kebab-button-background-color-hover);
+            background-color: var(--invoicecloud-kebab-button-background-color-hover);
         }
 
         &.active {
-            background-color: var(--kebab-button-active-background-color);
+            background-color: var(--invoicecloud-kebab-button-active-background-color);
         }
     }
 
     .actions {
-        background: var(--kebab-actions-background-color);
-        box-shadow: var(--kebab-actions-box-shadow);
+        background: var(--invoicecloud-kebab-actions-background-color);
+        box-shadow: var(--invoicecloud-kebab-actions-box-shadow);
         list-style: none;
         position: absolute;
         right: 0;
 
         .actionItem {
-            border-bottom: var(--kebab-action-item-border-bottom);
+            border-bottom: var(--invoicecloud-kebab-action-item-border-bottom);
 
             &:hover {
-                background-color: var(--utility-neutral-05);
+                background-color: var(--invoicecloud-utility-neutral-05);
             }
 
             &:last-child {
@@ -45,9 +45,9 @@
         .action {
             background: inherit;
             border: none;
-            font-size: var(--kebab-action-item-font-size);
-            line-height: var(--kebab-action-item-line-height);
-            padding: var(--kebab-action-item-padding);
+            font-size: var(--invoicecloud-kebab-action-item-font-size);
+            line-height: var(--invoicecloud-kebab-action-item-line-height);
+            padding: var(--invoicecloud-kebab-action-item-padding);
             width: 100%;
             width: max-content;
         }

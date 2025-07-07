@@ -8,30 +8,30 @@
     }
 
     .chip {
-        background-color: var(--chip-background-color);
-        border-radius: var(--chip-border-radius);
-        border: var(--chip-border);
-        color: var(--chip-color);
-        font-size: var(--chip-font-size);
-        font-weight: var(--chip-font-weight);
+        background-color: var(--invoicecloud-chip-background-color);
+        border-radius: var(--invoicecloud-chip-border-radius);
+        border: var(--invoicecloud-chip-border);
+        color: var(--invoicecloud-chip-color);
+        font-size: var(--invoicecloud-chip-font-size);
+        font-weight: var(--invoicecloud-chip-font-weight);
         grid-template-columns: repeat(2, auto);
         margin: 0;
 
         .title {
-            margin: var(--chip-title-margin);
+            margin: var(--invoicecloud-chip-title-margin);
         }
 
         .icon {
-            padding: var(--chip-icon-padding);
+            padding: var(--invoicecloud-chip-icon-padding);
         }
 
         .iconHover {
-            background-color: var(--chip-icon-background-color-hover);
-            padding: var(--chip-icon-padding-hover);
+            background-color: var(--invoicecloud-chip-icon-background-color-hover);
+            padding: var(--invoicecloud-chip-icon-padding-hover);
         }
     }
 
     .chipHover {
-        border: var(--chip-border-hover);
+        border: var(--invoicecloud-chip-border-hover);
     }
 }

@@ -70,19 +70,19 @@ const Dialog: React.FC<DialogProps> = ({
         switch (variant) {
             case 'base':
                 return {
-                    fill: 'var(--base-theme-4)',
+                    fill: 'var(--invoicecloud-base-theme-4)',
                 };
             case 'alternate':
                 return {
-                    fill: 'var(--alternate-theme-3)',
+                    fill: 'var(--invoicecloud-alternate-theme-3)',
                 };
             case 'error':
                 return {
-                    fill: 'var(--utility-red-50)',
+                    fill: 'var(--invoicecloud-utility-red-50)',
                 };
             default:
                 return {
-                    fill: 'var(--utility-neutral-60)',
+                    fill: 'var(--invoicecloud-utility-neutral-60)',
                 };
         }
     };

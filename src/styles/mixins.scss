@@ -5,96 +5,104 @@
 }
 
 @mixin buttons {
-    border: var(--primary-button-border);
-    border-radius: var(--primary-button-border-radius);
-    color: var(--primary-button-color);
-    font-size: var(--primary-button-font-size);
-    font-weight: var(--primary-button-font-weight);
-    margin: var(--primary-button-margin);
-    padding: var(--primary-button-padding);
+    border: var(--invoicecloud-primary-button-border);
+    border-radius: var(--invoicecloud-primary-button-border-radius);
+    color: var(--invoicecloud-primary-button-color);
+    font-size: var(--invoicecloud-primary-button-font-size);
+    font-weight: var(--invoicecloud-primary-button-font-weight);
+    margin: var(--invoicecloud-primary-button-margin);
+    padding: var(--invoicecloud-primary-button-padding);
 
     &.error {
-        background-color: var(--primary-button-error-background-color);
+        background-color: var(--invoicecloud-primary-button-error-background-color);
 
         &:hover {
-            background-color: var(--primary-button-error-background-color-hover);
+            background-color: var(--invoicecloud-primary-button-error-background-color-hover);
         }
     }
 
     &.alternate {
-        background-color: var(--alternate-theme-2);
+        background-color: var(--invoicecloud-alternate-theme-2);
 
         &:hover {
-            background-color: var(--alternate-theme-4);
+            background-color: var(--invoicecloud-alternate-theme-4);
         }
     }
 
     &.base {
-        background-color: var(--base-theme-4);
+        background-color: var(--invoicecloud-base-theme-4);
 
         &:hover {
-            background-color: var(--base-theme-3);
+            background-color: var(--invoicecloud-base-theme-3);
+        }
+    }
+
+	.default {
+        background-color: var(--invoicecloud-primary-button-background-color);
+
+        &:hover {
+            background-color: var(--invoicecloud-primary-button-background-color-hover);
         }
     }
 
 	// To-do: confirm these vars
     &.outline {
-        background-color: var(--utility-neutral-0);
-        border: var(--primary-button-border-outline);
-        color: var(--base-theme-4);
+        background-color: var(--invoicecloud-utility-neutral-0);
+        border: var(--invoicecloud-primary-button-border-outline);
+        color: var(--invoicecloud-base-theme-4);
 
         &:hover {
-            border: var(--primary-button-border-outline-hover);
-            color: var(--base-theme-3);
+            border: var(--invoicecloud-primary-button-border-outline-hover);
+            color: var(--invoicecloud-base-theme-3);
         }
     }
 
     &:focus-visible {
-        outline: var(--focus-outline);
-        outline-offset: var(--focus-outline-offset-s);
+        outline: var(--invoicecloud-focus-outline);
+        outline-offset: var(--invoicecloud-focus-outline-offset-s);
     }
 
     &.disabled {
-        border: var(--primary-button-disabled-border);
-        background-color: var(--primary-button-disabled-background-color);
-        color: var(--primary-button-disabled-color);
+        border: var(--invoicecloud-primary-button-disabled-border);
+        background-color: var(--invoicecloud-primary-button-disabled-background-color);
+        color: var(--invoicecloud-primary-button-disabled-color);
 		cursor: not-allowed;
 
         &:hover {
-            background-color: var(--primary-button-disabled-background-color-hover);
-            color: var(--primary-button-disabled-color-hover);
+            background-color: var(--invoicecloud-primary-button-disabled-background-color-hover);
+            color: var(--invoicecloud-primary-button-disabled-color-hover);
         }
     }
 }
 
 @mixin inputs {
     .inputContainer {
-        margin-bottom: var(--input-container-margin-bottom);
+        margin-bottom: var(--invoicecloud-input-container-margin-bottom);
     }
 
     .input {
-        border: var(--input-border);
-        border-radius: var(--input-border-radius);
-        font-size: var(--input-font-size);
-        height: var(--input-height);
-        margin: var(--input-margin);
-        padding: var(--input-padding);
-        width: var(--input-desktop-width);
+        border: var(--invoicecloud-input-border);
+        border-radius: var(--invoicecloud-input-border-radius);
+        font-size: var(--invoicecloud-input-font-size);
+        height: var(--invoicecloud-input-height);
+        margin: var(--invoicecloud-input-margin);
+        padding: var(--invoicecloud-input-padding);
+        width: var(--invoicecloud-input-desktop-width);
 
         &:focus-visible {
-            border: var(--input-border-focus);
+            border: var(--invoicecloud-input-border-focus);
         }
 
         &:hover {
-            border: var(--input-border-hover);
+            border: var(--invoicecloud-input-border-hover);
         }
 
         &:disabled {
-            background-color: var(--input-disabled-background-color);
+            background-color: var(--invoicecloud-input-disabled-background-color);
 			cursor: not-allowed;
 
             &:hover {
-                border: var(--input-disabled-border-hover);
+                border: var(--invoicecloud-input-disabled-border-hover);
             }
         }
 
@@ -102,54 +110,54 @@
     }
 
     .input[aria-invalid='true'] {
-        border-color: var(--input-invalid-border-color);
-        border-left-width: var(--input-invalid-border-left-width);
+        border-color: var(--invoicecloud-input-invalid-border-color);
+        border-left-width: var(--invoicecloud-input-invalid-border-left-width);
     }
 }
 
 @mixin checkboxes {
     appearance: none;
-    background-color: var(--input-background-color);
-    border-radius: var(--input-border-radius);
-    border: var(--checkbox-border);
+    background-color: var(--invoicecloud-input-background-color);
+    border-radius: var(--invoicecloud-input-border-radius);
+    border: var(--invoicecloud-checkbox-border);
     display: grid;
-    height: var(--checkbox-box-height);
-    margin: var(--spacing-xs);
+    height: var(--invoicecloud-checkbox-box-height);
+    margin: var(--invoicecloud-spacing-xs);
     place-content: center;
-    width: var(--checkbox-box-width);
+    width: var(--invoicecloud-checkbox-box-width);
 
     &:checked {
-        background-color: var(--checkbox-checked-background-color);
+        background-color: var(--invoicecloud-checkbox-checked-background-color);
     }
 
     &:checked::before {
-        background-color: var(--checkbox-check-color);
+        background-color: var(--invoicecloud-checkbox-check-color);
         transform: scale(1);
     }
 
     &:hover:not(:disabled),
     &:not(:disabled):checked {
-        border-color: var(--checkbox-border-hover-color);
+        border-color: var(--invoicecloud-checkbox-border-hover-color);
     }
 
     &::before {
         content: '';
-        width: var(--checkbox-width);
-        height: var(--checkbox-height);
-        clip-path: var(--checkbox-check-shape);
+        width: var(--invoicecloud-checkbox-width);
+        height: var(--invoicecloud-checkbox-height);
+        clip-path: var(--invoicecloud-checkbox-check-shape);
         transform: scale(0);
-        transform-origin: var(--checkbox-transform-origin);
-        transition: var(--checkbox-transition);
+        transform-origin: var(--invoicecloud-checkbox-transform-origin);
+        transition: var(--invoicecloud-checkbox-transition);
     }
 
     &:focus-visible {
-        border-radius: var(--checkbox-focus-border-radius);
-        outline: var(--checkbox-focus-outline);
-        transform: var(--checkbox-focus-transform);
+        border-radius: var(--invoicecloud-checkbox-focus-border-radius);
+        outline: var(--invoicecloud-checkbox-focus-outline);
+        transform: var(--invoicecloud-checkbox-focus-transform);
     }
 
     &:disabled {
-        background-color: var(--checkbox-disabled-background-color);
+        background-color: var(--invoicecloud-checkbox-disabled-background-color);
         cursor: not-allowed;
     }
 }

@@ -5,53 +5,53 @@
     .button {
         @include buttons;
 
-        border: var(--simple-button-border);
-        border-radius: var(--simple-button-border-radius);
-        color: var(--simple-button-color);
-        margin: var(--simple-button-margin);
-        padding: var(--simple-button-padding);
+        border: var(--invoicecloud-simple-button-border);
+        border-radius: var(--invoicecloud-simple-button-border-radius);
+        color: var(--invoicecloud-simple-button-color);
+        margin: var(--invoicecloud-simple-button-margin);
+        padding: var(--invoicecloud-simple-button-padding);
 
         &.error,
         &.alternate,
         &.base,
         &.disabled {
-            background: var(--simple-button-background-color);
+            background: var(--invoicecloud-simple-button-background-color);
 
             &:hover {
-                background: var(--simple-button-background-color-hover);
+                background: var(--invoicecloud-simple-button-background-color-hover);
             }
         }
 
         &.error {
-            color: var(--simple-button-error-color);
+            color: var(--invoicecloud-simple-button-error-color);
 
             &:hover {
-                color: var(--simple-button-error-color-hover);
+                color: var(--invoicecloud-simple-button-error-color-hover);
             }
         }
 
         &.alternate {
-            color: var(--alternate-theme-2);
+            color: var(--invoicecloud-alternate-theme-2);
 
             &:hover {
-                color: var(--alternate-theme-4);
+                color: var(--invoicecloud-alternate-theme-4);
             }
         }
 
         &.base {
-            color: var(--base-theme-4);
+            color: var(--invoicecloud-base-theme-4);
 
             &:hover {
-                color: var(--base-theme-3);
+                color: var(--invoicecloud-base-theme-3);
             }
         }
 
         &.disabled {
-            background: var(--simple-button-disabled-background);
-            color: var(--simple-button-disabled-color);
+            background: var(--invoicecloud-simple-button-disabled-background);
+            color: var(--invoicecloud-simple-button-disabled-color);
 
 			&:hover {
-				color: var(--simple-button-disabled-color-hover);
+				color: var(--invoicecloud-simple-button-disabled-color-hover);
 			}
         }
 

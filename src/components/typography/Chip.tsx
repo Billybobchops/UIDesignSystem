@@ -21,7 +21,7 @@ const Chip: React.FC<ChipProps> = ({ title, onRemove }) => {
         >
             <span className={classes.title}>{title}</span>
             <span aria-hidden="true" className={`${classes.icon} ${isHovered ? classes.iconHover : ''}`}>
-                <MenuCloseSmall fill={isHovered ? 'var(--chip-icon-color)' : 'var(--chip-icon-color-hover)'} />
+                <MenuCloseSmall fill={isHovered ? 'var(--invoicecloud-chip-icon-color)' : 'var(--invoicecloud-chip-icon-color-hover)'} />
             </span>
             <VisuallyHidden>{`Remove ${title} as a selection`}</VisuallyHidden>
         </button>

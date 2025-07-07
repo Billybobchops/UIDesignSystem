@@ -2,11 +2,11 @@
 
 @layer base.components {
     .inputContainer {
-        margin-bottom: var(--input-container-margin-bottom);
-        width: var(--date-picker-container-width);
+        margin-bottom: var(--invoicecloud-input-container-margin-bottom);
+        width: var(--invoicecloud-date-picker-container-width);
 
         @media (min-width: 500px) {
-            width: var(--input-desktop-width);
+            width: var(--invoicecloud-input-desktop-width);
         }
     }
 }

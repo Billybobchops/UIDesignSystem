@@ -8,11 +8,11 @@
         padding: 0; // only apply padding var to .innerButton
 
         .innerButton {
-            align-items: var(--primary-button-inner-align-items);
-            display: var(--primary-button-inner-display);
-            justify-content: var(--primary-button-inner-justify-content);
-            gap: var(--primary-button-inner-gap);
-            padding: var(--primary-button-padding);
+            align-items: var(--invoicecloud-primary-button-inner-align-items);
+            display: var(--invoicecloud-primary-button-inner-display);
+            justify-content: var(--invoicecloud-primary-button-inner-justify-content);
+            gap: var(--invoicecloud-primary-button-inner-gap);
+            padding: var(--invoicecloud-primary-button-padding);
         }
 
         @include mobile-100-w;

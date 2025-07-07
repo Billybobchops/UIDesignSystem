@@ -1,96 +1,96 @@
 :root {
 	/* Header */
-	--header-background-color: var(--nav-background-color);
-	--header-border-bottom: 1px solid var(--utility-neutral-20);
-	--header-max-width: var(--layout-max-width);
-	--header-logo-padding: var(--spacing-xs);
-	--header-logo-max-height: 50px;
-	--header-logo-mobile-max-height: 40px;
-	--header-backdrop-animation: fadeIn 0.1s ease-in-out;
-	--header-backdrop-background-color: rgba(0, 0, 0, 0.75);
+	--invoicecloud-header-background-color: var(--invoicecloud-nav-background-color);
+	--invoicecloud-header-border-bottom: 1px solid var(--invoicecloud-utility-neutral-20);
+	--invoicecloud-header-max-width: var(--invoicecloud-layout-max-width);
+	--invoicecloud-header-logo-padding: var(--invoicecloud-spacing-xs);
+	--invoicecloud-header-logo-max-height: 50px;
+	--invoicecloud-header-logo-mobile-max-height: 40px;
+	--invoicecloud-header-backdrop-animation: fadeIn 0.1s ease-in-out;
+	--invoicecloud-header-backdrop-background-color: rgba(0, 0, 0, 0.75);
 
-	--header-hamburger-toggle-padding: 0;
-	--header-hamburger-toggle-margin: 0 var(--spacing-s);
-	--header-hamburger-toggle-background-color: var(--utility-neutral-70);
-	--header-hamburger-toggle-border-radius: var(--border-radius-m);
-	--header-hamburger-transition: 0.2s ease-in-out;
+	--invoicecloud-header-hamburger-toggle-padding: 0;
+	--invoicecloud-header-hamburger-toggle-margin: 0 var(--invoicecloud-spacing-s);
+	--invoicecloud-header-hamburger-toggle-background-color: var(--invoicecloud-utility-neutral-70);
+	--invoicecloud-header-hamburger-toggle-border-radius: var(--invoicecloud-border-radius-m);
+	--invoicecloud-header-hamburger-transition: 0.2s ease-in-out;
 
     /* Primary Navigation */
-	--nav-background-color: var(--utility-neutral-0);
-	--nav-link-background-color: none;
-	--nav-link-border: var(--nav-link-background-color);
-    --nav-link-color: var(--utility-neutral-70);
-    --nav-link-font-size: 16px;
-	--nav-link-line-height: 1.4;
-    --nav-link-hover-color: var(--utility-neutral-100);
-    --nav-link-hover-weight: 2px;
-    --nav-link-font-weight: 600;
-    --nav-link-padding: var(--spacing-s);
-	--nav-link-text-decoration: none;
-    --nav-link-mobile-padding: var(--spacing-xs) var(--spacing-s);
-	--nav-link-active-border-bottom: 2px solid var(--nav-link-hover-color);
-	--nav-link-active-color: var(--nav-link-hover-color);
-	--nav-link-active-margin-bottom: -2px;
-	--nav-link-grid-gap: var(--spacing-xs);
+	--invoicecloud-nav-background-color: var(--invoicecloud-utility-neutral-0);
+	--invoicecloud-nav-link-background-color: none;
+	--invoicecloud-nav-link-border: var(--invoicecloud-nav-link-background-color);
+    --invoicecloud-nav-link-color: var(--invoicecloud-utility-neutral-70);
+    --invoicecloud-nav-link-font-size: 16px;
+	--invoicecloud-nav-link-line-height: 1.4;
+    --invoicecloud-nav-link-hover-color: var(--invoicecloud-utility-neutral-100);
+    --invoicecloud-nav-link-hover-weight: 2px;
+    --invoicecloud-nav-link-font-weight: 600;
+    --invoicecloud-nav-link-padding: var(--invoicecloud-spacing-s);
+	--invoicecloud-nav-link-text-decoration: none;
+    --invoicecloud-nav-link-mobile-padding: var(--invoicecloud-spacing-xs) var(--invoicecloud-spacing-s);
+	--invoicecloud-nav-link-active-border-bottom: 2px solid var(--invoicecloud-nav-link-hover-color);
+	--invoicecloud-nav-link-active-color: var(--invoicecloud-nav-link-hover-color);
+	--invoicecloud-nav-link-active-margin-bottom: -2px;
+	--invoicecloud-nav-link-grid-gap: var(--invoicecloud-spacing-xs);
 	
-    --submenu-background-color: var(--utility-neutral-0);
-    --submenu-elevation: var(--elevation-1);
-	--submenu-mobile-elevation: none;
-    --submenu-link-border: 1px solid var(--utility-neutral-20);
-    --submenu-link-color: var(--nav-link-color);
-    --submenu-link-hover-color: var(--utility-neutral-100);
-    --submenu-link-padding: var(--spacing-xs) var(--spacing-s) var(--spacing-xs) var(--spacing-m);
-    --submenu-link-hover-background: var(--utility-neutral-05);
-	--submenu-link-text-decoration: var(--nav-link-text-decoration);
-    --submenu-font-weight: 400;
+    --invoicecloud-submenu-background-color: var(--invoicecloud-utility-neutral-0);
+    --invoicecloud-submenu-elevation: var(--invoicecloud-elevation-1);
+	--invoicecloud-submenu-mobile-elevation: none;
+    --invoicecloud-submenu-link-border: 1px solid var(--invoicecloud-utility-neutral-20);
+    --invoicecloud-submenu-link-color: var(--invoicecloud-nav-link-color);
+    --invoicecloud-submenu-link-hover-color: var(--invoicecloud-utility-neutral-100);
+    --invoicecloud-submenu-link-padding: var(--invoicecloud-spacing-xs) var(--invoicecloud-spacing-s) var(--invoicecloud-spacing-xs) var(--invoicecloud-spacing-m);
+    --invoicecloud-submenu-link-hover-background: var(--invoicecloud-utility-neutral-05);
+	--invoicecloud-submenu-link-text-decoration: var(--invoicecloud-nav-link-text-decoration);
+    --invoicecloud-submenu-font-weight: 400;
 
 	/* Footer Navigation */
-	--footer-background-color: var(--utility-neutral-10);
-	--footer-color: var(--utility-neutral-70);
-	--footer-font-size: var(--spacing-s);
-	--footer-padding: var(--spacing-m);
-	--footer-row-gap: var(--spacing-s);
-	--footer-logo-padding-right: var(--footer-padding);
-	--footer-divider-border: 1px solid var(--utility-neutral-20);
-	--footer-link-padding: 0 var(--spacing-m);
+	--invoicecloud-footer-background-color: var(--invoicecloud-utility-neutral-10);
+	--invoicecloud-footer-color: var(--invoicecloud-utility-neutral-70);
+	--invoicecloud-footer-font-size: var(--invoicecloud-spacing-s);
+	--invoicecloud-footer-padding: var(--invoicecloud-spacing-m);
+	--invoicecloud-footer-row-gap: var(--invoicecloud-spacing-s);
+	--invoicecloud-footer-logo-padding-right: var(--invoicecloud-footer-padding);
+	--invoicecloud-footer-divider-border: 1px solid var(--invoicecloud-utility-neutral-20);
+	--invoicecloud-footer-link-padding: 0 var(--invoicecloud-spacing-m);
 
 	/* Inline Link */
-	--inline-link-color: var(--base-theme-4);
-	--inline-link-color-hover: var(--base-theme-3);
-	--inline-link-text-decoration: none;
+	--invoicecloud-inline-link-color: var(--invoicecloud-base-theme-4);
+	--invoicecloud-inline-link-color-hover: var(--invoicecloud-base-theme-3);
+	--invoicecloud-inline-link-text-decoration: none;
 
-	--inline-link-default-color: var(--utility-neutral-70);
-	--inline-link-default-color-hover: var(--utility-neutral-90);
+	--invoicecloud-inline-link-default-color: var(--invoicecloud-utility-neutral-70);
+	--invoicecloud-inline-link-default-color-hover: var(--invoicecloud-utility-neutral-90);
 
 	/* Account Links */
-	--account-link-color: var(--base-theme-4);
-	--account-link-font-size: 14px;
-	--account-link-margin: 0 var(--spacing-xs) var(--spacing-xs) 0;
-	--account-link-text-decoration: underline;
+	--invoicecloud-account-link-color: var(--invoicecloud-base-theme-4);
+	--invoicecloud-account-link-font-size: 14px;
+	--invoicecloud-account-link-margin: 0 var(--invoicecloud-spacing-xs) var(--invoicecloud-spacing-xs) 0;
+	--invoicecloud-account-link-text-decoration: underline;
 
-	--account-link-selected-background-color: var(--alternate-theme-3);
-	--account-link-selected-border-radius: var(--border-radius-l);
-	--account-link-selected-color: var(--utility-neutral-0);
-	--account-link-selected-padding: var(--spacing-xxs) var(--spacing-xs);
-	--account-link-selected-text-decoration: none;
+	--invoicecloud-account-link-selected-background-color: var(--invoicecloud-alternate-theme-3);
+	--invoicecloud-account-link-selected-border-radius: var(--invoicecloud-border-radius-l);
+	--invoicecloud-account-link-selected-color: var(--invoicecloud-utility-neutral-0);
+	--invoicecloud-account-link-selected-padding: var(--invoicecloud-spacing-xxs) var(--invoicecloud-spacing-xs);
+	--invoicecloud-account-link-selected-text-decoration: none;
 
-	--account-link-selected-hover-background-color: var(--account-link-selected-background-color);
-	--account-link-selected-hover-color: var(--account-link-selected-color);
+	--invoicecloud-account-link-selected-hover-background-color: var(--invoicecloud-account-link-selected-background-color);
+	--invoicecloud-account-link-selected-hover-color: var(--invoicecloud-account-link-selected-color);
 
 	/* Kebab Menu */
-	--kebab-button-background-color: none;
-	--kebab-button-background-color-hover: var(--base-theme-1);
-	--kebab-button-border: none;
-	--kebab-button-border-radius: var(--border-radius-s);
-	--kebab-button-padding: 6px 10px;
-	--kebab-button-active-background-color: var(--base-theme-4);
+	--invoicecloud-kebab-button-background-color: none;
+	--invoicecloud-kebab-button-background-color-hover: var(--invoicecloud-base-theme-1);
+	--invoicecloud-kebab-button-border: none;
+	--invoicecloud-kebab-button-border-radius: var(--invoicecloud-border-radius-s);
+	--invoicecloud-kebab-button-padding: 6px 10px;
+	--invoicecloud-kebab-button-active-background-color: var(--invoicecloud-base-theme-4);
 
-	--kebab-actions-background-color: var(--utility-neutral-0);
-	--kebab-actions-box-shadow: 0px 8px 16px 0px rgba(28, 28, 28, 0.16);
+	--invoicecloud-kebab-actions-background-color: var(--invoicecloud-utility-neutral-0);
+	--invoicecloud-kebab-actions-box-shadow: 0px 8px 16px 0px rgba(28, 28, 28, 0.16);
 	
-	--kebab-action-item-border-bottom: var(--submenu-link-border);
-	--kebab-action-item-background-color-hover: var(--utility-neutral-05);
-	--kebab-action-item-font-size: 16px;
-	--kebab-action-item-line-height: 1.4;
-	--kebab-action-item-padding: var(--spacing-xs) var(--spacing-s);
+	--invoicecloud-kebab-action-item-border-bottom: var(--invoicecloud-submenu-link-border);
+	--invoicecloud-kebab-action-item-background-color-hover: var(--invoicecloud-utility-neutral-05);
+	--invoicecloud-kebab-action-item-font-size: 16px;
+	--invoicecloud-kebab-action-item-line-height: 1.4;
+	--invoicecloud-kebab-action-item-padding: var(--invoicecloud-spacing-xs) var(--invoicecloud-spacing-s);
 }

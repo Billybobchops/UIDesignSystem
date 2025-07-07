@@ -33,16 +33,16 @@ const EnrollmentGridRow: React.FC<EnrollmentGridRowProps> = ({ serviceType, link
 		<>
 			<div className={classes.gridItems}>
 				<div className={classes.gridItem}>
-					{serviceType === 'AutoPay' && <AutoPay fill={'var(--base-theme-4)'} />}
-					{serviceType === 'Paperless' && <Paperless fill={'var(--base-theme-4)'} />}
-					{serviceType === 'Pay By Text' && <PayByText fill={'var(--base-theme-4)'} />}
+					{serviceType === 'AutoPay' && <AutoPay fill={'var(--invoicecloud-base-theme-4)'} />}
+					{serviceType === 'Paperless' && <Paperless fill={'var(--invoicecloud-base-theme-4)'} />}
+					{serviceType === 'Pay By Text' && <PayByText fill={'var(--invoicecloud-base-theme-4)'} />}
 					<p className={classes.serviceTitle}>{serviceType}</p>
 				</div>
 				<span className={classes.mobileBadge}>
 					<Badge content={status} hasMargin={false} variant={getBadgeVariant(status)} />
 				</span>
 			</div>
-			<ChevronRight fill={'var(--base-theme-4)'} />
+			<ChevronRight fill={'var(--invoicecloud-base-theme-4)'} />
 		</>
 	);
 	

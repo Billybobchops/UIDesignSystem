@@ -3,13 +3,13 @@
     @each $size,
         $value
             in (
-                xxs: var(--spacing-xxs),
-                xs: var(--spacing-xs),
-                s: var(--spacing-s),
-                m: var(--spacing-m),
-                l: var(--spacing-l),
-                xl: var(--spacing-xl),
-                xxl: var(--spacing-xxl)
+                xxs: var(--invoicecloud-spacing-xxs),
+                xs: var(--invoicecloud-spacing-xs),
+                s: var(--invoicecloud-spacing-s),
+                m: var(--invoicecloud-spacing-m),
+                l: var(--invoicecloud-spacing-l),
+                xl: var(--invoicecloud-spacing-xl),
+                xxl: var(--invoicecloud-spacing-xxl)
             )
     {
         .u-mb-#{$size} {

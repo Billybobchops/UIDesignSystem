@@ -2,12 +2,12 @@
 
 @layer base.components {
     .section {
-        margin-bottom: var(--accordion-margin-bottom);
+        margin-bottom: var(--invoicecloud-accordion-margin-bottom);
     }
 
     .focusedSection {
-        outline: var(--accordion-focused-outline);
-        outline-offset: var(--accordion-focused-outline-offset);
+        outline: var(--invoicecloud-accordion-focused-outline);
+        outline-offset: var(--invoicecloud-accordion-focused-outline-offset);
     }
 
     .title {
@@ -16,37 +16,37 @@
 
     .section,
     .button {
-        border-radius: var(--accordion-border-radius);
+        border-radius: var(--invoicecloud-accordion-border-radius);
     }
 
     .button {
-        background-color: var(--accordion-background-color);
-        border-left: var(--accordion-border-left);
-		border-right: var(--accordion-border-right);
-		border-top: var(--accordion-border-top);
-        border-bottom: var(--accordion-border-bottom);
-        color: var(--accordion-color);
+        background-color: var(--invoicecloud-accordion-background-color);
+        border-left: var(--invoicecloud-accordion-border-left);
+		border-right: var(--invoicecloud-accordion-border-right);
+		border-top: var(--invoicecloud-accordion-border-top);
+        border-bottom: var(--invoicecloud-accordion-border-bottom);
+        color: var(--invoicecloud-accordion-color);
         display: grid;
-        font-size: var(--accordion-font-size);
-        font-weight: var(--accordion-font-weight);
+        font-size: var(--invoicecloud-accordion-font-size);
+        font-weight: var(--invoicecloud-accordion-font-weight);
         grid-template-columns: repeat(2, auto);
-        gap: var(--accordion-gap);
+        gap: var(--invoicecloud-accordion-gap);
         justify-content: start;
-        padding: var(--accordion-padding);
+        padding: var(--invoicecloud-accordion-padding);
         text-align: left;
         width: 100%;
 
         &:hover {
-            background-color: var(--accordion-background-color-hover);
-            border-bottom: 2.5px solid var(--accordion-border-bottom-hover);
-            color: var(--accordion-color-hover);
+            background-color: var(--invoicecloud-accordion-background-color-hover);
+            border-bottom: 2.5px solid var(--invoicecloud-accordion-border-bottom-hover);
+            color: var(--invoicecloud-accordion-color-hover);
         }
     }
 
     .activeButton {
-        border-radius: var(--accordion-active-border-radius);
-        border: var(--accordion-active-border);
-        border-bottom: var(--accordion-active-border-bottom);
+        border-radius: var(--invoicecloud-accordion-active-border-radius);
+        border: var(--invoicecloud-accordion-active-border);
+        border-bottom: var(--invoicecloud-accordion-active-border-bottom);
     }
 
     .activeIcon svg {
@@ -54,9 +54,9 @@
     }
 
     .content {
-        border-radius: var(--accordion-content-border-radius);
-        border: var(--accordion-content-border);
-        padding: var(--accordion-content-padding);
+        border-radius: var(--invoicecloud-accordion-content-border-radius);
+        border: var(--invoicecloud-accordion-content-border);
+        padding: var(--invoicecloud-accordion-content-padding);
         text-align: left;
     }
 }

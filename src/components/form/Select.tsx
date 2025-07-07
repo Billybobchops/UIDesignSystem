@@ -59,7 +59,7 @@ const Select: React.FC<SelectProps> = ({
                         </option>
                     ))}
                 </select>
-                <ChevronDown fill={'var(--utility-neutral-70)'} />
+                <ChevronDown fill={'var(--invoicecloud-utility-neutral-70)'} />
             </div>
             <HelperText helperID={helperID} helperText={helperText} />
         </div>

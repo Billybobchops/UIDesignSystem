@@ -3,18 +3,18 @@
 
 @layer base.components {
     .dialog dialog {
-        border: var(--dialog-border);
-        border-radius: var(--dialog-border-radius);
-        max-height: var(--dialog-max-height);
-        max-width: var(--dialog-max-width);
-        padding: var(--spacing-l) var(--spacing-l) 0 var(--spacing-l);
-        width: var(--dialog-width);
+        border: var(--invoicecloud-dialog-border);
+        border-radius: var(--invoicecloud-dialog-border-radius);
+        max-height: var(--invoicecloud-dialog-max-height);
+        max-width: var(--invoicecloud-dialog-max-width);
+        padding: var(--invoicecloud-spacing-l) var(--invoicecloud-spacing-l) 0 var(--invoicecloud-spacing-l);
+        width: var(--invoicecloud-dialog-width);
     }
 
     .dialog dialog::backdrop {
-        background-color: var(--dialog-backdrop-background-color);
-        transition: var(--dialog-backdrop-transition);
-        opacity: var(--dialog-backdrop-opacity);
+        background-color: var(--invoicecloud-dialog-backdrop-background-color);
+        transition: var(--invoicecloud-dialog-backdrop-transition);
+        opacity: var(--invoicecloud-dialog-backdrop-opacity);
     }
 
     .dialogGrid {
@@ -23,12 +23,12 @@
     }
 
     .dialogTitle {
-        margin-bottom: var(--dialog-title-margin-bottom);
+        margin-bottom: var(--invoicecloud-dialog-title-margin-bottom);
     }
 
     .actionBar {
-        background-color: var(--dialog-action-bar-background-color);
-        border-top: var(--dialog-action-bar-border-top);
+        background-color: var(--invoicecloud-dialog-action-bar-background-color);
+        border-top: var(--invoicecloud-dialog-action-bar-border-top);
         bottom: 0;
         display: grid;
         justify-content: end;
@@ -41,7 +41,7 @@
     }
 
     .actions {
-        margin-top: var(--spacing-s);
+        margin-top: var(--invoicecloud-spacing-s);
 
         @include mobile-100-w;
 
@@ -52,7 +52,7 @@
     }
 
     .menuClose {
-        margin: var(--spacing-s);
+        margin: var(--invoicecloud-spacing-s);
         position: absolute;
         right: 0;
         top: 0;
