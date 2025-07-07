@@ -20,6 +20,7 @@ import TabsStory from './story/TabStory';
 import TableStory from './story/TableStory';
 import TypographyStory from './story/TypographyStory';
 import GridStory from './story/GridStory';
+import CardStory from './story/CardStory';
 
 export function Gallery() {
     return (
@@ -90,6 +91,10 @@ export function Gallery() {
 
             <GalleryDisplayArea title='Kebab Menu'>
                 <KebabMenuStory />
+            </GalleryDisplayArea>
+
+            <GalleryDisplayArea title='Cards'>
+                <CardStory />
             </GalleryDisplayArea>
 
             <GalleryDisplayArea title='Feature Status'>

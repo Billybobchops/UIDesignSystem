@@ -31,7 +31,7 @@
 	--dialog-max-width: var(--dialog-max-height);
 	--dialog-padding: var(--spacing-l) var(--spacing-l) 0 var(--spacing-l);
 	--dialog-width: calc(100% - 120px);
-	--dialog-backdrop-background-color: var(--utility-neutral-80);
+	--dialog-backdrop-background-color: rgba(0, 0, 0, 0.5);
 	--dialog-backdrop-transition: display 0.7s allow-discrete, overlay 0.7s allow-discrete,
             background-color 0.7s;
 	--dialog-backdrop-opaciity: 0.8;
@@ -42,4 +42,22 @@
 	/* Dividers */
 	--divider-light: 1px solid var(--utility-neutral-10);
 	--divider-dark: 1px solid var(--utility-neutral-20);
+
+	/* Cards */
+	--card-border-radius: var(--border-radius-s);
+	--card-box-shadow: var(--elevation-2);
+	--card-margin-bottom: var(--spacing-s);
+	--card-max-width: var(--input-desktop-width);
+	--card-outline: 1px solid var(--utility-neutral-20);
+	--card-outline-hover: 1px solid var(--utility-blue-50);
+	--card-outline-active: 2px solid var(--utility-blue-50);
+	--card-outline-focus: 2px solid var(--utility-blue-50);
+	--card-outline-offset-focus: var(--focus-outline-offset-s);
+	--card-background-color-disabled: var(--utility-neutral-05);
+	--card-color-disabled: var(--utility-neutral-80);
+	--card-heading-color-disabled: var(--utility-neutral-70);
+	--card-button-color-disabled: var(--utility-neutral-60);
+	--card-button-background-color: transparent;
+	--card-button-border: none;
+	--card-button-padding: var(--spacing-s) var(--spacing-s) 0 var(--spacing-s);
 }

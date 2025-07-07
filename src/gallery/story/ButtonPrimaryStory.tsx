@@ -8,7 +8,8 @@ const ButtonPrimaryStory = () => {
                 display: 'flex',
                 flexWrap: 'wrap',
                 alignContent: 'start',
-            }}>
+            }}
+		>
             <PrimaryButton
                 disabled={false}
                 icon={<SearchDefault />}

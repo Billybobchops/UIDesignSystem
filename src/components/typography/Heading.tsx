@@ -3,7 +3,7 @@ import clsx from 'clsx';
 import React from 'react';
 import classes from './Heading.module.scss';
 
-type HeadingLevel = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
+export type HeadingLevel = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
 
 interface HeadingProps {
     children: React.ReactNode;
