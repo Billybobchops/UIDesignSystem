@@ -1,4 +1,4 @@
-import Divider from '@components/Divider';
+import Divider from '@components/layout/Divider';
 import Paragraph from '@components/typography/Paragraph';
 
 const DividerStory = () => {

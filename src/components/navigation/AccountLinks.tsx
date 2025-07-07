@@ -1,4 +1,4 @@
-import Divider from '@components/Divider';
+import Divider from '@components/layout/Divider';
 import Heading from '@components/typography/Heading';
 import type { Spacing } from '@styles/spacing';
 import clsx from 'clsx';

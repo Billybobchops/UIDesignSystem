@@ -1,7 +1,6 @@
-import Dialog from '@components/Dialog';
+import Dialog from '@components/layout/Dialog';
 import SecondaryButton from '@components/button/SecondaryButton';
 import Paragraph from '@components/typography/Paragraph';
-import UnorderedList from '@components/typography/UnorderedList';
 
 const DialogStory = () => {
     return (
@@ -9,8 +8,9 @@ const DialogStory = () => {
             <Dialog
                 title="Account has a loan"
                 TriggerElement={props => (
-                    <SecondaryButton {...props} disabled={false} text="Info Dialog" variant="blue" />
+                    <SecondaryButton {...props} disabled={false} text="Info Dialog" variant="alternate" />
                 )}
+				variant="alternate"
             >
                 <Paragraph>
                     This account has an active loan. This account is not eligible to enroll in AutoPay and will be
@@ -26,7 +26,7 @@ const DialogStory = () => {
                     console.log('Action taken...');
                 }}
                 TriggerElement={props => (
-                    <SecondaryButton {...props} disabled={false} text="Action Dialog" variant="blue" />
+                    <SecondaryButton {...props} disabled={false} text="Action Dialog" variant="base" />
                 )}
             >
                 <Paragraph>
@@ -46,7 +46,7 @@ const DialogStory = () => {
                     console.log('Action taken...');
                 }}
                 TriggerElement={props => (
-                    <SecondaryButton {...props} disabled={false} text="Action Dialog Scrollable" variant="blue" />
+                    <SecondaryButton {...props} disabled={false} text="Action Dialog Scrollable" variant="base" />
                 )}
             >
                 <Paragraph>

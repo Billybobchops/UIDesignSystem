@@ -8,7 +8,7 @@ interface SimpleButtonProps {
     spacing?: Spacing | Spacing[];
     text: string;
     type?: 'button' | 'submit';
-    variant?: 'blue' | 'green' | 'red';
+    variant?: 'base' | 'alternate' | 'error';
 }
 
 const SimpleButton: React.FC<SimpleButtonProps> = ({
@@ -17,7 +17,7 @@ const SimpleButton: React.FC<SimpleButtonProps> = ({
     spacing,
     text,
     type = 'button',
-    variant = 'blue',
+    variant = 'base',
 }) => {
     return (
         <button

@@ -1,0 +1,37 @@
+@import '@styles/layer-order.scss';
+
+@layer base.components {
+    .chip,
+    .chip .icon {
+        align-items: center;
+        display: grid;
+    }
+
+    .chip {
+        background-color: var(--chip-background-color);
+        border-radius: var(--chip-border-radius);
+        border: var(--chip-border);
+        color: var(--chip-color);
+        font-size: var(--chip-font-size);
+        font-weight: var(--chip-font-weight);
+        grid-template-columns: repeat(2, auto);
+        margin: 0;
+
+        .title {
+            margin: var(--chip-title-margin);
+        }
+
+        .icon {
+            padding: var(--chip-icon-padding);
+        }
+
+        .iconHover {
+            background-color: var(--chip-icon-background-color-hover);
+            padding: var(--chip-icon-padding-hover);
+        }
+    }
+
+    .chipHover {
+        border: var(--chip-border-hover);
+    }
+}

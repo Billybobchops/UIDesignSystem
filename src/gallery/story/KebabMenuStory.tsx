@@ -1,4 +1,4 @@
-import KebabMenu from '@components/KebabMenu';
+import KebabMenu from '@components/navigation/KebabMenu';
 
 const kebabActions = [
     { label: 'View Invoice', onClick: () => console.log('Action 1 clicked') },

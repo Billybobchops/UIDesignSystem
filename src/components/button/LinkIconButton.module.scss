@@ -5,86 +5,80 @@
     .button {
         @include buttons;
 
-        align-items: center;
-        color: var(--theme-a-4);
-        display: inline-flex;
-        gap: var(--spacing-xs);
-        justify-content: center;
-        line-height: 1;
-        padding: 4px;
-        vertical-align: middle;
+        align-items: var(--link-icon-button-align-items);
+        color: var(--link-icon-button-color);
+        display: var(--link-icon-button-display);
+        gap: var(--link-icon-button-gap);
+        justify-content: var(--link-icon-button-justify-content);
+        line-height: var(--link-icon-button-line-height);
+        padding: var(--link-icon-button-padding);
+        vertical-align: var(--link-icon-button-vertical-align);
 
-        .iconStart,
-        .iconEnd {
-            align-items: center;
-            display: flex;
-        }
-
-        &.red,
-        &.green,
-        &.blue,
+        &.error,
+        &.alternate,
+        &.base,
         &.disabled {
-            background: none;
+            background: var(--link-icon-button-background-color);
 
             &:hover {
-                background: none;
+                background: var(--link-icon-button-background-color-hover);
             }
         }
 
-        &.red {
-            color: var(--utility-red-50);
+        &.error {
+            color: var(--link-icon-button-error-color);
 
             &:hover {
-                color: var(--utility-red-70);
+                color: var(--link-icon-button-error-color-hover);
             }
         }
 
-        &.green {
-            color: var(--utility-green-70);
+        &.alternate {
+            color: var(--alternate-theme-3);
 
             &:hover {
-                color: var(--utility-green-80);
+                color: var(--alternate-theme-4);
             }
         }
 
-        &.blue {
-            color: var(--theme-a-4);
+        &.base {
+            color: var(--base-theme-4);
 
             &:hover {
-                color: var(--theme-a-3);
+                color: var(--base-theme-3);
             }
         }
 
         &.disabled {
-            color: var(--utility-neutral-60);
+            color: var(--link-icon-button-disabled-color);
 
             &:hover {
-                color: var(--utility-neutral-60);
+                color: var(--link-icon-button-disabled-color-hover);
             }
         }
 
         &.iconOnly {
-            padding: var(--spacing-xxs);
+            padding: var(--link-icon-only-button-padding);
 
             &:hover {
-                &.red {
-                    background: var(--utility-red-50);
+                &.error {
+                    background: var(--link-icon-only-button-error-background-color-hover);
                 }
 
-                &.green {
-                    background: var(--utility-green-60);
+                &.alternate {
+                    background: var(--alternate-theme-2);
                 }
 
-                &.blue {
-                    background: var(--theme-a-3);
+                &.base {
+                    background: var(--base-theme-3);
                 }
             }
 
             &.disabled {
-                background: none;
+                background: var(--link-icon-only-button-disabled-background-color);
 
                 &:hover {
-                    background: none;
+                    background: var(--link-icon-only-button-disabled-background-color-hover);
                 }
             }
 

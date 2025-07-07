@@ -11,7 +11,7 @@ interface ButtonProps {
     spacing?: Spacing | Spacing[];
     text: string;
     type?: 'button' | 'submit';
-    variant?: 'blue' | 'green' | 'red';
+    variant?: 'base' | 'alternate' | 'default' | 'error'; // to-do: export common button types?
 }
 
 const PrimaryButton: React.FC<ButtonProps> = ({
@@ -22,9 +22,9 @@ const PrimaryButton: React.FC<ButtonProps> = ({
     spacing,
     text,
     type = 'button',
-    variant = 'blue',
+    variant = 'base',
 }) => {
-    const fillColor = disabled ? 'var(--utility-neutral-60)' : 'var(--utility-neutral-0)';
+    const fillColor = disabled ? 'var(--primary-button-disabled-color)' : 'var(--primary-button-color)';
 
     return (
         <button

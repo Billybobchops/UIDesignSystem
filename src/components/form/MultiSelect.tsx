@@ -1,4 +1,4 @@
-import Chip from '@components/Chip';
+import Chip from '@components/typography/Chip';
 import { ChevronDown } from '@components/Icon';
 import SimpleButton from '@components/button/SimpleButton';
 import Checkbox from '@components/form/Checkbox';
@@ -20,7 +20,6 @@ interface MultiSelectProps {
     disabled?: boolean;
     helperText?: string;
     label: string;
-    name: string;
     onChange: (selectedValues: string[]) => void;
     options: MultiSelectOption[];
     placeholder?: string;
@@ -33,7 +32,6 @@ const MultiSelect: React.FC<MultiSelectProps> = ({
     disabled = false,
     helperText = '',
     label,
-    // name,
     onChange,
     options,
     placeholder = 'Select options...',
@@ -123,6 +121,7 @@ const MultiSelect: React.FC<MultiSelectProps> = ({
                         className={classes.multiSelectSearch}
                         onBlur={() => setIsInputActive(searchTerm !== '')}
                         onChange={handleSearchChange}
+						id={selectID}
                         placeholder={buttonText}
                         ref={searchRef}
                         type="text"

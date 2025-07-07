@@ -29,15 +29,14 @@
         .multiSelectButton {
             appearance: none;
             background: none;
-            border-radius: var(--input-border-radius);
-            border: var(--input-border);
+			border: none;
             font-size: var(--input-font-size);
             margin: var(--input-margin);
 
             input[aria-label='Search options'] {
+				border-radius: var(--input-border-radius);
                 font-size: var(--input-font-size);
                 height: var(--input-height);
-                padding-right: var(--spacing-l);
                 padding: var(--input-padding);
                 text-align: left;
                 width: var(--input-desktop-width);
@@ -57,8 +56,8 @@
         }
 
         .multiSelectDropdown {
-            background: #fff;
-            border: 1px solid #ccc;
+            background: var(--multiselect-dropdown-background-color);
+            border: var(--input-border);
             left: 0;
             position: absolute;
             top: 100%;
@@ -67,7 +66,7 @@
         }
 
         .multiSelectSearch {
-            border: 1px solid #ccc;
+			border: var(--input-border);
             padding: var(--spacing-xs);
             width: calc(100% - 16px);
         }
@@ -76,7 +75,7 @@
             list-style: none;
             padding: 0;
             margin: 0;
-            max-height: 200px;
+            max-height: var(--multiselect-dropdown-max-height);
             overflow-y: auto;
         }
 
@@ -86,21 +85,21 @@
                 align-items: center;
 
                 input {
-                    margin: var(--spacing-xs);
-                    margin: 12px;
+                    margin: var(--multiselect-checkbox-margin);
                 }
             }
 
             &:hover {
-                background-color: var(--theme-a-1);
-                border-bottom: 1px solid var(--theme-a-3);
+                background-color: var(--multiselect-item-background-color-hover);
+                border-bottom: var(--multiselect-item-border-bottom-hover)
             }
         }
 
-        .hoverActive {
-            background-color: var(--theme-a-1);
-            border-bottom: 1px solid var(--theme-a-3);
-        }
+		// to-do: can we delete this and its corresponding .tsx 
+        // .hoverActive {
+        //     background-color: var(--base-theme-1);
+        //     border-bottom: 1px solid var(--base-theme-3);
+        // }
 
         .selectAll {
             border-bottom: 1px solid var(--utility-neutral-20);

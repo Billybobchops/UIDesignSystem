@@ -3,20 +3,19 @@
 
 @layer base.components {
     .fieldset {
-        border-radius: var(--border-radius-s);
-        border: 2px solid var(--utility-neutral-20);
+        border-radius: var(--input-border-radius);
+        border: var(--fieldset-border);
         margin-bottom: var(--input-container-margin-bottom);
-        padding: var(--spacing-xs) var(--spacing-s) var(--spacing-s)
-            var(--spacing-s);
+        padding: var(--fieldset-padding);
         width: var(--input-desktop-width);
 
         @include mobile-100-w;
     }
 
     .legend {
-        font-size: var(--label-font-size);
-        font-weight: var(--label-font-weight);
-        margin-left: var(--spacing-s);
-        padding: 0 12px;
+        font-size: var(--legend-font-size);
+        font-weight: var(--legend-font-weight);
+        margin-left: var(--legend-margin-left);
+        padding: var(--legend-padding);
     }
 }

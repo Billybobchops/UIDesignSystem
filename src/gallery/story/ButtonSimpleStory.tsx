@@ -7,29 +7,29 @@ const ButtonSimpleStory = () => {
                 clickHandler={() => {
                     console.log('test');
                 }}
-                text="cancel"
+                text='cancel'
             />
             <SimpleButton
                 clickHandler={() => {
                     console.log('test');
                 }}
-                text="cancel"
-                variant="green"
+                text='cancel'
+                variant='alternate'
             />
             <SimpleButton
                 clickHandler={() => {
                     console.log('test');
                 }}
-                text="cancel"
-                variant="red"
+                text='cancel'
+                variant='error'
             />
             <SimpleButton
                 clickHandler={() => {
                     console.log('test');
                 }}
                 disabled={true}
-                text="cancel"
-                variant="red"
+                text='cancel'
+                variant='error'
             />
         </>
     );

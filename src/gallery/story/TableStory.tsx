@@ -1,4 +1,4 @@
-import MuiTable from '@components/table/MuiTable';
+import MuiDynamicTable from '@components/table/dynamic/MuiDynamicTable';
 
 const dummyRowData = [
     {
@@ -311,9 +311,9 @@ const dummyRowData2 = [
 const TableStory = () => {
     return (
         <>
-            <MuiTable title="Example Ai Report Generator with nested rows" data={dummyRowData} />
-            <MuiTable title="Selectable Rows" hasCheckboxes={true} data={dummyRowData2} />
-            <MuiTable title="Basic non-nested table" data={dummyRowData2} />
+            <MuiDynamicTable title="Example Ai Report Generator with nested rows" data={dummyRowData} />
+            <MuiDynamicTable title="Selectable Rows" hasCheckboxes={true} data={dummyRowData2} />
+            <MuiDynamicTable title="Basic non-nested table" data={dummyRowData2} />
         </>
     );
 };

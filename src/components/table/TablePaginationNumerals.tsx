@@ -26,8 +26,6 @@ const TablePaginationNumerals: React.FC<TablePaginationNumeralsProps> = ({
             shape="rounded"
             showFirstButton
             showLastButton
-            // hidePrevButton
-            // hideNextButton
             renderItem={item => (
                 <PaginationItem
                     slots={{ previous: PreviousPage, next: NextPage, first: FirstPage, last: LastPage }}
@@ -42,18 +40,18 @@ const TablePaginationNumerals: React.FC<TablePaginationNumeralsProps> = ({
                     flexWrap: 'nowrap',
                 },
                 '& .MuiButtonBase-root': {
-                    color: 'var(--theme-a-4)',
-                    borderRadius: 'var(--border-radius-s)',
-                    fontWeight: 700,
-                    fontSize: '16px',
+                    color: 'var(--table-pagination-numeral-color)',
+                    borderRadius: 'var(--table-pagination-numeral-border-radius)',
+                    fontWeight: 'var(--table-pagination-numeral-font-weight)',
+                    fontSize: 'var(--table-pagination-numeral-font-size)',
 
                     '&.Mui-selected': {
-                        backgroundColor: 'var(--theme-a-4)',
-                        borderRadius: 'var(--border-radius-s)',
-                        color: 'var(--utility-neutral-0)',
+                        backgroundColor: 'var(--table-pagination-numeral-selected-background-color)',
+                        borderRadius: 'var(--table-pagination-numeral-border-radius)',
+                        color: 'var(--table-pagination-numeral-selected-color)',
 
                         '&:hover': {
-                            backgroundColor: 'var(--theme-a-4)',
+                            backgroundColor: 'var(--table-pagination-numeral-selected-background-color)',
                         },
                     },
                 },

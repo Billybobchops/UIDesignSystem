@@ -1,0 +1,21 @@
+@import '@styles/layer-order.scss';
+
+@layer base.components {
+    .link {
+        color: var(--inline-link-color);
+        text-decoration: underline;
+
+        &:hover {
+            color: var(--inline-link-color-hover);
+            text-decoration: var(--inline-link-text-decoration);
+        }
+    }
+
+    .default {
+        color: var(--inline-link-default-color);
+
+        &:hover {
+            color: var(--inline-link-default-color-hover);
+        }
+    }
+}

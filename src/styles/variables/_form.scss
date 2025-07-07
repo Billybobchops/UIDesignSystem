@@ -1,0 +1,120 @@
+:root {
+	/* Base styles */
+	--input-background-color: var(--utility-neutral-0);
+    --input-border-radius: var(--border-radius-s);
+    --input-border: 1px solid var(--utility-neutral-50);
+    --input-border-focus: 2px solid var(--base-theme-3);
+    --input-border-hover: 1px solid var(--base-theme-3);
+    --input-font-size: 1rem;
+    --input-container-margin-bottom: var(--input-font-size);
+    --input-desktop-width: 500px;
+    --input-margin: var(--spacing-xxs) var(--spacing-xxs) var(--spacing-xxs) 0;
+    --input-padding: var(--spacing-xs) var(--spacing-s);
+    --input-height: var(--spacing-xl);
+
+    --input-invalid-border-color: var(--utility-red-50);
+    --input-invalid-border-left-width: 3px;
+
+	--input-disabled-background-color: var(--utility-neutral-05);
+	--input-disabled-border-hover: var(--input-border);
+
+    --input-required-color: var(--utility-red-50);
+	
+	/* Labels */
+    --label-font-size: var(--input-font-size);
+    --label-font-weight: 700;
+
+	/* Checkboxes */
+	--checkbox-border: 2px solid var(--utility-neutral-50);
+	--checkbox-check-color: var(--utility-neutral-0);
+	--checkbox-check-shape: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+	--checkbox-checked-background-color: var(--base-theme-3);
+	--checkbox-box-height: 20px;
+	--checkbox-box-width: 20px;
+	--checkbox-height: 0.65em;
+	--checkbox-width: var(--checkbox-height);
+	--checkbox-border-hover-color: var(--base-theme-3);
+	--checkbox-transition: 120ms transform ease-in-out;
+	--checkbox-transform-origin: bottom left;
+
+	--checkbox-focus-border-radius: 2px;
+	--checkbox-focus-outline: 2px solid var(--base-theme-3);
+	--checkbox-focus-transform: scale(1.05);
+
+	--checkbox-disabled-background-color: var(--utility-neutral-50);
+
+	/* Select All Checkbox */
+	--partial-check-background-color: var(--base-theme-3);
+	--partial-check-border-color: var(--partial-check-background-color);
+	--partial-check-symbol-color: var(--utility-neutral-0);
+
+	/* Radio Group */
+	--radio-height: var(--checkbox-box-height);
+	--radio-width: var(--radio-height);
+	--radio-margin: 6px;
+	--radio-padding: 0;
+	--radio-border: 2px solid var(--utility-neutral-50);
+	--radio-border-radius: 50%;
+	--radio-background-color: transparent;
+	--radio-transition: outline 0.1s;
+
+	--radio-selected-border-color: var(--base-theme-3);
+	--radio-selected-background-color: var(----radio-selected-border-color);
+	--radio-selected-padding: 2px;
+	--radio-selected-shape: radial-gradient(
+		circle,
+		var(--radio-selected-border-color) 0%,
+		var(--radio-selected-border-color) 50%,
+		transparent 60%,
+		transparent 100%
+	);
+
+	--radio-disabled-background-color: var(--utility-neutral-50);
+	--radio-selected-disabled-shape: radial-gradient(
+		circle,
+		var(--utility-neutral-50) 0%,
+		var(--utility-neutral-50) 50%,
+		transparent 50%,
+		transparent 100%
+	);
+
+	--radio-focus-outline: 2px solid var(--base-theme-3);
+	--radio-focus-border: 2px solid var(--utility-neutral-50);
+	--radio-focus-transform: scale(1.05);
+
+	--radio-hover-border: 2px solid var(--base-theme-3);
+	--radio-hover-transform: scale(1.05);
+
+	/* Date Picker */
+	--date-picker-margin: 6px 6px 6px 0;
+	--date-picker-padding: var(--spacing-xs) 0 var(--spacing-xs) var(--spacing-s);
+	--date-picker-width: 100%;
+	--date-picker-border-hover: 1px solid var(--base-theme-3);
+	--date-picker-focus-border: 2px solid var(--base-theme-3);
+	--date-picker-container-width: var(--date-picker-width);
+
+	/* Fieldset */
+	--fieldset-border: 2px solid var(--utility-neutral-20);
+	--fieldset-padding: var(--spacing-xs) var(--spacing-s) var(--spacing-s) var(--spacing-s);
+
+	/* Legend */
+	--legend-font-size: var(--label-font-size);
+	--legend-font-weight: var(--label-font-weight);
+	--legend-margin-left: var(--spacing-s);
+	--legend-padding: 0 12px;
+
+	/* Helper Text */
+	--helper-text-font-size: 12px;
+	--helper-text-error-color: var(--status-error-color);
+
+	/* MultiSelect */
+	--multiselect-dropdown-background-color: var(--input-background-color);
+	--multiselect-dropdown-max-height: 200px;
+	--multiselect-checkbox-margin: 12px;
+	--multiselect-item-background-color-hover: var(--base-theme-1);
+	--multiselect-item-border-bottom-hover: 1px solid var(--base-theme-3)
+
+	/* Textarea */
+	--text-area-initial-height: 120px;
+}
+

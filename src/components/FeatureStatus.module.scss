@@ -12,13 +12,13 @@
     .gridRow {
         align-items: center;
         border-bottom: 1px solid var(--utility-neutral-20);
-        color: var(--theme-a-4);
+        color: var(--base-theme-4);
         display: grid;
         grid-template-columns: auto min-content;
         padding: 16px;
 
         &:hover {
-            background-color: var(--theme-a-1);
+            background-color: var(--base-theme-1);
         }
 
         @media (max-width: 500px) {
@@ -45,7 +45,7 @@
     }
 
     .enrolled {
-        color: var(--utility-green-70);
+        color: var(--alternate-theme-3);
     }
 
     .serviceTitle {

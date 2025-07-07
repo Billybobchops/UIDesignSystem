@@ -3,24 +3,24 @@
 @layer base.components {
     .container {
         align-items: center;
-        background-color: var(--utility-neutral-10);
-        color: var(--utility-neutral-70);
+        background-color: var(--footer-background-color);
+        color: var(--footer-color);
         display: grid;
-        font-size: var(--spacing-s);
+        font-size: var(--footer-font-size);
         grid-template-columns: repeat(auto-fill, minmax(0, auto));
-        padding: var(--spacing-m);
-        row-gap: var(--spacing-s);
+        padding: var(--footer-padding);
+        row-gap: var(--footer-row-gap);
 
         .logo {
-            padding-right: var(--spacing-m);
+            padding-right: var(--footer-logo-padding-right);
         }
 
         > :not(.logo) {
-            border-left: 1px solid var(--utility-neutral-20);
+            border-left: var(--footer-divider-border);
         }
 
         > :not(.logo):not(.flex) {
-            padding: 0 var(--spacing-m);
+            padding: var(--footer-link-padding);
         }
 
         @media (max-width: 800px) {
@@ -43,10 +43,10 @@
     .flex {
         align-items: center;
         display: flex;
-        padding-left: var(--spacing-m);
+        padding-left: var(--footer-padding);
 
         img {
-            padding-right: var(--spacing-s);
+            padding-right: var(--footer-row-gap);
         }
 
         @media (max-width: 800px) {

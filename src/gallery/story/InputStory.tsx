@@ -41,10 +41,17 @@ const InputStory = () => {
             text: 'Inception',
             id: 'inception',
             checked: false,
+			disabled: true,
         },
     ];
 
-    const radioGroupOptions = [{ id: 'Bland' }, { id: 'Medium' }, { id: 'Hot' }, { id: 'Absolute Destruction' }];
+    const radioGroupOptions = [
+        { id: 'Bland' },
+        { id: 'Medium' },
+        { id: 'Hot' },
+        { id: 'Absolute Destruction' },
+        { id: 'Nuclear', disabled: true },
+    ];
 
     const [selectedValues, setSelectValues] = useState<string[]>(['Real Estate', 'Utility', 'Electric']);
 
@@ -126,6 +133,12 @@ const InputStory = () => {
                     name="phoneNumber"
                     required={true}
                 />
+				<Textarea
+                    helperText="The quick brown fox jumps over the lazy dog."
+                    label="This is a textarea"
+                    name="textareaExample"
+                    required={false}
+                />
                 <DatePickerInput
                     label="Start date of first payment"
                     helperText="Please select a date for your first payment."
@@ -142,23 +155,16 @@ const InputStory = () => {
                     required={true}
                     helperText="Select your account from the options."
                 />
-                <Textarea
-                    helperText="The quick brown fox jumps over the lazy dog."
-                    label="This is a textarea"
-                    name="textareaExample"
-                    required={false}
-                />
-                <Checkboxes legend="What are your favorite Nolan movies?" options={checkboxOptions} />
-                <RadioGroup legend="What's your level of spice?" options={radioGroupOptions} />
-                <MultiSelect
+				<MultiSelect
                     helperText="Begin typing to search for invoice types"
                     onChange={setSelectValues}
                     required={true}
                     selectedValues={selectedValues}
                     label="Multi-select Invoice Type(s)"
-                    name="selectInvoiceType"
                     options={multiSelectOptions}
                 />
+                <Checkboxes legend="What are your favorite Nolan movies?" options={checkboxOptions} />
+                <RadioGroup legend="What's your level of spice?" options={radioGroupOptions} />
                 <PrimaryButton clickHandler={onSubmit} disabled={false} icon={<ChevronRight />} text="Complete Form" />
             </Form>
         </>

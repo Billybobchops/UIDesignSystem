@@ -5,53 +5,57 @@
     .button {
         @include buttons;
 
-        background: none;
-        border: none;
-        border-radius: var(--border-radius-s);
-        color: var(--utility-neutral-100);
-        margin: 12px 20px;
-        padding: 0;
+        border: var(--simple-button-border);
+        border-radius: var(--simple-button-border-radius);
+        color: var(--simple-button-color);
+        margin: var(--simple-button-margin);
+        padding: var(--simple-button-padding);
 
-        &.red,
-        &.green,
-        &.blue,
+        &.error,
+        &.alternate,
+        &.base,
         &.disabled {
-            background: none;
+            background: var(--simple-button-background-color);
 
             &:hover {
-                background: none;
+                background: var(--simple-button-background-color-hover);
             }
         }
 
-        &.red {
-            color: var(--utility-red-50);
+        &.error {
+            color: var(--simple-button-error-color);
 
             &:hover {
-                color: var(--utility-red-70);
+                color: var(--simple-button-error-color-hover);
             }
         }
 
-        &.green {
-            color: var(--utility-green-60);
+        &.alternate {
+            color: var(--alternate-theme-2);
 
             &:hover {
-                color: var(--utility-green-80);
+                color: var(--alternate-theme-4);
             }
         }
 
-        &.blue {
-            color: var(--theme-a-4);
+        &.base {
+            color: var(--base-theme-4);
 
             &:hover {
-                color: var(--theme-a-3);
+                color: var(--base-theme-3);
             }
         }
 
         &.disabled {
-            background: none;
-            color: var(--utility-neutral-60);
+            background: var(--simple-button-disabled-background);
+            color: var(--simple-button-disabled-color);
+
+			&:hover {
+				color: var(--simple-button-disabled-color-hover);
+			}
         }
 
+		// to-do: the new <Grid> component may solve this better
         @media (max-width: 500px) {
             margin: 0 12px 12px 12px;
         }

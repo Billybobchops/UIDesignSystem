@@ -1,0 +1,21 @@
+:root {
+	--table-background-color: var(--utility-neutral-0);
+	--table-background-color-odd: var(--utility-neutral-05);
+	--table-margin-bottom: var(--spacing-xxl);
+	--table-min-width: 700px;
+	--table-width: 100%;
+	--table-row-padding: 12px var(--spacing-xs);
+	--table-active-row-border-color: var(--base-theme-4);
+
+	--table-pagination-select-border: 1px solid var(--utility-neutral-50);
+	--table-pagination-select-border-radius: var(--border-radius-s);
+	--table-pagination-numeral-color: var(--base-theme-4);
+	--table-pagination-numeral-border-radius: var(--border-radius-s);
+	--table-pagination-numeral-font-weight: 700;
+	--table-pagination-numeral-font-size: 16px;
+	--table-pagination-numeral-selected-background-color: var(--table-pagination-numeral-color);
+	--table-pagination-numeral-selected-color: var(--utility-neutral-0);
+
+	--table-dynamic-active-row-action-background-color: var(--utility-blue-10);
+	--table-chevron-color: var(--base-theme-3);
+}

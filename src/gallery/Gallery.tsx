@@ -80,11 +80,11 @@ export function Gallery() {
                 <AlertStory />
             </GalleryDisplayArea>
 
-            <GalleryDisplayArea title='Inputs *Need to add validation to all inputs after the phone input, etc.*'>
+            <GalleryDisplayArea title='Inputs *To-Do: add validation to all inputs after the phone input, etc.*'>
                 <InputStory />
             </GalleryDisplayArea>
 
-            <GalleryDisplayArea title='Dynamic Table (Our most complex component) *Work In Progress now*'>
+            <GalleryDisplayArea title='Dynamic Table *Work In Progress*'>
                 <TableStory />
             </GalleryDisplayArea>
 
@@ -100,17 +100,13 @@ export function Gallery() {
                 <DividerStory />
             </GalleryDisplayArea>
 
-            <GalleryDisplayArea title='Tabs *Need to update to match latest design updates*'>
+            <GalleryDisplayArea title='Tabs *To-Do: update to match latest design updates*'>
                 <TabsStory />
             </GalleryDisplayArea>
 
             <GalleryDisplayArea title='Grid'>
 				<GridStory />
 			</GalleryDisplayArea>
-
-            <GalleryDisplayArea title='Charts: COMING SOON'>
-                {' '}
-            </GalleryDisplayArea>
 
             <GalleryDisplayArea title='Toast: COMING SOON'>
                 {' '}

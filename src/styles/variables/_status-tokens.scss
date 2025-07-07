@@ -1,0 +1,26 @@
+:root {
+    /* Success */
+    --status-success-color: var(--utility-green-80);
+    --status-success-background-color: var(--utility-green-10);
+    --status-success-border: 1px solid var(--utility-green-20);
+
+    /* Warning */
+    --status-warning-color: var(--utility-yellow-90);
+    --status-warning-background-color: var(--utility-yellow-10);
+    --status-warning-border: 1px solid var(--utility-yellow-30);
+
+    /* Error */
+    --status-error-color: var(--utility-red-70);
+    --status-error-background-color: var(--utility-red-10);
+    --status-error-border: 1px solid var(--utility-red-20);
+
+    /* Info */
+    --status-info-color: var(--utility-blue-70);
+    --status-info-background-color: var(--utility-blue-10);
+    --status-info-border: 1px solid var(--utility-blue-30);
+
+    /* Neutral */
+    --status-neutral-color: var(--utility-neutral-70);
+    --status-neutral-background-color: var(--utility-neutral-05);
+    --status-neutral-border: 1px solid var(--utility-neutral-20);
+}

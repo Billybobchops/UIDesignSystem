@@ -9,23 +9,23 @@ interface AlertProps {
     children?: React.ReactNode;
     isDismissable: boolean;
     spacing?: Spacing | Spacing[];
-    variant: 'default' | 'warning' | 'error' | 'success';
+    variant: 'info' | 'warning' | 'error' | 'success';
 }
 
 const Alert: React.FC<AlertProps> = ({ children, isDismissable, spacing, variant }) => {
     const [isActive, setIsActive] = useState(true);
     const getFillColor = (variant: string) => {
         switch (variant) {
-            case 'default':
-                return 'var(--theme-a-4)';
+            case 'info':
+                return 'var(--status-info-color)';
             case 'warning':
-                return 'var(--utility-yellow-80)';
+                return 'var(--status-warning-color)';
             case 'error':
-                return 'var(--utility-red-60)';
+                return 'var(--status-error-color)';
             case 'success':
-                return 'var(--utility-green-80)';
+                return 'var(--status-success-color)';
             default:
-                return 'var(--theme-a-4)';
+                return 'var(--status-neutral-color)';
         }
     };
 

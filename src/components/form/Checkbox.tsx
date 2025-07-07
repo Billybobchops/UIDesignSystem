@@ -10,7 +10,13 @@ interface CheckboxProps {
     spacing?: Spacing | Spacing[];
 }
 
-const Checkbox: React.FC<CheckboxProps> = ({ checked, disabled = false, id, onChange, spacing }) => {
+const Checkbox: React.FC<CheckboxProps> = ({
+    checked,
+    disabled = false,
+    id,
+    onChange,
+    spacing,
+}) => {
     return (
         <input
             aria-checked={checked}
@@ -20,7 +26,7 @@ const Checkbox: React.FC<CheckboxProps> = ({ checked, disabled = false, id, onCh
             id={id}
             name={id}
             onChange={onChange}
-            type="checkbox"
+            type='checkbox'
             value={id}
         />
     );

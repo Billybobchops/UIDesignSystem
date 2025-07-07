@@ -5,14 +5,13 @@
     .button {
         @include buttons;
 
-        align-items: center;
-        display: inline-flex;
-        justify-content: center;
-        gap: var(--spacing-xs);
-
-        border-radius: var(--border-radius-l);
-        border: 2px solid var(--utility-neutral-10);
-        padding: var(--button-padding-large);
+        align-items: var(--cta-align-items);
+        display: var(--cta-button-display);
+        justify-content: var(--cta-button-justify-content);
+        gap: var(--cta-button-gap);
+        border-radius: var(--cta-button-border-radius);
+        border: 2px solid var(--cta-button-border);
+        padding: var(--cta-button-padding);
 
         @include mobile-100-w;
     }

@@ -1,0 +1,92 @@
+:root {
+    /* Primary Buttons */
+    --primary-button-border: none;
+    --primary-button-border-radius: var(--spacing-xxs);
+    --primary-button-color: var(--utility-neutral-0);
+    --primary-button-border-outline: 2px solid var(--base-theme-4);
+    --primary-button-border-outline-hover: 2px solid var(--base-theme-3);
+    --primary-button-font-size: 1rem;
+    --primary-button-font-weight: 700;
+    --primary-button-margin: 0 var(--spacing-s) var(--spacing-s) 0;
+    --primary-button-padding: 12px 20px;
+
+    --primary-button-error-background-color: var(--utility-red-50);
+    --primary-button-error-background-color-hover: var(--utility-red-70);
+
+    --primary-button-inner-align-items: center;
+    --primary-button-inner-display: flex;
+    --primary-button-inner-justify-content: center;
+    --primary-button-inner-gap: var(--spacing-xs);
+
+    --primary-button-disabled-border: none;
+    --primary-button-disabled-border-hover: var(--primary-button-disabled-border);
+    --primary-button-disabled-background-color: var(--utility-neutral-10);
+    --primary-button-disabled-background-color-hover: var(--primary-button-disabled-background-color);
+    --primary-button-disabled-color: var(--utility-neutral-60);
+    --primary-button-disabled-color-hover: var(--primary-button-disabled-color);
+
+    /* Secondary Buttons */
+    --secondary-button-background-color: var(--utility-neutral-0);
+    --secondary-button-color-hover: var(--utility-neutral-0);
+    --secondary-button-base-color: var(--utility-neutral-0);
+
+    --secondary-button-error-border: 2px solid var(--utility-red-50);
+    --secondary-button-error-color: var(--utility-red-50);
+    --secondary-button-error-background-color-hover: var(--utility-red-70);
+    --secondary-button-error-border-hover: 2px solid var(--utility-red-70);
+
+    --secondary-button-disabled-background-color: var(--primary-button-disabled-background-color);
+    --secondary-button-disabled-background-color-hover: var(--primary-button-disabled-background-color-hover);
+    --secondary-button-disabled-border: var(--primary-button-disabled-border);
+    --secondary-button-disabled-border-hover: var(--primary-button-disabled-border-hover);
+    --secondary-button-disabled-color: var(--primary-button-disabled-color);
+    --secondary-button-disabled-color-hover: var(--primary-button-disabled-color-hover);
+
+    /* Simple Buttons */
+    --simple-button-background-color: none;
+    --simple-button-background-color-hover: var(--simple-button-background-color);
+    --simple-button-border: none;
+    --simple-button-border-radius: var(--border-radius-s);
+    --simple-button-color: var(--utility-neutral-100);
+    --simple-button-margin: var(--primary-button-padding);
+    --simple-button-padding: 0;
+
+    --simple-button-error-color: var(--primary-button-error-background-color);
+    --simple-button-error-color-hover: var(--primary-button-error-background-color-hover);
+
+    --simple-button-disabled-background: none;
+    --simple-button-disabled-color: var(--primary-button-disabled-color);
+    --simple-button-disabled-color-hover: var(--simple-button-disabled-color);
+
+    /* Link Icon Buttons */
+    --link-icon-button-align-items: var(--primary-button-inner-align-items);
+    --link-icon-background-color: var(--simple-button-background-color);
+    --link-icon-button-background-color-hover: var(--simple-button-background-color-hover);
+    --link-icon-button-color: var(--base-theme-4);
+    --link-icon-button-display: inline-flex;
+    --link-icon-button-gap: var(--primary-button-inner-gap);
+    --link-icon-button-justify-content: var(--primary-button-inner-justify-content);
+    --link-icon-button-line-height: 1;
+    --link-icon-button-padding: var(--spacing-xxs);
+    --link-icon-button-vertical-align: middle;
+    --link-icon-only-button-padding: var(--spacing-xxs);
+
+    --link-icon-button-error-color: var(--primary-button-error-background-color);
+    --link-icon-button-error-color-hover: var(
+    --primary-button-error-background-color-hover    );
+    --link-icon-only-button-error-background-color-hover: var(--primary-button-error-background-color);
+
+    --link-icon-button-disabled-color: var(--primary-button-disabled-color);
+    --link-icon-button-disabled-color-hover: var(--primary-button-disabled-color-hover);
+    --link-icon-only-button-disabled-background-color: var(--simple-button-disabled-background);
+    --link-icon-only-button-disabled-background-color-hover: var(--link-icon-only-button-disabled-background-color);
+
+    /* CTA Buttons */
+    --cta-button-padding: 12px 70px;
+    --cta-button-align-items: var(--primary-button-inner-align-items);
+    --cta-button-border: 2px solid var(--utility-neutral-10);
+    --cta-button-border-radius: var(--border-radius-l);
+    --cta-button-display: inline-flex;
+    --cta-button-justify-content: var(--primary-button-inner-justify-content);
+    --cta-button-gap: var(--primary-button-inner-gap);
+}

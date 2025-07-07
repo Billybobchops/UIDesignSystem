@@ -1,4 +1,4 @@
-import Accordion from '@components/Accordion';
+import Accordion from '@components/layout/Accordion';
 import ButtonSecondary from '@components/button/PrimaryButton';
 import Paragraph from '@components/typography/Paragraph';
 

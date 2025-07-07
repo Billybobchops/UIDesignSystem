@@ -5,62 +5,64 @@
 }
 
 @mixin buttons {
-    border: var(--button-border);
-    border-radius: var(--spacing-xxs);
-    color: var(--utility-neutral-0);
-    font-size: var(--button-font-size);
-    font-weight: var(--button-font-weight);
-    margin: var(--button-margin);
-    padding: var(--button-padding-small);
+    border: var(--primary-button-border);
+    border-radius: var(--primary-button-border-radius);
+    color: var(--primary-button-color);
+    font-size: var(--primary-button-font-size);
+    font-weight: var(--primary-button-font-weight);
+    margin: var(--primary-button-margin);
+    padding: var(--primary-button-padding);
 
-    &.red {
-        background-color: var(--utility-red-50);
+    &.error {
+        background-color: var(--primary-button-error-background-color);
 
         &:hover {
-            background-color: var(--utility-red-70);
+            background-color: var(--primary-button-error-background-color-hover);
         }
     }
 
-    &.green {
-        background-color: var(--utility-green-60);
+    &.alternate {
+        background-color: var(--alternate-theme-2);
 
         &:hover {
-            background-color: var(--utility-green-80);
+            background-color: var(--alternate-theme-4);
         }
     }
 
-    &.blue {
-        background-color: var(--theme-a-4);
+    &.base {
+        background-color: var(--base-theme-4);
 
         &:hover {
-            background-color: var(--theme-a-3);
+            background-color: var(--base-theme-3);
         }
     }
 
+	// To-do: confirm these vars
     &.outline {
         background-color: var(--utility-neutral-0);
-        border: var(--button-border-outline);
-        color: var(--theme-a-4);
+        border: var(--primary-button-border-outline);
+        color: var(--base-theme-4);
 
         &:hover {
-            border: var(--button-border-outline-hover);
-            color: var(--theme-a-3);
+            border: var(--primary-button-border-outline-hover);
+            color: var(--base-theme-3);
         }
     }
 
     &:focus-visible {
-        outline: 2.5px solid var(--theme-a-3);
-        outline-offset: var(--outline-offset-s);
+        outline: var(--focus-outline);
+        outline-offset: var(--focus-outline-offset-s);
     }
 
     &.disabled {
-        border: none;
-        background-color: var(--utility-neutral-10);
-        color: var(--utility-neutral-60);
+        border: var(--primary-button-disabled-border);
+        background-color: var(--primary-button-disabled-background-color);
+        color: var(--primary-button-disabled-color);
+		cursor: not-allowed;
 
         &:hover {
-            background-color: var(--utility-neutral-10);
-            color: var(--utility-neutral-60);
+            background-color: var(--primary-button-disabled-background-color-hover);
+            color: var(--primary-button-disabled-color-hover);
         }
     }
 }
@@ -88,10 +90,11 @@
         }
 
         &:disabled {
-            background-color: var(--utility-neutral-05);
+            background-color: var(--input-disabled-background-color);
+			cursor: not-allowed;
 
             &:hover {
-                border: var(--input-border);
+                border: var(--input-disabled-border-hover);
             }
         }
 
@@ -106,48 +109,47 @@
 
 @mixin checkboxes {
     appearance: none;
-    background-color: var(--utility-neutral-0);
-    border-radius: var(--border-radius-s);
-    border: 2px solid var(--utility-neutral-50);
+    background-color: var(--input-background-color);
+    border-radius: var(--input-border-radius);
+    border: var(--checkbox-border);
     display: grid;
-    height: 20px;
+    height: var(--checkbox-box-height);
     margin: var(--spacing-xs);
     place-content: center;
-    width: 20px;
+    width: var(--checkbox-box-width);
 
     &:checked {
-        background-color: var(--theme-a-3);
+        background-color: var(--checkbox-checked-background-color);
     }
 
     &:checked::before {
-        background-color: var(--utility-neutral-0);
+        background-color: var(--checkbox-check-color);
         transform: scale(1);
     }
 
     &:hover:not(:disabled),
     &:not(:disabled):checked {
-        border-color: var(--theme-a-3);
+        border-color: var(--checkbox-border-hover-color);
     }
 
     &::before {
         content: '';
-        width: 0.65em;
-        height: 0.65em;
-        clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+        width: var(--checkbox-width);
+        height: var(--checkbox-height);
+        clip-path: var(--checkbox-check-shape);
         transform: scale(0);
-        transform-origin: bottom left;
-        transition: 120ms transform ease-in-out;
-        background-color: var(--utility-neutral-0);
+        transform-origin: var(--checkbox-transform-origin);
+        transition: var(--checkbox-transition);
     }
 
     &:focus-visible {
-        border-radius: 2px;
-        outline: 2px solid var(--theme-a-3);
-        transform: scale(1.05);
+        border-radius: var(--checkbox-focus-border-radius);
+        outline: var(--checkbox-focus-outline);
+        transform: var(--checkbox-focus-transform);
     }
 
     &:disabled {
-        background-color: var(--utility-neutral-50);
+        background-color: var(--checkbox-disabled-background-color);
         cursor: not-allowed;
     }
 }

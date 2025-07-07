@@ -1,0 +1,62 @@
+@import '@styles/layer-order.scss';
+
+@layer base.components {
+    .section {
+        margin-bottom: var(--accordion-margin-bottom);
+    }
+
+    .focusedSection {
+        outline: var(--accordion-focused-outline);
+        outline-offset: var(--accordion-focused-outline-offset);
+    }
+
+    .title {
+        margin-bottom: 0;
+    }
+
+    .section,
+    .button {
+        border-radius: var(--accordion-border-radius);
+    }
+
+    .button {
+        background-color: var(--accordion-background-color);
+        border-left: var(--accordion-border-left);
+		border-right: var(--accordion-border-right);
+		border-top: var(--accordion-border-top);
+        border-bottom: var(--accordion-border-bottom);
+        color: var(--accordion-color);
+        display: grid;
+        font-size: var(--accordion-font-size);
+        font-weight: var(--accordion-font-weight);
+        grid-template-columns: repeat(2, auto);
+        gap: var(--accordion-gap);
+        justify-content: start;
+        padding: var(--accordion-padding);
+        text-align: left;
+        width: 100%;
+
+        &:hover {
+            background-color: var(--accordion-background-color-hover);
+            border-bottom: 2.5px solid var(--accordion-border-bottom-hover);
+            color: var(--accordion-color-hover);
+        }
+    }
+
+    .activeButton {
+        border-radius: var(--accordion-active-border-radius);
+        border: var(--accordion-active-border);
+        border-bottom: var(--accordion-active-border-bottom);
+    }
+
+    .activeIcon svg {
+        transform: rotate(180deg);
+    }
+
+    .content {
+        border-radius: var(--accordion-content-border-radius);
+        border: var(--accordion-content-border);
+        padding: var(--accordion-content-padding);
+        text-align: left;
+    }
+}

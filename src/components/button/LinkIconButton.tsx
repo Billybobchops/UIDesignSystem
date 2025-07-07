@@ -13,7 +13,7 @@ interface IconButtonProps {
     spacing?: Spacing | Spacing[];
     text?: string;
     type?: 'button' | 'submit';
-    variant?: 'blue' | 'green' | 'red';
+    variant?: 'base' | 'alternate' | 'default' | 'error';
 }
 
 const IconButton: React.FC<IconButtonProps> = ({
@@ -25,7 +25,7 @@ const IconButton: React.FC<IconButtonProps> = ({
     spacing,
     text,
     type = 'button',
-    variant = 'blue',
+    variant = 'base',
 }) => {
     const [isHovered, setIsHovered] = useState(false);
     const getFillColor = (variant: string, disabled: boolean) => {
@@ -33,20 +33,20 @@ const IconButton: React.FC<IconButtonProps> = ({
             return { fill: 'var(--utility-neutral-60)', hoverFill: 'var(--utility-neutral-60)' };
         }
         switch (variant) {
-            case 'blue':
+            case 'base':
                 return {
-                    fill: 'var(--theme-a-4)',
-                    hoverFill: text ? 'var(--theme-a-3)' : 'var(--utility-neutral-0)',
+                    fill: 'var(--base-theme-4)',
+                    hoverFill: text ? 'var(--base-theme-3)' : 'var(--utility-neutral-0)',
                 };
-            case 'green':
+            case 'alternate':
                 return {
-                    fill: 'var(--utility-green-70)',
-                    hoverFill: text ? 'var(--utility-green-80)' : 'var(--utility-neutral-0)',
+                    fill: 'var(--alternate-theme-3)',
+                    hoverFill: text ? 'var(--alternate-theme-4)' : 'var(--utility-neutral-0)',
                 };
-            case 'red':
+            case 'error':
                 return {
-                    fill: 'var(--utility-red-50)',
-                    hoverFill: text ? 'var(--utility-red-70)' : 'var(--utility-neutral-0)',
+                    fill: 'var(--link-icon-button-error-color)',
+                    hoverFill: text ? 'var(--link-icon-button-error-color-hover)' : 'var(--utility-neutral-0)',
                 };
             default:
                 return {

@@ -1,13 +1,13 @@
-import Badge from '@components/Badge';
+import Badge from '@components/typography/Badge';
 
 const BadgeStory = () => {
     return (
         <>
+            <Badge content="info" variant="info" />
             <Badge content="Success" variant="success" />
-            <Badge content="Warning" variant="warning" />
             <Badge content="Error" variant="error" />
+            <Badge content="Warning" variant="warning" />
             <Badge content="Neutral" variant="neutral" />
-            <Badge content="Informational" variant="informational" />
         </>
     );
 };

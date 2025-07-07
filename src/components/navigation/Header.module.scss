@@ -2,20 +2,20 @@
 
 @layer base.components {
     .header {
-        background-color: var(--nav-background-color);
-        border-bottom: 1px solid var(--utility-neutral-20); // temp
+        background-color: var(--header-background-color);
+        border-bottom: 1px solid var(--header-border-bottom);
         position: relative;
         z-index: 1000;
     }
 
     .container {
         align-items: center;
-        background: var(--nav-background-color);
+        background: var(--header-background-color);
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         margin: auto;
-        max-width: var(--layout-max-width);
+        max-width: var(--header-max-width);
     }
 
     .homeLink {
@@ -23,11 +23,11 @@
 
         img {
             display: block;
-            padding: var(--spacing-xs);
-            max-height: 50px;
+            padding: var(--header-logo-padding);
+            max-height: var(--header-logo-max-height);
 
             @media (max-width: 390px) {
-                max-height: 40px;
+                max-height: var(--header-logo-mobile-max-height);
             }
         }
     }
@@ -37,8 +37,8 @@
         border: none;
         cursor: pointer;
         display: none; // Initially hidden on larger screens
-        padding: 0;
-        margin: 0 var(--spacing-s);
+        padding: var(--header-hamburger-toggle-padding);
+        margin: var(--header-hamburger-toggle-margin);
         z-index: 10; // Ensure it's above the nav when open
 
         // Make the button appear on mobile
@@ -49,8 +49,8 @@
 
     .backdrop {
         @media (max-width: 900px) {
-            animation: fadeIn 0.1s ease-in-out;
-            background-color: rgba(0, 0, 0, 0.75);
+            animation: var(--header-backdrop-animation);
+            background-color: var(--header-backdrop-background-color);
             height: 100%;
             left: 0;
             position: fixed;

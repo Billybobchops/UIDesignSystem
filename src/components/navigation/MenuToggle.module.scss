@@ -20,12 +20,11 @@
         position: absolute;
         height: 2px;
         width: 100%;
-        background: var(--utility-neutral-70);
-        border-radius: var(--border-radius-m);
+        background: var(--header-hamburger-toggle-background-color);
+        border-radius: var(--header-hamburger-toggle-border-radius);
         opacity: 1;
         left: 0;
-        transform: rotate(0deg);
-        transition: 0.2s ease-in-out;
+        transition: var(--header-hamburger-transition);
     }
 
     .menuToggle span:nth-child(1) {

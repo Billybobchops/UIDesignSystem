@@ -3,19 +3,18 @@
 
 @layer base.components {
     .dialog dialog {
-        border: none;
-        border-radius: var(--border-radius-m);
-        max-height: 600px;
-        max-width: 600px;
+        border: var(--dialog-border);
+        border-radius: var(--dialog-border-radius);
+        max-height: var(--dialog-max-height);
+        max-width: var(--dialog-max-width);
         padding: var(--spacing-l) var(--spacing-l) 0 var(--spacing-l);
-        width: calc(100% - 120px);
+        width: var(--dialog-width);
     }
 
     .dialog dialog::backdrop {
-        background-color: var(--utility-neutral-80);
-        transition: display 0.7s allow-discrete, overlay 0.7s allow-discrete,
-            background-color 0.7s;
-        opacity: 0.8;
+        background-color: var(--dialog-backdrop-background-color);
+        transition: var(--dialog-backdrop-transition);
+        opacity: var(--dialog-backdrop-opacity);
     }
 
     .dialogGrid {
@@ -24,12 +23,12 @@
     }
 
     .dialogTitle {
-        margin-bottom: 20px;
+        margin-bottom: var(--dialog-title-margin-bottom);
     }
 
     .actionBar {
-        background-color: var(--utility-neutral-0);
-        border-top: 2px solid var(--utility-neutral-30);
+        background-color: var(----dialog-action-bar-background-color);
+        border-top: var(--dialog-action-bar-border-top);
         bottom: 0;
         display: grid;
         justify-content: end;

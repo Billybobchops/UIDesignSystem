@@ -1,0 +1,52 @@
+@import '@styles/layer-order.scss';
+
+@layer base.components {
+    .alert {
+        border-radius: var(--alert-border-radius);
+        display: grid;
+        font-size: var(--alert-font-size);
+        grid-template-columns: auto 1fr 20px;
+        line-height: var(--alert-line-height);
+        margin-bottom: var(--alert-margin-bottom);
+        padding: var(--alert-padding);
+
+        span:first-of-type {
+            margin-right: var(--spacing-xs);
+        }
+
+        span:last-of-type {
+            justify-self: right;
+        }
+    }
+
+    .info {
+        background-color: var(--status-info-background-color);
+        border: var(--status-info-border);
+        color: var(--status-info-color);
+    }
+
+    .error {
+        background-color: var(--status-error-background-color);
+        border: var(--status-error-border);
+        color: var(--status-error-color);
+    }
+
+    .success {
+        background-color: var(--status-success-background-color);
+        border: var(--status-success-border);
+        color: var(--status-success-color);
+    }
+
+    .warning {
+        background-color: var(--status-warning-background-color);
+        border: var(--status-warning-border);
+        color: var(--status-warning-color);
+    }
+
+    .button {
+        align-self: start;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+    }
+}

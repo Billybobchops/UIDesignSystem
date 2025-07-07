@@ -2,55 +2,44 @@
 
 @layer base.components {
     .radio {
-        box-sizing: border-box;
-        width: 20px;
-        height: 20px;
-        margin: 6px;
-        padding: 0;
-        border: 2px solid var(--utility-neutral-50);
-        border-radius: 50%;
         appearance: none;
-        background-color: transparent;
+        background-color: var(--radio-background-color);
+        border-radius: var(--radio-border-radius);;
+        border: var(--radio-border);
+        box-sizing: border-box;
+        height: var(--radio-height);
+        margin: var(--radio-margin);
         outline: none;
-        transition: outline 0.1s;
+        padding: var(--radio-padding);
+        transition: var(--radio-transition);
+        width: var(--radio-width);
 
         &:not(:disabled):checked {
-            border-color: var(--theme-a-3);
-            background-color: var(--theme-a-3);
             background-clip: content-box;
-            padding: 2px;
-            background-image: radial-gradient(
-                circle,
-                var(--theme-a-3) 0%,
-                var(--theme-a-3) 50%,
-                transparent 60%,
-                transparent 100%
-            );
+            background-color: var(--radio-selected-background-color);
+            background-image: var(--radio-selected-shape);
+            border-color: var(--radio-selected-border-color);
+            padding: var(--radio-selected-padding);
         }
 
         &:disabled {
-            background-color: var(--utility-neutral-50);
+            background-color: var(--radio-disabled-background-color);
+			cursor: not-allowed;
         }
 
         &:disabled:checked {
-            background-image: radial-gradient(
-                circle,
-                var(--utility-neutral-50) 0%,
-                var(--utility-neutral-50) 50%,
-                transparent 50%,
-                transparent 100%
-            );
+            background-image: var(--radio-selected-disabled-shape);
         }
 
         &:focus-visible:not(:checked) {
-            outline: 2px solid var(--theme-a-3);
-            border: 2px solid var(--utility-neutral-50);
-            transform: scale(1.05);
+            outline: var(--radio-focus-outline);
+            border: var(--radio-focus-border);
+            transform: var(--radio-focus-transform);
         }
 
         &:not(:disabled):hover {
-            border: 2px solid var(--theme-a-3);
-            transform: scale(1.05);
+            border: var(--radio-hover-border);
+            transform: var(--radio-hover-transform);
         }
 
         @media (prefers-reduced-motion: reduce) {

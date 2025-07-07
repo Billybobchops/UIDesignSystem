@@ -3,10 +3,10 @@
 @layer base.components {
     .helperText {
         display: block;
-        font-size: 12px;
+        font-size: var(--helper-text-font-size);
     }
 
     .errorText {
-        color: var(--utility-red-70);
+        color: var(--helper-text-error-color);
     }
 }

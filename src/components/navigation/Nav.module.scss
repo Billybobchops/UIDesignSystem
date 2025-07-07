@@ -27,7 +27,7 @@
         padding: 0;
 
         @media (max-width: 900px) {
-            background-color: var(--utility-neutral-0);
+            background-color: var(--nav-background-color);
             flex-direction: column;
             width: 100%;
         }
@@ -46,12 +46,12 @@
             &:hover,
             &:focus,
             &.isActive {
-                border-bottom: 2px solid var(--nav-link-hover-color);
-                color: var(--nav-link-hover-color);
-                margin-bottom: -2px;
+                border-bottom: var(--nav-link-active-border-bottom);
+                color: var(--nav-link-active-color);
+                margin-bottom: var(--nav-link-active-margin-bottom);
 
                 .navLink {
-                    color: var(--nav-link-hover-color);
+                    color: var(--nav-link-active-color);
                 }
             }
         }
@@ -84,7 +84,7 @@
     .linkGrid {
         align-items: center;
         display: grid;
-        gap: var(--spacing-xs);
+        gap: var(--nav-link-grid-gap);
         grid-template-columns: auto 20px;
     }
 
@@ -93,14 +93,14 @@
     }
 
     .navLink {
-        background: none;
-        border: none;
+        background: var(--nav-link-background-color);
+        border: var(--nav-link-border);
         color: var(--nav-link-color);
         display: inline-block;
         font-size: var(--nav-link-font-size);
         font-weight: var(--nav-link-font-weight);
-        line-height: 1.4;
-        text-decoration: none;
+        line-height: var(--nav-link-line-height);
+        text-decoration: var(--nav-link-text-decoration);
 
         .labelContent {
             display: flex;
@@ -149,7 +149,7 @@
 
         @media (max-width: 900px) {
             position: static;
-            box-shadow: none;
+            box-shadow: var(--submenu-mobile-elevation);
         }
 
         .navItem {
@@ -157,7 +157,7 @@
             display: block;
             margin: 0;
             padding: var(--submenu-link-padding);
-            text-decoration: none;
+            text-decoration: var(--submenu-link-text-decoration);
             white-space: nowrap;
 
             .navLink {

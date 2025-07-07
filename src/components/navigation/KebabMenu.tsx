@@ -17,7 +17,7 @@ const KebabMenu: React.FC<KebabProps> = ({ actions }) => {
                 onClick={() => setIsOpen(!isOpen)}
                 type="button"
             >
-                <Kebab fill={isOpen ? 'var(--utility-neutral-0)' : 'var(--theme-a-4)'} />
+                <Kebab fill={isOpen ? 'var(--utility-neutral-0)' : 'var(--base-theme-4)'} />
             </button>
 
             {isOpen && (

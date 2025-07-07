@@ -1,0 +1,46 @@
+@import '@styles/layer-order.scss';
+
+@layer base.components {
+    .badge {
+        border-radius: var(--border-radius-l);
+        display: inline-block;
+        font-size: var(--badge-font-size);
+        font-weight: var(--badge-font-weight);
+        padding: var(--badge-padding);
+        margin: var(--badge-margin);
+    }
+
+    .hasMargin {
+        margin: 0 12px 12px 0;
+    }
+
+    .success {
+        background-color: var(--status-success-background-color);
+        border: var(--status-success-border);
+        color: var(--status-success-color);
+    }
+
+    .warning {
+        background-color: var(--status-warning-background-color);
+        border: var(--status-warning-border);
+        color: var(--status-warning-color);
+    }
+
+    .error {
+        background-color: var(--status-error-background-color);
+        border: var(--status-error-border);
+        color: var(--status-error-color);
+    }
+
+    .neutral {
+        background-color: var(--status-neutral-background-color);
+        border: var(--status-neutral-border);
+        color: var(--status-neutral-color);
+    }
+
+    .info {
+        background-color: var(--status-info-background-color);
+        border: var(--status-info-border);
+        color: var(--status-info-color);
+    }
+}

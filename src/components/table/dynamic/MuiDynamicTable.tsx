@@ -1,4 +1,4 @@
-import { formatHeader, getNestedColumns, isNestedArray, isRecord } from '@/components/table/utils';
+import { formatHeader, getNestedColumns, isNestedArray, isRecord } from '@components/table/utils';
 import Checkbox from '@components/form/Checkbox';
 import CollapsibleTableRow from '@components/table/CollapsibleTableRow';
 import MuiTableBody from '@components/table/MuiTableBody';
@@ -12,14 +12,14 @@ import TableRowAction from '@components/table/TableRowAction';
 import Heading from '@components/typography/Heading';
 import { useCallback, useMemo, useState } from 'react';
 
-interface MuiTableProps {
+interface MuiDynamicTableProps {
     data: unknown[];
     getRowId?: (row: Record<string, unknown>) => string;
     title?: string;
     hasCheckboxes?: boolean;
 }
 
-const MuiTable = ({ data, getRowId, title, hasCheckboxes }: MuiTableProps) => {
+const MuiDynamicTable = ({ data, getRowId, title, hasCheckboxes }: MuiDynamicTableProps) => {
     // Validate data shape
     if (!data.every(isRecord)) {
         return <div>Invalid data format</div>;
@@ -187,4 +187,4 @@ const MuiTable = ({ data, getRowId, title, hasCheckboxes }: MuiTableProps) => {
     );
 };
 
-export default MuiTable;
+export default MuiDynamicTable;

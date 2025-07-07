@@ -37,7 +37,7 @@ const Accordion: React.FC<AccordionProps> = ({ children, title }) => {
                     type="button"
                 >
                     <span className={iconClasses}>
-                        <ChevronDown fill={isHovered ? 'var(--theme-a-3)' : 'var(--theme-a-4)'} />
+                        <ChevronDown fill={isHovered ? 'var(--base-theme-3)' : 'var(--base-theme-4)'} />
                     </span>
                     <span className="sr-only">
                         {isOpen ? 'Collapse' : 'Expand'} {title}

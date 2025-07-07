@@ -8,17 +8,17 @@ const FooterStory = () => {
         {
             label: 'Privacy Policy',
             href: 'https://www.invoicecloud.net/privacy-policy',
-            variant: 'grey',
+            variant: 'default',
         },
         {
             label: 'Accessibility',
             href: 'https://invoicecloud.net/accessibility-statement',
-            variant: 'grey',
+            variant: 'default',
         },
         {
             label: 'Secure Site',
             href: 'https://sealserver.trustwave.com/cert.php?customerId=e6fe5831b6ba46ef83d7c7330126e94d',
-            variant: 'grey',
+            variant: 'default',
             imageSrc: trustwave,
             imageAlt: "This site protected by Trustwave's Trust Commerce Program. You may click on seal to validate.",
         },

@@ -31,9 +31,9 @@ const CollapsibleTableRow = <T extends Record<string, unknown>, K extends Record
             {/* Main Row */}
             <MuiTableRow
                 isNested={false}
-                sx={{ boxShadow: isOpen ? '0 -1px 0 0 var(--theme-a-4)' : 'none', position: 'relative' }}
+                sx={{ boxShadow: isOpen ? '0 -1px 0 0 var(--table-active-row-border-color)' : 'none', position: 'relative' }}
             >
-                <TableRowAction type="chevron" onClick={onToggle} isActive={isOpen} />
+                <TableRowAction type="chevron" onClick={onToggle} isActive={isOpen} isOpen={isOpen} />
                 {columns.map(column => {
                     if (column.isNestedHeader) {
                         return <MuiTableCell key={String(column.key)}>Expand to View</MuiTableCell>;

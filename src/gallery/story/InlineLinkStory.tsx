@@ -1,4 +1,4 @@
-import InlineLink from '@components/InlineLink';
+import InlineLink from '@components/navigation/InlineLink';
 import Paragraph from '@components/typography/Paragraph';
 
 const InlineLinkStory = () => {

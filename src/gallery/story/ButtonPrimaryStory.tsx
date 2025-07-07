@@ -20,7 +20,7 @@ const ButtonPrimaryStory = () => {
                 icon={<SearchDefault />}
                 iconPosition='start'
                 text='Search Invoices'
-                variant='green'
+                variant='alternate'
             />
             <PrimaryButton
                 disabled={true}
@@ -43,14 +43,14 @@ const ButtonPrimaryStory = () => {
                 icon={<MenuCloseMedium />}
                 iconPosition={'start'}
                 text='Remove Email Address'
-                variant='red'
+                variant='error'
             />
             <PrimaryButton
                 disabled={true}
                 icon={<MenuCloseMedium />}
                 iconPosition={'start'}
                 text='Remove Email Address'
-                variant='red'
+                variant='error'
             />
         </span>
     );

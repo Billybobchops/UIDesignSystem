@@ -1,10 +1,10 @@
-import InlineLink from '@components/InlineLink';
+import InlineLink from '@components/navigation/InlineLink';
 import classes from './Footer.module.scss';
 
 export interface Link {
     label?: string;
     href: string;
-    variant: 'grey' | 'blue';
+    variant: 'default' | 'base';
     imageSrc?: string;
     imageAlt?: string;
 }

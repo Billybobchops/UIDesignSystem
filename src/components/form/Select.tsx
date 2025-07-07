@@ -38,6 +38,7 @@ const Select: React.FC<SelectProps> = ({
     //     onChange(e.target.value);
     // };
 
+	// to-do: fix state management
     return (
         <div className={clsx(classes.selectContainer, spacing)}>
             <Label inline={false} inputID={selectID} label={label} required={required} />

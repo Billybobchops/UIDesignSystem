@@ -1,4 +1,4 @@
-import AccountLinks from '@components/AccountLinks';
+import AccountLinks from '@components/navigation/AccountLinks';
 
 const AccountLinksStory = () => {
     const dummyAccountLinks = [

@@ -6,7 +6,7 @@ interface LinkProps {
     onClick?: () => void;
     href?: string;
     target?: string;
-    variant?: 'blue' | 'grey';
+    variant?: 'base' | 'default';
 }
 
 const InlineLink: React.FC<LinkProps> = ({
@@ -14,7 +14,7 @@ const InlineLink: React.FC<LinkProps> = ({
     onClick,
     href = '#',
     target = '_blank',
-    variant = 'blue',
+    variant = 'base',
 }) => {
     return (
         <a

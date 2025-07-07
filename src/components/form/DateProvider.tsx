@@ -1,8 +1,6 @@
 import { LocalizationProvider } from '@mui/x-date-pickers';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 
-// const { AdapterDayjs } = await import('@mui/x-date-pickers/AdapterDayjs'); // dynamic import to sidestep bundler resolution problems
-
 interface DateProviderProps {
     children?: React.ReactNode;
 }

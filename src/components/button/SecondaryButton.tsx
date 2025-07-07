@@ -8,7 +8,7 @@ interface ButtonProps {
     spacing?: Spacing | Spacing[];
     text: string;
     type?: 'button' | 'submit';
-    variant?: 'blue' | 'green' | 'red';
+    variant?: 'base' | 'alternate' | 'default' | 'error';
 }
 
 const SecondaryButton: React.FC<ButtonProps> = ({
@@ -17,7 +17,7 @@ const SecondaryButton: React.FC<ButtonProps> = ({
     spacing,
     text,
     type = 'button',
-    variant = 'blue',
+    variant = 'base',
 }) => {
     return (
         <button

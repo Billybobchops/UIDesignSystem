@@ -317,7 +317,7 @@ export const TableSortArrow: React.FC<IconProps> = ({ fill = 'var(--utility-neut
     );
 };
 
-export const FirstPage: React.FC<IconProps> = ({ fill = 'var(--theme-a-4)' }) => {
+export const FirstPage: React.FC<IconProps> = ({ fill = 'var(--base-theme-4)' }) => {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
             <title>First Page</title>
@@ -340,7 +340,7 @@ export const FirstPage: React.FC<IconProps> = ({ fill = 'var(--theme-a-4)' }) =>
     );
 };
 
-export const LastPage: React.FC<IconProps> = ({ fill = 'var(--theme-a-4)' }) => {
+export const LastPage: React.FC<IconProps> = ({ fill = 'var(--base-theme-4)' }) => {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
             <title>Last Page</title>
@@ -363,7 +363,7 @@ export const LastPage: React.FC<IconProps> = ({ fill = 'var(--theme-a-4)' }) => 
     );
 };
 
-export const PreviousPage: React.FC<IconProps> = ({ fill = 'var(--theme-a-4)' }) => {
+export const PreviousPage: React.FC<IconProps> = ({ fill = 'var(--base-theme-4)' }) => {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 10 16" fill="none">
             <title>Previous Page</title>
@@ -382,7 +382,7 @@ export const PreviousPage: React.FC<IconProps> = ({ fill = 'var(--theme-a-4)' })
     );
 };
 
-export const NextPage: React.FC<IconProps> = ({ fill = 'var(--theme-a-4)' }) => {
+export const NextPage: React.FC<IconProps> = ({ fill = 'var(--base-theme-4)' }) => {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width="9" height="16" viewBox="0 0 9 16" fill="none">
             <title>Next Page</title>
@@ -401,7 +401,7 @@ export const NextPage: React.FC<IconProps> = ({ fill = 'var(--theme-a-4)' }) => 
     );
 };
 
-export const Kebab: React.FC<IconProps> = ({ fill = 'var(--theme-a-4)' }) => {
+export const Kebab: React.FC<IconProps> = ({ fill = 'var(--base-theme-4)' }) => {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
             <title>Kebab</title>
@@ -418,7 +418,7 @@ export const Kebab: React.FC<IconProps> = ({ fill = 'var(--theme-a-4)' }) => {
     );
 };
 
-export const Home: React.FC<IconProps> = ({ fill = 'var(--theme-a-4)' }) => {
+export const Home: React.FC<IconProps> = ({ fill = 'var(--base-theme-4)' }) => {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16" fill="none">
             <title>Home</title>

@@ -5,6 +5,6 @@
     @include inputs;
 
     .input {
-        height: 120px;
+        height: var(--text-area-initial-height);
     }
 }

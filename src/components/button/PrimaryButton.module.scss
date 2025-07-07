@@ -5,15 +5,14 @@
     .button {
         @include buttons;
 
-        border-radius: var(--border-radius-s);
-        padding: 0;
+        padding: 0; // only apply padding var to .innerButton
 
         .innerButton {
-            align-items: center;
-            display: flex;
-            justify-content: center;
-            gap: var(--spacing-xs);
-            padding: var(--button-padding-small);
+            align-items: var(--primary-button-inner-align-items);
+            display: var(--primary-button-inner-display);
+            justify-content: var(--primary-button-inner-justify-content);
+            gap: var(--primary-button-inner-gap);
+            padding: var(--primary-button-padding);
         }
 
         @include mobile-100-w;

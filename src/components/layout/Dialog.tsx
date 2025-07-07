@@ -9,10 +9,10 @@ interface DialogProps {
     handleDialogAction?: () => void;
     actionButtonText?: string;
     children: React.ReactNode;
-    color?: string;
     hasAction?: boolean;
     title?: string;
     TriggerElement: React.FC<{ clickHandler: () => void }>;
+	variant?: 'base' | 'alternate' | 'error';
 }
 
 const Dialog: React.FC<DialogProps> = ({
@@ -20,9 +20,9 @@ const Dialog: React.FC<DialogProps> = ({
     actionButtonText,
     hasAction = false,
     children,
-    color = 'var(--theme-a-4)',
     title,
     TriggerElement,
+	variant = 'base',
 }) => {
     const dialogRef = useRef<HTMLDialogElement | null>(null);
     const scrollPositionRef = useRef(0);
@@ -66,13 +66,34 @@ const Dialog: React.FC<DialogProps> = ({
         };
     }, [closeDialog]);
 
+	const getFillColor = (variant: string) => {
+        switch (variant) {
+            case 'base':
+                return {
+                    fill: 'var(--base-theme-4)',
+                };
+            case 'alternate':
+                return {
+                    fill: 'var(--alternate-theme-3)',
+                };
+            case 'error':
+                return {
+                    fill: 'var(--utility-red-50)',
+                };
+            default:
+                return {
+                    fill: 'var(--utility-neutral-60)',
+                };
+        }
+    };
+
     return (
         <div className={classes.dialog}>
             <TriggerElement clickHandler={openDialog} />
             <dialog ref={dialogRef}>
                 <button className={classes.menuClose} onClick={closeDialog} type="button">
                     <span aria-hidden="true">
-                        <MenuCloseLarge fill={color} />
+                        <MenuCloseLarge fill={getFillColor(variant).fill} />
                     </span>
                     <VisuallyHidden>Close Dialog</VisuallyHidden>
                 </button>
@@ -91,14 +112,14 @@ const Dialog: React.FC<DialogProps> = ({
                                         text="cancel"
                                         clickHandler={closeDialog}
                                         disabled={false}
-                                        variant="blue"
+                                        variant={variant}
                                     />
                                     <PrimaryButton
                                         disabled={false}
                                         clickHandler={handleDialogAction}
                                         icon={<ChevronRight />}
                                         text={actionButtonText ? actionButtonText : ''}
-                                        variant="blue"
+                                        variant={variant}
                                     />
                                 </>
                             )}
@@ -108,7 +129,7 @@ const Dialog: React.FC<DialogProps> = ({
                                     clickHandler={closeDialog}
                                     icon={<ChevronRight />}
                                     text="Close"
-                                    variant="blue"
+                                    variant={variant}
                                 />
                             )}
                         </div>

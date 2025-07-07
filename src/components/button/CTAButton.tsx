@@ -11,7 +11,7 @@ interface ButtonProps {
     spacing?: Spacing | Spacing[];
     text: string;
     type?: 'button' | 'submit';
-    variant?: 'blue' | 'green' | 'outline';
+    variant?: 'base' | 'alternate' | 'outline';
 }
 
 const CTAButton: React.FC<ButtonProps> = ({
@@ -22,13 +22,13 @@ const CTAButton: React.FC<ButtonProps> = ({
     spacing,
     text,
     type = 'button',
-    variant = 'blue',
+    variant = 'base',
 }) => {
     const [isHovered, setIsHovered] = useState(false);
 
     const fillColor = (() => {
         if (disabled) {
-            return 'var(--utility-neutral-60)';
+            return 'var(--primary-button-disabled-color)';
         }
 
         if (isHovered && variant !== 'outline') {
@@ -37,9 +37,9 @@ const CTAButton: React.FC<ButtonProps> = ({
 
         if (variant === 'outline') {
             if (isHovered) {
-                return 'var(--theme-a-3)';
+                return 'var(--base-theme-3)';
             }
-            return 'var(--theme-a-4)';
+            return 'var(--base-theme-4)';
         }
     })();
 

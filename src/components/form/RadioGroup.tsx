@@ -6,11 +6,15 @@ import classes from './RadioGroup.module.scss';
 
 interface RadioGroupProps {
     legend: string;
-    options: { id: string }[];
+    options: { id: string; disabled?: boolean }[];
     spacing?: Spacing | Spacing[];
 }
 
-const RadioGroup: React.FC<RadioGroupProps> = ({ legend, options, spacing }) => {
+const RadioGroup: React.FC<RadioGroupProps> = ({
+    legend,
+    options,
+    spacing,
+}) => {
     const [selected, setSelected] = useState(options[0]);
     const onOptionChange = (index: number) => {
         setSelected(options[index]);
@@ -24,9 +28,10 @@ const RadioGroup: React.FC<RadioGroupProps> = ({ legend, options, spacing }) => 
                         <input
                             checked={selected.id === option.id}
                             className={classes.radio}
+                            disabled={option.disabled}
                             id={option.id}
                             onChange={() => onOptionChange(i)}
-                            type="radio"
+                            type='radio'
                             value={option.id}
                         />
                         {option.id}

@@ -67,8 +67,8 @@ const MuiTablePagination: React.FC<MuiTablePaginationProps> = ({
                     },
                 },
                 '& .MuiInputBase-root .MuiNativeSelect-select.MuiTablePagination-select': {
-                    border: '1px solid var(--utility-neutral-50)',
-                    borderRadius: 'var(--border-radius-s)',
+                    border: 'var(--table-pagination-select-border)',
+                    borderRadius: 'var(--table-pagination-select-border-radius)',
                 },
             }}
             onPageChange={handleChangePage}

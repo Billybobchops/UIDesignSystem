@@ -1,0 +1,45 @@
+:root {
+	/* Accordion */
+	--accordion-margin-bottom: 20px;
+	--accordion-focused-outline: 2px solid var(--base-theme-3);
+	--accordion-focused-outline-offset: var(--focus-outline-offset-m);
+	--accordion-border-radius: var(--border-radius-s);
+	--accordion-background-color: var(--utility-neutral-05);
+	--accordion-background-color-hover: var(--base-theme-1);
+	--accordion-border-left: none;
+	--accordion-border-right: none;
+	--accordion-border-top: none;
+	--accordion-border-bottom: 2px solid var(--utility-neutral-20);
+	--accordion-border-bottom-hover: 2.5px solid var(--base-theme-3);
+	--accordion-color: var(--base-theme-4);
+	--accordion-color-hover: var(--base-theme-3);
+	--accordion-font-size: 16px;
+	--accordion-font-weight: 700;
+	--accordion-gap: var(--spacing-s);
+	--accordion-padding: 14px 18px;
+	--accordion-active-border-radius: var(--border-radius-s) var(--border-radius-s) 0 0;
+	--accordion-active-border: 1px solid var(--base-theme-3);
+	--accordion-active-border-bottom: none;
+	--accordion-content-border-radius: 0 0 var(--border-radius-s) var(--border-radius-s);
+	--accordion-content-border: 1px solid var(--base-theme-3);
+	--accordion-content-padding: 20px;
+
+	/* Dialog */
+	--dialog-border: none;
+	--dialog-border-radius: var(--border-radius-m);
+	--dialog-max-height: 600px;
+	--dialog-max-width: var(--dialog-max-height);
+	--dialog-padding: var(--spacing-l) var(--spacing-l) 0 var(--spacing-l);
+	--dialog-width: calc(100% - 120px);
+	--dialog-backdrop-background-color: var(--utility-neutral-80);
+	--dialog-backdrop-transition: display 0.7s allow-discrete, overlay 0.7s allow-discrete,
+            background-color 0.7s;
+	--dialog-backdrop-opaciity: 0.8;
+	--dialog-title-margin-bottom: var(--accordion-content-padding);
+	--dialog-action-bar-background-color: var(--utility-neutral-0);
+	--dialog-action-bar-border-top: 2px solid var(--utility-neutral-30);
+
+	/* Dividers */
+	--divider-light: 1px solid var(--utility-neutral-10);
+	--divider-dark: 1px solid var(--utility-neutral-20);
+}

@@ -6,12 +6,12 @@
         @include checkboxes;
 
         &.partialCheck {
-            background-color: var(--theme-a-3);
-            border-color: var(--theme-a-3);
+            background-color: var(--partial-check-background-color);
+            border-color: var(--partial-check-border-color);
         }
 
         &.partialCheck::before {
-            background-color: var(--utility-neutral-0);
+            background-color: var(--partial-check-symbol-color);
             clip-path: none;
             content: '';
             height: 2px;

@@ -3,7 +3,7 @@
 @layer base.components {
     .paragraph {
         font-size: var(--body-font-size);
-        line-height: 1.5rem;
+        line-height: var(--body-font-line-height);
         margin: 0 0 var(--spacing-s) 0;
     }
 
