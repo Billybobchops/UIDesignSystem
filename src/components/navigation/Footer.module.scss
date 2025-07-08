@@ -1,6 +1,6 @@
 @import '@styles/layer-order.scss';
 
-@layer base.components {
+@layer invoicecloud-base.invoicecloud-components {
     .container {
         align-items: center;
         background-color: var(--invoicecloud-footer-background-color);

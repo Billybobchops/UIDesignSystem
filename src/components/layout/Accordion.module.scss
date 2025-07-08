@@ -1,6 +1,6 @@
 @import '@styles/layer-order.scss';
 
-@layer base.components {
+@layer invoicecloud-base.invoicecloud-components {
     .section {
         margin-bottom: var(--invoicecloud-accordion-margin-bottom);
     }

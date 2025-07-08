@@ -1,6 +1,6 @@
 @import '@styles/layer-order.scss';
 
-@layer base.components {
+@layer invoicecloud-base.invoicecloud-components {
     .badge {
         border-radius: var(--invoicecloud-border-radius-l);
         display: inline-block;

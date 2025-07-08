@@ -1,7 +1,7 @@
 @use '@styles/mixins.scss' as *;
 @import '@styles/layer-order.scss';
 
-@layer base.components {
+@layer invoicecloud-base.invoicecloud-components {
     .dialog dialog {
         border: var(--invoicecloud-dialog-border);
         border-radius: var(--invoicecloud-dialog-border-radius);

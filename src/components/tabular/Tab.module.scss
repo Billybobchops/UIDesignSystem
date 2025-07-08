@@ -1,6 +1,6 @@
 @import '@styles/layer-order.scss';
 
-@layer base.components {
+@layer invoicecloud-base.invoicecloud-components {
 	// to-do: abstract styles to CSS vars
     .tab {
         background-color: var(--invoicecloud-utility-neutral-05);

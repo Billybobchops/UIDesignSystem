@@ -1,6 +1,6 @@
 @import '@styles/layer-order.scss';
 
-@layer base.components {
+@layer invoicecloud-base.invoicecloud-components {
     .radio {
         appearance: none;
         background-color: var(--invoicecloud-radio-background-color);

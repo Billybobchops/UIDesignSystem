@@ -1,36 +1,43 @@
 @import '@styles/layer-order.scss';
 
-@layer base.components {
+@layer invoicecloud-base.invoicecloud-components {
     .h1,
     .h2,
     .h3,
     .h4,
     .h5,
     .h6 {
-        margin: var(--invoicecloud-heading-margin);
+        color: var(--invoicecloud-heading-color);
+		margin: var(--invoicecloud-heading-margin);
     }
 
     .h1 {
+		color: var(--invoicecloud-heading-1-color);
         font-size: var(--invoicecloud-h1-font-size);
     }
 
     .h2 {
+		color: var(--invoicecloud-heading-2-color);
         font-size: var(--invoicecloud-h2-font-size);
     }
 
     .h3 {
+		color: var(--invoicecloud-heading-3-color);
         font-size: var(--invoicecloud-h3-font-size);
     }
 
     .h4 {
+		color: var(--invoicecloud-heading-4-color);
         font-size: var(--invoicecloud-h4-font-size);
     }
 
     .h5 {
+		color: var(--invoicecloud-heading-5-color);
         font-size: var(--invoicecloud-h5-font-size);
     }
 
     .h6 {
+		color: var(--invoicecloud-heading-6-color);
         font-size: var(--invoicecloud-h6-font-size);
     }
 }

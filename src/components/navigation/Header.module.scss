@@ -1,6 +1,6 @@
 @import '@styles/layer-order.scss';
 
-@layer base.components {
+@layer invoicecloud-base.invoicecloud-components {
     .header {
         background-color: var(--invoicecloud-header-background-color);
         border-bottom: 1px solid var(--invoicecloud-header-border-bottom);

@@ -1,7 +1,7 @@
-@layer base {
-    @layer reset, variables, components;
+@layer invoicecloud-base {
+    @layer invoicecloud-reset, invoicecloud-variables, invoicecloud-components;
 }
 
-@layer override {
-    @layer spacing, invoicecloud-overrides;
+@layer invoicecloud-override {
+    @layer invoicecloud-spacing, invoicecloud-overrides;
 }

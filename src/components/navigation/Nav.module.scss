@@ -1,6 +1,6 @@
 @import '@styles/layer-order.scss';
 
-@layer base.components {
+@layer invoicecloud-base.invoicecloud-components {
     .nav {
         align-self: end; // important for larger logos
         background-color: var(--invoicecloud-nav-background-color);
